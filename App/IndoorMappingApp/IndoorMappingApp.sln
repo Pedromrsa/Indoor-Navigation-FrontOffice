@@ -1,0 +1,27 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.13.35913.81 d17.13
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IndoorMappingApp", "IndoorMappingApp.csproj", "{CCE8AD22-C2AD-499F-BE91-C7087F165FC1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CCE8AD22-C2AD-499F-BE91-C7087F165FC1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CCE8AD22-C2AD-499F-BE91-C7087F165FC1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CCE8AD22-C2AD-499F-BE91-C7087F165FC1}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{CCE8AD22-C2AD-499F-BE91-C7087F165FC1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CCE8AD22-C2AD-499F-BE91-C7087F165FC1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CCE8AD22-C2AD-499F-BE91-C7087F165FC1}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {EB05500A-138D-44D7-974E-B3492B2D4BBC}
+	EndGlobalSection
+EndGlobal

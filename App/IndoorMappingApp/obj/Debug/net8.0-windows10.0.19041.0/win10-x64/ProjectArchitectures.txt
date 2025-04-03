@@ -1,0 +1,1 @@
+C:\Users\pedro\Desktop\TASSI\Indoor-Navigation-FrontOffice\App\IndoorMappingApp\IndoorMappingApp.csproj;x64
