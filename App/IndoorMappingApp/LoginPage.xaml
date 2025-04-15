@@ -1,0 +1,91 @@
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             x:Class="IndoorMappingApp.LoginPage"
+             BackgroundColor="White"
+             >
+    <!-- Create a Grid to center the container -->
+    <Grid VerticalOptions="Center"  HorizontalOptions="Center">
+
+        <!-- Grey container with padding and rounded corners -->
+        <Frame BackgroundColor="#D3D3D3"
+               Padding="20"
+               CornerRadius="0"
+               BorderColor="Transparent"
+               >
+            <StackLayout VerticalOptions="Center" HorizontalOptions="CenterAndExpand" Spacing="17">
+
+                <!-- Login Label -->
+                <Label Text="Login"
+                       FontSize="20"
+                       TextColor="Black"
+                       HorizontalOptions="Center"
+                       VerticalOptions="Start" 
+                       Margin="0,0,0,20"/>
+
+                <!-- Email Text Entry -->
+                <Frame BorderColor="Black"
+                    CornerRadius="0"
+                    Padding="0"
+                    HasShadow="False"
+                    HorizontalOptions="FillAndExpand">
+                    <Entry Placeholder="ISEP E-mail"
+                           PlaceholderColor="Black"
+                           TextColor="Black"
+                           FontSize="17"
+                           Keyboard="Email"
+                           Background="White"
+                           HorizontalOptions="FillAndExpand" />
+                </Frame>
+
+                <Frame BorderColor="Black"
+                CornerRadius="0"
+                Padding="0"
+                HasShadow="False"
+                HorizontalOptions="FillAndExpand">
+                    <!-- Password Text Entry -->
+                    <Entry Placeholder="Password"
+                       PlaceholderColor="Black"
+                       TextColor="Black"
+                       IsPassword="True"
+                       FontSize="17"
+                        Background="White"
+                       HorizontalOptions="FillAndExpand" />
+                </Frame>
+                <!-- Forgot Password label -->
+                <Label Text="Forgot Password?"
+                       TextColor="#2e52f3"
+                       FontSize="17"
+                       HorizontalOptions="Center"
+                       VerticalOptions="End" 
+                        />
+
+                <!-- Don't have an account label -->
+                <Label HorizontalOptions="Center">
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <Span Text="Don't have an account? " TextColor="Black"  FontSize="17"/>
+                            <Span Text="Register" TextColor="#2e52f3"  FontSize="17">
+                            </Span>
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+
+                <!-- Enter Button -->
+                <Button Text="Enter"
+                        BorderWidth="1"
+                        FontSize="16"
+                        BorderColor="Black"
+                        BackgroundColor="Red"
+                        TextColor="White"
+                        WidthRequest="70"
+                        HorizontalOptions="FillAndExpand"
+                        Command="{Binding EnterCommand}" />
+
+            </StackLayout>
+
+        </Frame>
+
+    </Grid>
+
+
+</ContentPage>
