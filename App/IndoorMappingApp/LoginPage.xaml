@@ -1,85 +1,93 @@
-<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
-             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-             x:Class="IndoorMappingApp.LoginPage"
-             BackgroundColor="White"
-             >
-    <!-- Create a Grid to center the container -->
-    <Grid VerticalOptions="Center"  HorizontalOptions="Center">
+<ContentPage
+    x:Class="IndoorMappingApp.LoginPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    BackgroundColor="White">
+    <!--  Create a Grid to center the container  -->
+    <Grid HorizontalOptions="Center" VerticalOptions="Center">
 
-        <!-- Grey container with padding and rounded corners -->
-        <Frame BackgroundColor="#D3D3D3"
-               Padding="20"
-               CornerRadius="0"
-               BorderColor="Transparent"
-               >
-            <StackLayout VerticalOptions="Center" HorizontalOptions="CenterAndExpand" Spacing="17">
+        <!--  Grey container with padding and rounded corners  -->
+        <Frame
+            Padding="20"
+            BackgroundColor="#D3D3D3"
+            BorderColor="Transparent"
+            CornerRadius="0">
+            <StackLayout
+                HorizontalOptions="CenterAndExpand"
+                Spacing="17"
+                VerticalOptions="Center">
 
-                <!-- Login Label -->
-                <Label Text="Login"
-                       FontSize="20"
-                       TextColor="Black"
-                       HorizontalOptions="Center"
-                       VerticalOptions="Start" 
-                       Margin="0,0,0,20"/>
+                <!--  Login Label  -->
+                <Label
+                    Margin="0,0,0,20"
+                    FontSize="20"
+                    HorizontalOptions="Center"
+                    Text="Login"
+                    TextColor="Black"
+                    VerticalOptions="Start" />
 
-                <!-- Email Text Entry -->
-                <Frame BorderColor="Black"
-                    CornerRadius="0"
+                <!--  Email Text Entry  -->
+                <Frame
                     Padding="0"
+                    BorderColor="Black"
+                    CornerRadius="0"
                     HasShadow="False"
                     HorizontalOptions="FillAndExpand">
-                    <Entry Placeholder="ISEP E-mail"
-                           PlaceholderColor="Black"
-                           TextColor="Black"
-                           FontSize="17"
-                           Keyboard="Email"
-                           Background="White"
-                           HorizontalOptions="FillAndExpand" />
-                </Frame>
-
-                <Frame BorderColor="Black"
-                CornerRadius="0"
-                Padding="0"
-                HasShadow="False"
-                HorizontalOptions="FillAndExpand">
-                    <!-- Password Text Entry -->
-                    <Entry Placeholder="Password"
-                       PlaceholderColor="Black"
-                       TextColor="Black"
-                       IsPassword="True"
-                       FontSize="17"
+                    <Entry
                         Background="White"
-                       HorizontalOptions="FillAndExpand" />
-                </Frame>
-                <!-- Forgot Password label -->
-                <Label Text="Forgot Password?"
-                       TextColor="#2e52f3"
-                       FontSize="17"
-                       HorizontalOptions="Center"
-                       VerticalOptions="End" 
-                        />
-
-                <!-- Don't have an account label -->
-                <Label HorizontalOptions="Center">
-                    <Label.FormattedText>
-                        <FormattedString>
-                            <Span Text="Don't have an account? " TextColor="Black"  FontSize="17"/>
-                            <Span Text="Register" TextColor="#2e52f3"  FontSize="17">
-                            </Span>
-                        </FormattedString>
-                    </Label.FormattedText>
-                </Label>
-
-                <!-- Enter Button -->
-                <Button Text="Enter"
-                        BorderWidth="1"
-                        FontSize="16"
-                        BorderColor="Black"
-                        BackgroundColor="Red"
-                        TextColor="White"
-                        WidthRequest="70"
+                        FontSize="17"
                         HorizontalOptions="FillAndExpand"
-                        Command="{Binding EnterCommand}" />
+                        Keyboard="Email"
+                        Placeholder="ISEP E-mail"
+                        PlaceholderColor="Black"
+                        TextColor="Black" />
+                </Frame>
+
+                <Frame
+                    Padding="0"
+                    BorderColor="Black"
+                    CornerRadius="0"
+                    HasShadow="False"
+                    HorizontalOptions="FillAndExpand">
+                    <!--  Password Text Entry  -->
+                    <Entry
+                        Background="White"
+                        FontSize="17"
+                        HorizontalOptions="FillAndExpand"
+                        IsPassword="True"
+                        Placeholder="Password"
+                        PlaceholderColor="Black"
+                        TextColor="Black" />
+                </Frame>
+                <!--  Forgot Password label  -->
+                <Label
+                    FontSize="17"
+                    HorizontalOptions="Center"
+                    Text="Forgot Password?"
+                    TextColor="#2e52f3"
+                    VerticalOptions="End" />
+
+                <!--  Don't have an account button  -->
+                <Button
+                    BackgroundColor="Transparent"
+                    BorderWidth="0"
+                    Clicked="OnRegisterClicked"
+                    FontSize="17"
+                    HorizontalOptions="Center"
+                    Text="Don't have an account?"
+                    TextColor="#2e52f3" />
+
+                <!--  Enter Button  -->
+                <Button
+                    BackgroundColor="Red"
+                    BorderColor="Black"
+                    BorderWidth="1"
+                    Command="{Binding EnterCommand}"
+                    FontSize="16"
+                    HorizontalOptions="FillAndExpand"
+                    Text="Enter"
+                    TextColor="White"
+                    WidthRequest="70" />
 
             </StackLayout>
 

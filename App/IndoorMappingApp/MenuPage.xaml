@@ -1,11 +1,35 @@
 <ContentPage
     x:Class="IndoorMappingApp.MenuPage"
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
-    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     BackgroundColor="White">
-    <VerticalStackLayout Padding="20" Spacing="15">
-        <Button Clicked="OnLoginClicked" Text="Login" />
-        <Button Clicked="OnRegisterClicked" Text="Register" />
-        <Button Clicked="OnGuestClicked" Text="Try as Guest" />
+
+
+    <VerticalStackLayout
+        Padding="20"
+        HorizontalOptions="Center"
+        Spacing="15">
+
+        <Button
+            BackgroundColor="Red"
+            Clicked="OnLoginClicked"
+            HorizontalOptions="Center"
+            Text="Login"
+            TextColor="White" />
+
+        <Button
+            BackgroundColor="Gray"
+            Clicked="OnRegisterClicked"
+            HorizontalOptions="Center"
+            Text="Register"
+            TextColor="White" />
+
+        <Button
+            BackgroundColor="Green"
+            Clicked="OnGuestClicked"
+            HorizontalOptions="Center"
+            Text="Try as Guest"
+            TextColor="White" />
+
     </VerticalStackLayout>
 </ContentPage>

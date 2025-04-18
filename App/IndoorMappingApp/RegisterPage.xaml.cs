@@ -30,4 +30,9 @@ public partial class RegisterPage : ContentPage
         await Navigation.PopAsync();
     }
 
+    async void OnLoginClicked(object sender, EventArgs e)
+    {
+         await Navigation.PushAsync(new LoginPage());
+    }
+
 }

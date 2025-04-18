@@ -91,20 +91,15 @@
                 </Frame>
 
                 <!--  Already have an account?  -->
-                <Label HorizontalOptions="Center">
-                    <Label.FormattedText>
-                        <FormattedString>
-                            <Span
-                                FontSize="17"
-                                Text="Already have an account? "
-                                TextColor="Black" />
-                            <Span
-                                FontSize="17"
-                                Text="Login"
-                                TextColor="#2e52f3" />
-                        </FormattedString>
-                    </Label.FormattedText>
-                </Label>
+                <Button
+                    BackgroundColor="Transparent"
+                    BorderWidth="0"
+                    Clicked="OnLoginClicked"
+                    FontSize="17"
+                    HorizontalOptions="Center"
+                    Text="Already have an account? Login"
+                    TextColor="#2e52f3" />
+
 
                 <!--  5. Register button  -->
                 <Button
