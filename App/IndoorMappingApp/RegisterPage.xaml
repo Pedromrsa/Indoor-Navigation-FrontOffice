@@ -1,0 +1,123 @@
+<ContentPage
+    x:Class="IndoorMappingApp.RegisterPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    BackgroundColor="White">
+
+    <!--  1. Center container  -->
+    <Grid HorizontalOptions="Center" VerticalOptions="Center">
+
+        <!--  2. Grey box frame  -->
+        <Frame
+            Padding="20"
+            BackgroundColor="#D3D3D3"
+            BorderColor="Transparent"
+            CornerRadius="0">
+
+            <!--  3. Inputs and labels  -->
+            <VerticalStackLayout HorizontalOptions="CenterAndExpand" Spacing="17">
+
+                <!--  Page heading  -->
+                <Label
+                    Margin="0,0,0,20"
+                    FontSize="20"
+                    HorizontalOptions="Center"
+                    Text="Register"
+                    TextColor="Black" />
+
+                <!--  Email  -->
+                <Frame
+                    Padding="0"
+                    BorderColor="Black"
+                    CornerRadius="0"
+                    HasShadow="False"
+                    HorizontalOptions="FillAndExpand">
+                    <Entry
+                        x:Name="EmailEntry"
+                        Background="White"
+                        FontSize="17"
+                        Keyboard="Email"
+                        Placeholder="Enter your ISEP E-mail"
+                        PlaceholderColor="Black"
+                        TextColor="Black" />
+                </Frame>
+
+                <!--  Password  -->
+                <Frame
+                    Padding="0"
+                    BorderColor="Black"
+                    CornerRadius="0"
+                    HasShadow="False"
+                    HorizontalOptions="FillAndExpand">
+                    <Entry
+                        x:Name="PasswordEntry"
+                        Background="White"
+                        FontSize="17"
+                        IsPassword="True"
+                        Placeholder="Enter password"
+                        PlaceholderColor="Black"
+                        TextColor="Black" />
+                </Frame>
+
+                <!--  Disability Picker  -->
+                <Frame
+                    Padding="0"
+                    BorderColor="Black"
+                    CornerRadius="0"
+                    HasShadow="False"
+                    HorizontalOptions="FillAndExpand">
+                    <Picker
+                        x:Name="LimitationPicker"
+                        Title="Select physical limitation"
+                        BackgroundColor="White"
+                        FontSize="17"
+                        TextColor="Black"
+                        TitleColor="Black" />
+                </Frame>
+
+
+                <!--  Language picker  -->
+                <Frame
+                    Padding="0"
+                    BorderColor="Black"
+                    CornerRadius="0"
+                    HasShadow="False"
+                    HorizontalOptions="FillAndExpand">
+                    <Picker
+                        x:Name="LanguagePicker"
+                        Title="Select language"
+                        Background="White"
+                        FontSize="17" />
+                </Frame>
+
+                <!--  Already have an account?  -->
+                <Label HorizontalOptions="Center">
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <Span
+                                FontSize="17"
+                                Text="Already have an account? "
+                                TextColor="Black" />
+                            <Span
+                                FontSize="17"
+                                Text="Login"
+                                TextColor="#2e52f3" />
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+
+                <!--  5. Register button  -->
+                <Button
+                    BackgroundColor="Red"
+                    BorderColor="Black"
+                    BorderWidth="1"
+                    Clicked="OnRegisterClicked"
+                    FontSize="16"
+                    HorizontalOptions="FillAndExpand"
+                    Text="Register"
+                    TextColor="White" />
+
+            </VerticalStackLayout>
+        </Frame>
+    </Grid>
+</ContentPage>
