@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="IndoorMappingApp.MainMenuPage"
+             Title="MainMenuPage">
+    <ScrollView>
+        <VerticalStackLayout Padding="20" Spacing="30" HorizontalOptions="Center">
+
+            <Image Source="Resources/Images/mapa_isep.png"
+                   HeightRequest="250"
+                   Aspect="AspectFit" />
+
+            <Button Text="Available Routes"
+                    Clicked="OnRoutesClicked"
+                    HorizontalOptions="Fill" />
+
+            <!-- Botão só visível se for utilizador registado -->
+            <Button Text="Options"
+                    x:Name="OptionsButton"
+                    Clicked="OnOptionsClicked"
+                    HorizontalOptions="Fill"
+                    IsVisible="False" />
+
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
