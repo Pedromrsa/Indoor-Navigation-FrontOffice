@@ -1,0 +1,74 @@
+# .gitignore para projeto MAUI com Visual Studio
+
+# Pastas padrão do .NET
+bin/
+obj/
+.vs/
+.vscode/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Configurações locais
+*.userprefs
+*.pidb
+*.ide
+*.orig
+
+# Ficheiros do Visual Studio Code
+.vscode/
+history/
+.ionide/
+*.code-workspace
+
+# Logs e temporários
+*.log
+*.tmp
+*.temp
+*.bak
+*.old
+
+# Build do MAUI para plataformas específicas
+**/Platforms/**/bin/
+**/Platforms/**/obj/
+
+# Arquivos gerados pelo build de Android
+*.apk
+*.aab
+
+# Arquivos gerados pelo build de iOS/macOS
+build/
+DerivedData/
+*.pbxuser
+*.mode1v3
+*.mode2v3
+*.perspectivev3
+xcuserdata/
+*.xcworkspace
+*.xcodeproj/project.xcworkspace/xcuserdata
+
+# Arquivos de backup
+*.swp
+*.swo
+
+# Arquivos de publicação
+publish/
+
+# Arquivos do Rider (JetBrains)
+.idea/
+*.sln.iml
+
+# Certificados e segredos (por precaução)
+*.pfx
+*.key
+*.keystore
+*.jks
+*.pem
+*.cer
+*.crt
+
+# Outros
+Thumbs.db
+ehthumbs.db
+Desktop.ini
