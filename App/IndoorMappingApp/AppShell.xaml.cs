@@ -6,6 +6,9 @@
         {
             InitializeComponent();
             Routing.RegisterRoute("register", typeof(RegisterPage));
+			Routing.RegisterRoute("mainmenu", typeof(MainMenuPage));
+            Routing.RegisterRoute("routes", typeof(AvailableRoutesPage));
+            Routing.RegisterRoute("options", typeof(OptionsPage));
         }
     }
 }
