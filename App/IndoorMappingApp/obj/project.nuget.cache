@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "k3zBV9ukXtOmPI7kQCrulrtps52KwK6sTjdVn89g8Mpx+Y5JMs4HTgWnVw72+rC0vzA05vb/+cK1Qgzhi+gQvQ==",
+  "dgSpecHash": "As6Ix+gE3iuOvVSAyEvgicz0Tnen2CCSrHUHTrZD44hPq4tO5q9BaYczIYMZqG5kv6mrw3GwXdhhTdhKFfJj5w==",
   "success": true,
   "projectFilePath": "C:\\Users\\Renfe\\Desktop\\TASSI\\Indoor-Navigation-FrontOffice\\App\\IndoorMappingApp\\IndoorMappingApp.csproj",
   "expectedPackageFiles": [
@@ -28,6 +28,11 @@
     "C:\\Users\\Renfe\\.nuget\\packages\\microsoft.net.illink.tasks\\8.0.1\\microsoft.net.illink.tasks.8.0.1.nupkg.sha512",
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages\\microsoft.windows.sdk.buildtools\\10.0.22621.756\\microsoft.windows.sdk.buildtools.10.0.22621.756.nupkg.sha512",
     "C:\\Users\\Renfe\\.nuget\\packages\\microsoft.windowsappsdk\\1.3.230724000\\microsoft.windowsappsdk.1.3.230724000.nupkg.sha512",
+    "C:\\Users\\Renfe\\.nuget\\packages\\skiasharp\\3.116.1\\skiasharp.3.116.1.nupkg.sha512",
+    "C:\\Users\\Renfe\\.nuget\\packages\\skiasharp.nativeassets.android\\3.116.1\\skiasharp.nativeassets.android.3.116.1.nupkg.sha512",
+    "C:\\Users\\Renfe\\.nuget\\packages\\skiasharp.nativeassets.ios\\3.116.1\\skiasharp.nativeassets.ios.3.116.1.nupkg.sha512",
+    "C:\\Users\\Renfe\\.nuget\\packages\\skiasharp.nativeassets.maccatalyst\\3.116.1\\skiasharp.nativeassets.maccatalyst.3.116.1.nupkg.sha512",
+    "C:\\Users\\Renfe\\.nuget\\packages\\skiasharp.nativeassets.win32\\3.116.1\\skiasharp.nativeassets.win32.3.116.1.nupkg.sha512",
     "C:\\Users\\Renfe\\.nuget\\packages\\xamarin.android.glide\\4.15.1.2\\xamarin.android.glide.4.15.1.2.nupkg.sha512",
     "C:\\Users\\Renfe\\.nuget\\packages\\xamarin.android.glide.annotations\\4.15.1.2\\xamarin.android.glide.annotations.4.15.1.2.nupkg.sha512",
     "C:\\Users\\Renfe\\.nuget\\packages\\xamarin.android.glide.disklrucache\\4.15.1.2\\xamarin.android.glide.disklrucache.4.15.1.2.nupkg.sha512",

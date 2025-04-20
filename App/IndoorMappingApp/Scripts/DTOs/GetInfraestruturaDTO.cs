@@ -1,0 +1,19 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace IndoorMappingApp.Scripts.DTOs
+{
+    public class GetInfraestruturaDTO
+    {
+        public long InfraestruturaId { get; set; }
+        public string? Descricao { get; set; }
+        public double Latitude { get; set; }
+        public double Longitude { get; set; }
+        public int Piso { get; set; }
+        public bool Acessivel { get; set; }
+        public string Tipo { get; set; } = string.Empty;
+    }
+}

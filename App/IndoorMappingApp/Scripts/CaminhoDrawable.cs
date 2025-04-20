@@ -12,7 +12,8 @@ namespace IndoorMappingApp.Scripts
 
         public void Draw(ICanvas canvas, RectF dirtyRect)
         {
-            if (Pontos.Count < 2) return;
+            if (Pontos.Count < 2)
+                return;
 
             canvas.StrokeColor = Colors.Red;
             canvas.StrokeSize = 4;
