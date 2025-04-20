@@ -15,10 +15,9 @@ public partial class MenuPage : ContentPage
 
     private async void OnGuestClicked(object sender, EventArgs e)
     {
-        await Shell.Current.GoToAsync("mainmenu", true,
-            new Dictionary<string, object>
-            {
-                { "IsGuest", true }
-            });
+        await Shell.Current.GoToAsync("mainmenu", true, new Dictionary<string, object>
+        {
+            { "IsGuest", true }
+        });
     }
 }

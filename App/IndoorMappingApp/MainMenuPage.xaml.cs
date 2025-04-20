@@ -1,10 +1,12 @@
-using IndoorMappingApp.Scripts;
+ï»¿using IndoorMappingApp.Scripts;
+using Microsoft.Maui.Controls;
 
 namespace IndoorMappingApp;
 
-[QueryProperty(nameof(IsGuest), "IsGuest")]
-public partial class MainMenuPage : ContentPage
+public partial class MainMenuPage : ContentPage, IQueryAttributable
 {
+    private CaminhoDrawable _drawable = new CaminhoDrawable();
+
     private bool _isGuest;
     public bool IsGuest
     {
@@ -12,33 +14,33 @@ public partial class MainMenuPage : ContentPage
         set
         {
             _isGuest = value;
-
-            // Evita NullReference se OptionsButton ainda não estiver pronto
-            if (OptionsButton != null)
-                OptionsButton.IsVisible = !_isGuest;
+            OptionsButton.IsVisible = !_isGuest;
         }
     }
-
-    private CaminhoDrawable _drawable = new CaminhoDrawable();
 
     public MainMenuPage()
     {
         InitializeComponent();
+
         CaminhoView.Drawable = _drawable;
 
-
-        // Mostrar botão Options só se NÃO for Guest
-        OptionsButton.IsVisible = !_isGuest;
-
-        // Exemplo temporário: desenhar um caminho manual
         _drawable.Pontos = new List<PointF>
-            {
-        new PointF(50, 50),
-        new PointF(100, 150),
-        new PointF(200, 250)
-    };
+        {
+            new PointF(50, 50),
+            new PointF(100, 150),
+            new PointF(200, 250)
+        };
 
-        CaminhoView.Invalidate(); // redesenha
+        CaminhoView.Invalidate();
+    }
+
+    // Aqui recebe-se os parÃ¢metros do Shell
+    public void ApplyQueryAttributes(IDictionary<string, object> query)
+    {
+        if (query.ContainsKey("IsGuest"))
+        {
+            IsGuest = Convert.ToBoolean(query["IsGuest"]);
+        }
     }
 
     private async void OnRoutesClicked(object sender, EventArgs e)
