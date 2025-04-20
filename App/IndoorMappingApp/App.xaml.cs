@@ -6,7 +6,7 @@
         {
             InitializeComponent();
 
-            MainPage = new MainMenuPage();
+            MainPage = new MenuPage();
         }
     }
 }

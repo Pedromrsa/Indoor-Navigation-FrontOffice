@@ -13,6 +13,12 @@ public partial class MenuPage : ContentPage
     async void OnRegisterClicked(object sender, EventArgs e)
         => await Navigation.PushAsync(new RegisterPage());
 
-    async void OnGuestClicked(object sender, EventArgs e)
-        => await Navigation.PushAsync(new MainPage()); // or main app page
+    private async void OnGuestClicked(object sender, EventArgs e)
+    {
+        await Shell.Current.GoToAsync("mainmenu", true,
+            new Dictionary<string, object>
+            {
+                { "IsGuest", true }
+            });
+    }
 }

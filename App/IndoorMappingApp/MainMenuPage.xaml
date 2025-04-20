@@ -6,9 +6,18 @@
     <ScrollView>
         <VerticalStackLayout Padding="20" Spacing="30" HorizontalOptions="Center">
 
-            <Image Source="Resources/Images/mapa_isep.png"
-                   HeightRequest="250"
-                   Aspect="AspectFit" />
+            <Grid HeightRequest="400">
+                <!-- Mapa de fundo -->
+                <Image Source="Resources/Images/mapa_isep.png"
+                       Aspect="AspectFit"
+                       x:Name="MapaImage" />
+
+                <!-- Área de desenho sobre o mapa -->
+                <GraphicsView x:Name="CaminhoView"
+                              HeightRequest="250"
+                              WidthRequest="300"
+                              BackgroundColor="Transparent" />
+            </Grid>
 
             <Button Text="Available Routes"
                     Clicked="OnRoutesClicked"

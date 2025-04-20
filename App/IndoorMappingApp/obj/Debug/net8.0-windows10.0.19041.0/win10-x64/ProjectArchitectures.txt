@@ -1,1 +1,1 @@
-C:\Users\ASUS\Desktop\Indoor-Navigation-FrontOffice\App\IndoorMappingApp\IndoorMappingApp.csproj;x64
+C:\Users\Renfe\Desktop\TASSI\Indoor-Navigation-FrontOffice\App\IndoorMappingApp\IndoorMappingApp.csproj;x64
