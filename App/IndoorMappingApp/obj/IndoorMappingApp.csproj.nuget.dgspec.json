@@ -79,9 +79,13 @@
               "version": "[8.0.1, )",
               "autoReferenced": true
             },
-            "SkiaSharp": {
+            "SixLabors.ImageSharp": {
               "target": "Package",
-              "version": "[3.116.1, )"
+              "version": "[3.1.7, )"
+            },
+            "SixLabors.ImageSharp.Drawing": {
+              "target": "Package",
+              "version": "[2.1.5, )"
             }
           },
           "imports": [
@@ -126,9 +130,13 @@
               "version": "[8.0.1, )",
               "autoReferenced": true
             },
-            "SkiaSharp": {
+            "SixLabors.ImageSharp": {
               "target": "Package",
-              "version": "[3.116.1, )"
+              "version": "[3.1.7, )"
+            },
+            "SixLabors.ImageSharp.Drawing": {
+              "target": "Package",
+              "version": "[2.1.5, )"
             }
           },
           "imports": [
@@ -173,9 +181,13 @@
               "version": "[8.0.1, )",
               "autoReferenced": true
             },
-            "SkiaSharp": {
+            "SixLabors.ImageSharp": {
               "target": "Package",
-              "version": "[3.116.1, )"
+              "version": "[3.1.7, )"
+            },
+            "SixLabors.ImageSharp.Drawing": {
+              "target": "Package",
+              "version": "[2.1.5, )"
             }
           },
           "imports": [
@@ -215,9 +227,13 @@
               "target": "Package",
               "version": "[8.0.3, )"
             },
-            "SkiaSharp": {
+            "SixLabors.ImageSharp": {
               "target": "Package",
-              "version": "[3.116.1, )"
+              "version": "[3.1.7, )"
+            },
+            "SixLabors.ImageSharp.Drawing": {
+              "target": "Package",
+              "version": "[2.1.5, )"
             }
           },
           "imports": [

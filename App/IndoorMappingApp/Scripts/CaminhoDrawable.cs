@@ -20,7 +20,9 @@ namespace IndoorMappingApp.Scripts
 
             for (int i = 0; i < Pontos.Count - 1; i++)
             {
-                canvas.DrawLine(Pontos[i], Pontos[i + 1]);
+                var p1 = Pontos[i];
+                var p2 = Pontos[i + 1];
+                canvas.DrawLine(p1.X, p1.Y, p2.X, p2.Y);
             }
         }
     }

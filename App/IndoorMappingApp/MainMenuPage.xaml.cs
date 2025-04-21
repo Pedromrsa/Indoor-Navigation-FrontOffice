@@ -73,24 +73,25 @@ public partial class MainMenuPage : ContentPage, IQueryAttributable
             return;
         }
 
-        if (_infraIdToPixel.Count == 0)
-            await InicializarCoordenadasInfraestruturasAsync();
-
         var pontos = resultado.InfraestruturasIds
             .Where(InfraestruturaToPixelInMap.Pixeis.ContainsKey)
-            .Select(id =>
-            {
-                var p = InfraestruturaToPixelInMap.Pixeis[id];
-                return new Point((int)p.X, (int)p.Y);
-            })
+            .Select(id => InfraestruturaToPixelInMap.Pixeis[id])
             .ToList();
 
-        var novaImagem = await CaminhoMapPainter.PintarCaminhoAsync("mapa_isep.png", pontos);
-        ImagemMapa.Source = novaImagem;
-
+        try
+        {
+            // Envia o ImageSource atual diretamente
+            var novaImagem = await CaminhoMapPainter.PintarCaminhoAsync(ImagemMapa.Source, pontos);
+            ImagemMapa.Source = novaImagem;
+        }
+        catch (Exception ex)
+        {
+            await DisplayAlert("Erro ao pintar caminho", ex.Message, "OK");
+        }
 
         await DisplayAlert("Caminho", resultado.Mensagem, "OK");
     }
+
 
     protected override async void OnAppearing()
     {

@@ -8,10 +8,11 @@
 
             <!-- Mapa de fundo -->
             <Image
-                x:Name="ImagemMapa"
-                Source="mapa_isep.png"
-                Aspect="AspectFit"
-                HeightRequest="400" />
+    x:Name="ImagemMapa"
+    Source="mapa_isep.png"
+    Aspect="AspectFit"
+    AbsoluteLayout.LayoutBounds="0,0,1,1"
+    AbsoluteLayout.LayoutFlags="All" />
 
 
             <Button Text="Available Routes"
