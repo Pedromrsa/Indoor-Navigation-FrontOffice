@@ -1,24 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Renfe\\Desktop\\TASSI\\Indoor-Navigation-FrontOffice\\App\\IndoorMappingApp\\IndoorMappingApp.csproj": {}
+    "C:\\Users\\User01\\Documents\\GitHub\\Indoor-Navigation-FrontOffice\\App\\IndoorMappingApp\\IndoorMappingApp.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Renfe\\Desktop\\TASSI\\Indoor-Navigation-FrontOffice\\App\\IndoorMappingApp\\IndoorMappingApp.csproj": {
+    "C:\\Users\\User01\\Documents\\GitHub\\Indoor-Navigation-FrontOffice\\App\\IndoorMappingApp\\IndoorMappingApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Renfe\\Desktop\\TASSI\\Indoor-Navigation-FrontOffice\\App\\IndoorMappingApp\\IndoorMappingApp.csproj",
+        "projectUniqueName": "C:\\Users\\User01\\Documents\\GitHub\\Indoor-Navigation-FrontOffice\\App\\IndoorMappingApp\\IndoorMappingApp.csproj",
         "projectName": "IndoorMappingApp",
-        "projectPath": "C:\\Users\\Renfe\\Desktop\\TASSI\\Indoor-Navigation-FrontOffice\\App\\IndoorMappingApp\\IndoorMappingApp.csproj",
-        "packagesPath": "C:\\Users\\Renfe\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Renfe\\Desktop\\TASSI\\Indoor-Navigation-FrontOffice\\App\\IndoorMappingApp\\obj\\",
+        "projectPath": "C:\\Users\\User01\\Documents\\GitHub\\Indoor-Navigation-FrontOffice\\App\\IndoorMappingApp\\IndoorMappingApp.csproj",
+        "packagesPath": "C:\\Users\\User01\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\User01\\Documents\\GitHub\\Indoor-Navigation-FrontOffice\\App\\IndoorMappingApp\\obj\\",
         "projectStyle": "PackageReference",
         "crossTargeting": true,
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Renfe\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\User01\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -38,11 +38,11 @@
             "targetAlias": "net8.0-android",
             "projectReferences": {}
           },
-          "net8.0-ios17.2": {
+          "net8.0-ios18.0": {
             "targetAlias": "net8.0-ios",
             "projectReferences": {}
           },
-          "net8.0-maccatalyst17.2": {
+          "net8.0-maccatalyst18.0": {
             "targetAlias": "net8.0-maccatalyst",
             "projectReferences": {}
           },
@@ -55,7 +55,13 @@
           "warnAsError": [
             "NU1605"
           ]
-        }
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.200"
       },
       "frameworks": {
         "net8.0-android34.0": {
@@ -67,16 +73,16 @@
             },
             "Microsoft.Maui.Controls": {
               "target": "Package",
-              "version": "[8.0.3, )"
+              "version": "[8.0.100, )"
             },
             "Microsoft.Maui.Controls.Compatibility": {
               "target": "Package",
-              "version": "[8.0.3, )"
+              "version": "[8.0.100, )"
             },
             "Microsoft.NET.ILLink.Tasks": {
               "suppressParent": "All",
               "target": "Package",
-              "version": "[8.0.1, )",
+              "version": "[8.0.15, )",
               "autoReferenced": true
             },
             "SixLabors.ImageSharp": {
@@ -99,6 +105,28 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.Android.Ref.34",
+              "version": "[34.0.147, 34.0.147]"
+            },
+            {
+              "name": "Microsoft.Android.Runtime.34.android-arm",
+              "version": "[34.0.147, 34.0.147]"
+            },
+            {
+              "name": "Microsoft.Android.Runtime.34.android-arm64",
+              "version": "[34.0.147, 34.0.147]"
+            },
+            {
+              "name": "Microsoft.Android.Runtime.34.android-x64",
+              "version": "[34.0.147, 34.0.147]"
+            },
+            {
+              "name": "Microsoft.Android.Runtime.34.android-x86",
+              "version": "[34.0.147, 34.0.147]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.Android": {
               "privateAssets": "all"
@@ -107,9 +135,9 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.203/PortableRuntimeIdentifierGraph.json"
         },
-        "net8.0-ios17.2": {
+        "net8.0-ios18.0": {
           "targetAlias": "net8.0-ios",
           "dependencies": {
             "Microsoft.Extensions.Logging.Debug": {
@@ -118,16 +146,16 @@
             },
             "Microsoft.Maui.Controls": {
               "target": "Package",
-              "version": "[8.0.3, )"
+              "version": "[8.0.100, )"
             },
             "Microsoft.Maui.Controls.Compatibility": {
               "target": "Package",
-              "version": "[8.0.3, )"
+              "version": "[8.0.100, )"
             },
             "Microsoft.NET.ILLink.Tasks": {
               "suppressParent": "All",
               "target": "Package",
-              "version": "[8.0.1, )",
+              "version": "[8.0.15, )",
               "autoReferenced": true
             },
             "SixLabors.ImageSharp": {
@@ -150,6 +178,16 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.iOS.Ref.net8.0_18.0",
+              "version": "[18.0.8319, 18.0.8319]"
+            },
+            {
+              "name": "Microsoft.iOS.Runtime.iossimulator-x64.net8.0_18.0",
+              "version": "[18.0.8319, 18.0.8319]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.iOS": {
               "privateAssets": "all"
@@ -158,9 +196,9 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.203/PortableRuntimeIdentifierGraph.json"
         },
-        "net8.0-maccatalyst17.2": {
+        "net8.0-maccatalyst18.0": {
           "targetAlias": "net8.0-maccatalyst",
           "dependencies": {
             "Microsoft.Extensions.Logging.Debug": {
@@ -169,16 +207,16 @@
             },
             "Microsoft.Maui.Controls": {
               "target": "Package",
-              "version": "[8.0.3, )"
+              "version": "[8.0.100, )"
             },
             "Microsoft.Maui.Controls.Compatibility": {
               "target": "Package",
-              "version": "[8.0.3, )"
+              "version": "[8.0.100, )"
             },
             "Microsoft.NET.ILLink.Tasks": {
               "suppressParent": "All",
               "target": "Package",
-              "version": "[8.0.1, )",
+              "version": "[8.0.15, )",
               "autoReferenced": true
             },
             "SixLabors.ImageSharp": {
@@ -202,6 +240,16 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.MacCatalyst.Ref.net8.0_18.0",
+              "version": "[18.0.8319, 18.0.8319]"
+            },
+            {
+              "name": "Microsoft.MacCatalyst.Runtime.maccatalyst-x64.net8.0_18.0",
+              "version": "[18.0.8319, 18.0.8319]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.MacCatalyst": {
               "privateAssets": "all"
@@ -210,7 +258,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.203/PortableRuntimeIdentifierGraph.json"
         },
         "net8.0-windows10.0.19041": {
           "targetAlias": "net8.0-windows10.0.19041.0",
@@ -221,11 +269,11 @@
             },
             "Microsoft.Maui.Controls": {
               "target": "Package",
-              "version": "[8.0.3, )"
+              "version": "[8.0.100, )"
             },
             "Microsoft.Maui.Controls.Compatibility": {
               "target": "Package",
-              "version": "[8.0.3, )"
+              "version": "[8.0.100, )"
             },
             "SixLabors.ImageSharp": {
               "target": "Package",
@@ -250,18 +298,18 @@
           "downloadDependencies": [
             {
               "name": "Microsoft.Windows.SDK.NET.Ref",
-              "version": "[10.0.19041.31, 10.0.19041.31]"
+              "version": "[10.0.19041.57, 10.0.19041.57]"
             }
           ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             },
-            "Microsoft.Windows.SDK.NET.Ref": {
+            "Microsoft.Windows.SDK.NET.Ref.Windows": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.203\\RuntimeIdentifierGraph.json"
         }
       },
       "runtimes": {

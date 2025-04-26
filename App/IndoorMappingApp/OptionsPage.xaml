@@ -5,7 +5,8 @@
              BackgroundColor="White"
              Title="Options">
 
-    <StackLayout>
+    <VerticalStackLayout>
+
         <!-- Options as Buttons -->
         <StackLayout Padding="20,20" Spacing="25">
 
@@ -52,5 +53,5 @@
 
         </StackLayout>
 
-    </StackLayout>
+    </VerticalStackLayout>
 </ContentPage>

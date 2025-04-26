@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="IndoorMappingApp.PathProblems"
+             Title="PathProblems">
+
+    <VerticalStackLayout Padding="0">
+
+        <!-- Content Form -->
+        <ScrollView>
+            <VerticalStackLayout Padding="20" Spacing="20">
+
+                <Label Text="ISEP Number" FontSize="14" />
+
+                <Label Text="What path has the problem?" FontSize="14" />
+
+                <Entry Placeholder="Indicate the path with problems..." />
+
+                <Label Text="Please select the option that corresponds to the obstruction" FontSize="14" />
+
+                <!-- Option 1: Elevator broken (Checkbox + Picker) -->
+                <HorizontalStackLayout Spacing="10" VerticalOptions="Center">
+                    <CheckBox />
+                    <Picker Title="Elevator x is broken.">
+                        <Picker.ItemsSource>
+                            <x:Array Type="{x:Type x:String}">
+                                <x:String>Elevator x is broken.</x:String>
+                                <x:String>Elevator y is broken.</x:String>
+                                <x:String>Elevator z is broken.</x:String>
+                            </x:Array>
+                        </Picker.ItemsSource>
+                    </Picker>
+                </HorizontalStackLayout>
+
+                <!-- Option 2: Obstruction in the path -->
+                <HorizontalStackLayout Spacing="10" VerticalOptions="Center">
+                    <CheckBox />
+                    <Label Text="Obstruction in the path." VerticalOptions="Center" />
+                </HorizontalStackLayout>
+
+                <!-- Option 3: Other problem -->
+                <HorizontalStackLayout Spacing="10" VerticalOptions="Center">
+                    <CheckBox />
+                    <Label Text="Other problem." VerticalOptions="Center" />
+                </HorizontalStackLayout>
+
+                <!-- Text input for "Other problem" -->
+                <Entry Placeholder="Please tell what's the other problem" />
+
+                <!-- Send Button -->
+                <Button Text="Send warning"
+                        BackgroundColor="Red"
+                        TextColor="White"
+                        FontAttributes="Bold"
+                        CornerRadius="10"
+                        HeightRequest="50"
+                        WidthRequest="180"
+                        HorizontalOptions="Center" />
+
+            </VerticalStackLayout>
+        </ScrollView>
+
+    </VerticalStackLayout>
+</ContentPage>

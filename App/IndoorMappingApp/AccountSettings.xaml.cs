@@ -1,4 +1,4 @@
-namespace IndoorMappingApp;
+﻿namespace IndoorMappingApp;
 
 public partial class AccountSettings : ContentPage
 {
@@ -6,4 +6,9 @@ public partial class AccountSettings : ContentPage
 	{
 		InitializeComponent();
 	}
+
+    private async void OnBackButtonClicked(object sender, EventArgs e)
+    {
+        throw new NotImplementedException("Back Button"); ;
+    }
 }

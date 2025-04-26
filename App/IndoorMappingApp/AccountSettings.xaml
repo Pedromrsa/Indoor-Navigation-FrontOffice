@@ -4,6 +4,7 @@
              x:Class="IndoorMappingApp.AccountSettings"
              Title="AccountSettings">
     <VerticalStackLayout Padding="0">
+
         <!-- Content Form -->
         <ScrollView>
             <VerticalStackLayout Padding="20" Spacing="20">
