@@ -25,6 +25,23 @@
                     Text="Register"
                     TextColor="Black" />
 
+                <!--  Name  -->
+                <Frame
+                    Padding="0"
+                    BorderColor="Black"
+                    CornerRadius="0"
+                    HasShadow="False"
+                    HorizontalOptions="FillAndExpand">
+                    <Entry
+                        x:Name="NameEntry"
+                        Background="White"
+                        FontSize="17"
+                        Placeholder="Enter your full name"
+                        PlaceholderColor="Black"
+                        TextColor="Black" />
+                </Frame>
+
+
                 <!--  Email  -->
                 <Frame
                     Padding="0"
@@ -103,12 +120,14 @@
 
                 <!--  5. Register button  -->
                 <Button
+                    x:Name="RegisterButton"
                     BackgroundColor="Red"
                     BorderColor="Black"
                     BorderWidth="1"
                     Clicked="OnRegisterClicked"
                     FontSize="16"
                     HorizontalOptions="FillAndExpand"
+                    IsEnabled="False"
                     Text="Register"
                     TextColor="White" />
 

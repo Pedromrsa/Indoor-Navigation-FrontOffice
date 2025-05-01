@@ -12,12 +12,37 @@ public partial class RegisterPage : ContentPage
 
         LanguagePicker.ItemsSource = new[] { "English", "Portuguese" };
         LimitationPicker.ItemsSource = new[] { "Tetraplegic", "Paraplegia" };
+
+        NameEntry.TextChanged += (s, e) => ValidateForm();
+        EmailEntry.TextChanged += (s, e) => ValidateForm();
+        PasswordEntry.TextChanged += (s, e) => ValidateForm();
+        LimitationPicker.SelectedIndexChanged += (s, e) => ValidateForm();
+        LanguagePicker.SelectedIndexChanged += (s, e) => ValidateForm();
+    }
+
+    void ValidateForm()
+    {
+        bool isValid =
+            !string.IsNullOrWhiteSpace(NameEntry.Text) &&
+            !string.IsNullOrWhiteSpace(EmailEntry.Text) &&
+            !string.IsNullOrWhiteSpace(PasswordEntry.Text) &&
+            LimitationPicker.SelectedIndex >= 0 &&
+            LanguagePicker.SelectedIndex >= 0;
+
+        RegisterButton.IsEnabled = isValid;
     }
 
     async void OnRegisterClicked(object sender, EventArgs e)
     {
+        if (string.IsNullOrWhiteSpace(NameEntry.Text))
+        {
+            await DisplayAlert("Validation Error", "Please enter your name.", "OK");
+            return;
+        }
+
         var dto = new RegisterRequestDTO
         {
+            Name = NameEntry.Text,
             Email = EmailEntry.Text,
             Password = PasswordEntry.Text,
             Limitation = LimitationPicker.SelectedIndex,  
