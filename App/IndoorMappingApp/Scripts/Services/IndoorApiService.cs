@@ -66,5 +66,29 @@ namespace IndoorMappingApp.Scripts.Services
 
             return new List<GetInfraestruturaDTO>();
         }
+        public async Task<RegisterResponseDTO?> RegisterAsync(RegisterRequestDTO dto)
+        {
+            try
+            {
+                // POST /api/Auth/register2 with JSON body
+                var response = await _httpClient.PostAsJsonAsync("api/Auth/register2",dto);
+
+                if (response.IsSuccessStatusCode)
+                {
+                    return await response.Content.ReadFromJsonAsync<RegisterResponseDTO>();
+                }
+                else
+                {
+                    var error = await response.Content.ReadAsStringAsync();
+                    Console.WriteLine($"Registration failed: {error}");
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Error in RegisterAsync: {ex.Message}");
+            }
+
+            return null;
+        }
     }
 }
