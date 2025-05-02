@@ -541,3 +541,8 @@ C:\Users\Renfe\Desktop\TASSI\Indoor-Navigation-FrontOffice\App\IndoorMappingApp\
 C:\Users\Renfe\Desktop\TASSI\Indoor-Navigation-FrontOffice\App\IndoorMappingApp\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\SixLabors.ImageSharp.dll
 C:\Users\Renfe\Desktop\TASSI\Indoor-Navigation-FrontOffice\App\IndoorMappingApp\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\SixLabors.Fonts.dll
 C:\Users\Renfe\Desktop\TASSI\Indoor-Navigation-FrontOffice\App\IndoorMappingApp\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\SixLabors.ImageSharp.Drawing.dll
+C:\Users\ASUS\Desktop\Indoor-Navigation-FrontOffice\App\IndoorMappingApp\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\SixLabors.Fonts.dll
+C:\Users\ASUS\Desktop\Indoor-Navigation-FrontOffice\App\IndoorMappingApp\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\SixLabors.ImageSharp.dll
+C:\Users\ASUS\Desktop\Indoor-Navigation-FrontOffice\App\IndoorMappingApp\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\SixLabors.ImageSharp.Drawing.dll
+C:\Users\ASUS\Desktop\Indoor-Navigation-FrontOffice\App\IndoorMappingApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\burguer_menu.scale-100.png
+C:\Users\ASUS\Desktop\Indoor-Navigation-FrontOffice\App\IndoorMappingApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\mapa_isep.scale-100.png

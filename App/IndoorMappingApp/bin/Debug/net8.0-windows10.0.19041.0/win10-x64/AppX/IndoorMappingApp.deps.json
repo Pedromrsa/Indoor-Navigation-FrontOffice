@@ -12,6 +12,8 @@
           "Microsoft.Extensions.Logging.Debug": "8.0.1",
           "Microsoft.Maui.Controls": "8.0.83",
           "Microsoft.Maui.Controls.Compatibility": "8.0.83",
+          "SixLabors.ImageSharp": "3.1.7",
+          "SixLabors.ImageSharp.Drawing": "2.1.5",
           "runtimepack.Microsoft.Windows.SDK.NET.Ref": "10.0.19041.54"
         },
         "runtime": {
@@ -444,6 +446,34 @@
             "fileVersion": "1.5.0.0"
           }
         }
+      },
+      "SixLabors.Fonts/2.0.8": {
+        "runtime": {
+          "lib/net6.0/SixLabors.Fonts.dll": {
+            "assemblyVersion": "2.0.0.0",
+            "fileVersion": "2.0.8.0"
+          }
+        }
+      },
+      "SixLabors.ImageSharp/3.1.7": {
+        "runtime": {
+          "lib/net6.0/SixLabors.ImageSharp.dll": {
+            "assemblyVersion": "3.0.0.0",
+            "fileVersion": "3.1.7.0"
+          }
+        }
+      },
+      "SixLabors.ImageSharp.Drawing/2.1.5": {
+        "dependencies": {
+          "SixLabors.Fonts": "2.0.8",
+          "SixLabors.ImageSharp": "3.1.7"
+        },
+        "runtime": {
+          "lib/net6.0/SixLabors.ImageSharp.Drawing.dll": {
+            "assemblyVersion": "2.0.0.0",
+            "fileVersion": "2.1.5.0"
+          }
+        }
       }
     }
   },
@@ -618,6 +648,27 @@
       "sha512": "sha512-qzzWG8rxZyzKzBuUdwr4ApezMINf+NT2b8EiEE5fchczNJJmDwlHImMWxX1pHK1W8Yby99alqLyC8DB0fIrhuA==",
       "path": "microsoft.windowsappsdk/1.5.240627000",
       "hashPath": "microsoft.windowsappsdk.1.5.240627000.nupkg.sha512"
+    },
+    "SixLabors.Fonts/2.0.8": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-psTLKJVKaD8PKm+Bz/mSSNo4m0VCTYoJ97TF/ynxEWkn4sFUipI0rzE2V/KBtfU0TOn/gF/+1XBOEvusGZZMhA==",
+      "path": "sixlabors.fonts/2.0.8",
+      "hashPath": "sixlabors.fonts.2.0.8.nupkg.sha512"
+    },
+    "SixLabors.ImageSharp/3.1.7": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-9fIOOAsyLFid6qKypM2Iy0Z3Q9yoanV8VoYAHtI2sYGMNKzhvRTjgFDHonIiVe+ANtxIxM6SuqUzj0r91nItpA==",
+      "path": "sixlabors.imagesharp/3.1.7",
+      "hashPath": "sixlabors.imagesharp.3.1.7.nupkg.sha512"
+    },
+    "SixLabors.ImageSharp.Drawing/2.1.5": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-cER1JfvshYDmTxw+gUy/x5e1xoNWhrD6s3AFf8rRUx9hWSXYdOFreQfUrM/QooMj0rF7+hkVtvGnV3EdMx4dxA==",
+      "path": "sixlabors.imagesharp.drawing/2.1.5",
+      "hashPath": "sixlabors.imagesharp.drawing.2.1.5.nupkg.sha512"
     }
   }
 }

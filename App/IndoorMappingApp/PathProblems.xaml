@@ -2,52 +2,106 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="IndoorMappingApp.PathProblems"
+             Shell.NavBarIsVisible="False"
+             BackgroundColor="White"
              Title="PathProblems">
 
-    <VerticalStackLayout Padding="0">
+    <Grid RowDefinitions="Auto,*">
+
+        <!-- Top Bar -->
+        <Grid BackgroundColor="Red" HeightRequest="50" Padding="0" RowSpacing="0" Grid.Row="0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="Auto" />
+            </Grid.ColumnDefinitions>
+
+            <Label Text="Project Logo"
+               VerticalOptions="Center"
+               TextColor="White"
+               FontAttributes="Bold"
+               Margin="10,0" />
+
+            <ImageButton Source="burguer_menu.png"
+                     BackgroundColor="Transparent"
+                     Grid.Column="1"
+                     HorizontalOptions="End"
+                     VerticalOptions="Center"
+                     Margin="10,0"
+                     HeightRequest="24"
+                     WidthRequest="24" />
+        </Grid>
+
+
+
+
+        <VerticalStackLayout Grid.Row="1"  Padding="0">
 
         <!-- Content Form -->
         <ScrollView>
             <VerticalStackLayout Padding="20" Spacing="20">
 
-                <Label Text="ISEP Number" FontSize="14" />
+                <Label Text="ISEP Number" FontSize="14" TextColor="Black" />
 
-                <Label Text="What path has the problem?" FontSize="14" />
+                <Label Text="What path has the problem?" FontSize="14" TextColor="Black" />
+                    <Frame
+                        Padding="0"
+                        BorderColor="Black"
+                        CornerRadius="0"
+                        HasShadow="False"
+                        BackgroundColor="White"
+                        HorizontalOptions="FillAndExpand">
+                        <Entry Placeholder="Indicate the path with problems..."/>
+                    </Frame>
 
-                <Entry Placeholder="Indicate the path with problems..." />
+                    <Label Text="Please select the option that corresponds to the obstruction" FontSize="14" TextColor="Black" />
 
-                <Label Text="Please select the option that corresponds to the obstruction" FontSize="14" />
-
-                <!-- Option 1: Elevator broken (Checkbox + Picker) -->
+                    <Label Text="Select Elevator" FontSize="14" TextColor="Black" />
+                    <!-- Option 1: Elevator broken (Checkbox + Picker) -->
                 <HorizontalStackLayout Spacing="10" VerticalOptions="Center">
-                    <CheckBox />
-                    <Picker Title="Elevator x is broken.">
-                        <Picker.ItemsSource>
-                            <x:Array Type="{x:Type x:String}">
-                                <x:String>Elevator x is broken.</x:String>
-                                <x:String>Elevator y is broken.</x:String>
-                                <x:String>Elevator z is broken.</x:String>
-                            </x:Array>
-                        </Picker.ItemsSource>
-                    </Picker>
-                </HorizontalStackLayout>
+                        <CheckBox Color="#666666" />
+                        <Frame
+                             Padding="0"
+                             BorderColor="Black"
+                             CornerRadius="0"
+                             HasShadow="False"
+                             BackgroundColor="White"
+                             HorizontalOptions="FillAndExpand">
+                            <Picker TextColor="Black">
+                                <Picker.ItemsSource>
+                                    <x:Array Type="{x:Type x:String}">
+                                        <x:String>Elevator x is broken.</x:String>
+                                        <x:String>Elevator y is broken.</x:String>
+                                        <x:String>Elevator z is broken.</x:String>
+                                    </x:Array>
+                                </Picker.ItemsSource>
+                            </Picker>
+                        </Frame>
+                    </HorizontalStackLayout>
 
                 <!-- Option 2: Obstruction in the path -->
                 <HorizontalStackLayout Spacing="10" VerticalOptions="Center">
-                    <CheckBox />
-                    <Label Text="Obstruction in the path." VerticalOptions="Center" />
+                     <CheckBox Color="#666666" />
+                    <Label Text="Obstruction in the path." VerticalOptions="Center" TextColor="Black" />
                 </HorizontalStackLayout>
 
                 <!-- Option 3: Other problem -->
                 <HorizontalStackLayout Spacing="10" VerticalOptions="Center">
-                    <CheckBox />
-                    <Label Text="Other problem." VerticalOptions="Center" />
+                        <CheckBox Color="#666666"/>
+                    <Label Text="Other problem." VerticalOptions="Center" TextColor="Black" />
                 </HorizontalStackLayout>
 
-                <!-- Text input for "Other problem" -->
-                <Entry Placeholder="Please tell what's the other problem" />
+                    <Frame
+                        Padding="0"
+                        BorderColor="Black"
+                        CornerRadius="0"
+                        HasShadow="False"
+                        BackgroundColor="White"
+                        HorizontalOptions="FillAndExpand">
+                            <!-- Text input for "Other problem" -->
+                        <Entry Placeholder="Please tell what's the other problem"/>
+                    </Frame>
 
-                <!-- Send Button -->
+                    <!-- Send Button -->
                 <Button Text="Send warning"
                         BackgroundColor="Red"
                         TextColor="White"
@@ -61,4 +115,5 @@
         </ScrollView>
 
     </VerticalStackLayout>
+    </Grid>
 </ContentPage>

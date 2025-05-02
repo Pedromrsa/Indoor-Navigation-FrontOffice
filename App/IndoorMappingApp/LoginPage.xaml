@@ -33,7 +33,8 @@
                     CornerRadius="0"
                     HasShadow="False"
                     HorizontalOptions="FillAndExpand">
-                    <Entry
+					<Entry
+						x:Name="emailEntry"
                         Background="White"
                         FontSize="17"
                         HorizontalOptions="FillAndExpand"
@@ -50,7 +51,8 @@
                     HasShadow="False"
                     HorizontalOptions="FillAndExpand">
                     <!--  Password Text Entry  -->
-                    <Entry
+					<Entry
+						x:Name="passwordEntry"
                         Background="White"
                         FontSize="17"
                         HorizontalOptions="FillAndExpand"
@@ -60,29 +62,39 @@
                         TextColor="Black" />
                 </Frame>
                 <!--  Forgot Password label  -->
-                <Label
-                    FontSize="17"
-                    HorizontalOptions="Center"
-                    Text="Forgot Password?"
-                    TextColor="#2e52f3"
-                    VerticalOptions="End" />
-
-                <!--  Don't have an account button  -->
                 <Button
+                    Text="Forgot Password?"
+                    FontSize="17"
+                    TextColor="#2e52f3"
+                    BackgroundColor="Transparent"
+                    BorderWidth="0"
+                    HorizontalOptions="Center"
+                    VerticalOptions="End"
+                    Clicked="OnForgotPasswordClicked" />
+
+                <StackLayout Orientation="Horizontal" HorizontalOptions="Center" VerticalOptions="Center">
+                    <Label
+                    Text="Don't have an account?"
+                    FontSize="17"
+                    TextColor="black"
+                    VerticalOptions="Center" />
+
+                    <Button
+                    Text="Register"
+                    FontSize="17"
+                    TextColor="#2e52f3"
                     BackgroundColor="Transparent"
                     BorderWidth="0"
                     Clicked="OnRegisterClicked"
-                    FontSize="17"
-                    HorizontalOptions="Center"
-                    Text="Don't have an account?"
-                    TextColor="#2e52f3" />
+                    VerticalOptions="Center" />
+                </StackLayout>
 
                 <!--  Enter Button  -->
                 <Button
                     BackgroundColor="Red"
                     BorderColor="Black"
                     BorderWidth="1"
-                    Command="{Binding EnterCommand}"
+					Clicked="OnLoginClicked"
                     FontSize="16"
                     HorizontalOptions="FillAndExpand"
                     Text="Enter"
