@@ -57,7 +57,7 @@ public partial class MainMenuPage : ContentPage, IQueryAttributable
         var infraestruturas = await api.GetInfraestruturasAsync();
 
         _infraIdToPixel = infraestruturas.ToDictionary(
-            infra => infra.InfraestruturaId,
+            infra => infra.Id,
             infra => MapGeolocation.ConvertToPixel(infra.Latitude, infra.Longitude)
         );
     }

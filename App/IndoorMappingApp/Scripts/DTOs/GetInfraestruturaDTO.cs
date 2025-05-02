@@ -8,7 +8,7 @@ namespace IndoorMappingApp.Scripts.DTOs
 {
     public class GetInfraestruturaDTO
     {
-        public long InfraestruturaId { get; set; }
+        public long Id { get; set; }
         public string? Descricao { get; set; }
         public double Latitude { get; set; }
         public double Longitude { get; set; }
