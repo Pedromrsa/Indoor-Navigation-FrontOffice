@@ -90,5 +90,53 @@ namespace IndoorMappingApp.Scripts.Services
 
             return null;
         }
+
+        public async Task<bool> RequestRecoveryTokenAsync(string email)
+        {
+            try
+            {
+                var payload = new RecoverAccountRequestDTO
+                {
+                    Email = email
+                };
+
+                var response = await _httpClient.PostAsJsonAsync("api/Auth/recover", payload);
+                return response.IsSuccessStatusCode;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Error in RequestRecoveryTokenAsync: {ex.Message}");
+                return false;
+            }
+        }
+
+        public async Task<bool> ValidateRecoveryTokenAsync(string token)
+        {
+            try
+            {
+                var response = await _httpClient.GetAsync($"api/Auth/validate-token?token={token}");
+                return response.IsSuccessStatusCode;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Error in ValidateRecoveryTokenAsync: {ex.Message}");
+                return false;
+            }
+        }
+
+        public async Task<bool> ResetPasswordAsync(string token, string newPassword)
+        {
+            try
+            {
+                var payload = new { Token = token, NewPassword = newPassword };
+                var response = await _httpClient.PostAsJsonAsync("api/Auth/reset-password", payload);
+                return response.IsSuccessStatusCode;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Error in ResetPasswordAsync: {ex.Message}");
+                return false;
+            }
+        }
     }
 }
