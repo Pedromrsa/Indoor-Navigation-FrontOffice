@@ -84,6 +84,12 @@ build_metadata.AdditionalFiles.ManifestResourceName = IndoorMappingApp.PathProbl
 build_metadata.AdditionalFiles.TargetPath = PathProblems.xaml
 build_metadata.AdditionalFiles.RelativePath = PathProblems.xaml
 
+[C:/Users/gabri/OneDrive/Documentos/GitHub/Indoor-Navigation-FrontOffice/App/IndoorMappingApp/RecoverAccountPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = IndoorMappingApp.RecoverAccountPage.xaml
+build_metadata.AdditionalFiles.TargetPath = RecoverAccountPage.xaml
+build_metadata.AdditionalFiles.RelativePath = RecoverAccountPage.xaml
+
 [C:/Users/gabri/OneDrive/Documentos/GitHub/Indoor-Navigation-FrontOffice/App/IndoorMappingApp/RegisterPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = IndoorMappingApp.RegisterPage.xaml
