@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage 
+    x:Class="IndoorMappingApp.RecoverAccountPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    BackgroundColor="White">
+
+    <!--  Create a Grid to center the container  -->
+    <Grid HorizontalOptions="Center" VerticalOptions="Center">
+
+        <!--  Grey container with padding and rounded corners  -->
+        <Frame
+            Padding="50"
+            BackgroundColor="#D3D3D3"
+            BorderColor="Transparent"
+            CornerRadius="0">
+            <StackLayout
+                HorizontalOptions="CenterAndExpand"
+                Spacing="17"
+                VerticalOptions="Center">
+
+                <!--  Recover Account Label  -->
+                <Label
+                    Margin="0,0,0,20"
+                    FontSize="20"
+                    HorizontalOptions="Center"
+                    Text="Recover Account"
+                    TextColor="Black"
+                    VerticalOptions="Start" />
+
+                <StackLayout Margin="0,0,0,0">
+                    <Label
+                         x:Name="emailLabel"
+                         Text="Please provide the email associated to your account."
+                         FontSize="17"
+                         HorizontalOptions="Center"
+                         HorizontalTextAlignment="Center"
+                         TextColor="black"
+                         VerticalOptions="Center" />
+                    <Label
+                        x:Name="tokenLabel"
+                        Text= "We've sent you a verification token. Please enter it below."
+                        FontSize="17"
+                        HorizontalOptions="Center"
+                        IsVisible="Collapse"
+                        HorizontalTextAlignment="Center"
+                        TextColor="black"
+                        VerticalOptions="Center" />
+                </StackLayout>
+
+                <!--  Email Text Entry  -->
+                <Frame
+                    x:Name="emailFrame"
+                    Padding="0"
+                    BorderColor="Black"
+                    CornerRadius="0"
+                    HasShadow="False"
+                    HorizontalOptions="FillAndExpand">
+                    <Entry
+						x:Name="emailEntry"
+                        Background="White"
+                        FontSize="17"
+                        HorizontalOptions="FillAndExpand"
+                        Keyboard="Email"
+                        Placeholder="ISEP E-mail"
+                        PlaceholderColor="Black"
+                        TextColor="Black" />
+                </Frame>
+
+                <!--  Token Text Entry  -->
+                <Frame
+                    x:Name="tokenFrame"
+                    Padding="0"
+                    BorderColor="Black"
+                    CornerRadius="0"
+                    IsVisible="Collapse"
+                    HasShadow="False"
+                    HorizontalOptions="FillAndExpand">
+                    <Entry
+	                	x:Name="tokenEntry"
+                        Background="White"
+                        FontSize="17"
+                        HorizontalOptions="FillAndExpand"
+                        Keyboard="Email"
+                        Placeholder="Verification token"
+                        PlaceholderColor="Black"
+                        TextColor="Black" />
+                </Frame>
+
+                <StackLayout>
+                    <Label
+                    x:Name="sendEmailLabel"
+                    Text="A mail will be sent to your email box with instructions to change the password."
+                    FontSize="17"
+                    HorizontalOptions="Center"
+                    HorizontalTextAlignment="Center"
+                    TextColor="black"
+                    VerticalOptions="Center" />
+                </StackLayout>
+
+                <!--  Enter Button  -->
+                <Button
+                    x:Name="sendEmailButton"
+                    BackgroundColor="Red"
+                    BorderColor="Black"
+                    BorderWidth="1"
+					Clicked="OnSendEmailClicked"
+                    FontSize="16"
+                    HorizontalOptions="FillAndExpand"
+                    Text="Send Email"
+                    TextColor="White"
+                    WidthRequest="120" />
+
+                <Button
+                    x:Name="verifyButton"
+                    BackgroundColor="Red"
+                    BorderColor="Black"
+                    BorderWidth="1"
+                    IsVisible="Collapse"
+                    Clicked="OnVerifyClicked"
+                    FontSize="16"
+                    HorizontalOptions="FillAndExpand"
+                    Text="Confirm"
+                    TextColor="White"
+                    WidthRequest="120" />
+
+            </StackLayout>
+
+        </Frame>
+
+    </Grid>
+
+
+</ContentPage>

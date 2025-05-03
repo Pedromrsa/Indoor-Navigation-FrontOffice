@@ -1,5 +1,4 @@
-﻿using System.Net.Http;
-using System.Text;
+﻿using System.Text;
 using System.Text.Json;
 
 namespace IndoorMappingApp
@@ -17,7 +16,7 @@ namespace IndoorMappingApp
 
         private async void OnForgotPasswordClicked(object sender, EventArgs e)
         {
-            //await Navigation.PushAsync(new RecoverAccountPage());
+            await Navigation.PushAsync(new RecoverAccountPage(), true);
         }
 
         private async void OnLoginClicked(object sender, EventArgs e)
