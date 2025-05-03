@@ -14,20 +14,22 @@
 
                 <!-- New Password -->
                 <Label Text="New Password" FontSize="14" />
-                <Entry IsPassword="True"
-                       Placeholder="***********"
-                       FontSize="14"/>
+                <Entry x:Name="NewPasswordEntry"
+                        IsPassword="True"
+                        Placeholder="***********"
+                        FontSize="14"/>
 
                 <!-- Confirm Password -->
                 <Label Text="Confirm Password" FontSize="14" />
-                <Entry IsPassword="True"
-                       Placeholder=""
-                       FontSize="14"
-                       BackgroundColor="White"/>
+                <Entry x:Name="ConfirmPasswordEntry"
+                        IsPassword="True"
+                        Placeholder=""
+                        FontSize="14"
+                        BackgroundColor="White"/>
 
                 <!-- Physical Limitation Dropdown -->
                 <Label Text="Physical Limitation" FontSize="14" />
-                <Picker Title="Select Limitation">
+                <Picker x:Name="LimitationPicker" Title="Select Limitation">
                     <Picker.Items>
                         <x:String>None</x:String>
                         <x:String>Paraplegic</x:String>
@@ -37,7 +39,7 @@
 
                 <!-- Language Dropdown -->
                 <Label Text="Language" FontSize="14" />
-                <Picker Title="Select Language">
+                <Picker x:Name="LanguagePicker" Title="Select Language">
                     <Picker.Items>
                         <x:String>English</x:String>
                         <x:String>Portuguese</x:String>

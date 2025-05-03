@@ -90,5 +90,25 @@ namespace IndoorMappingApp.Scripts.Services
 
             return null;
         }
+
+        public async Task<RegisterResponseDTO> UpdateAccountSettingsAsync(UpdateAccountRequestDTO dto)
+        {
+            var client = new HttpClient();
+            var url = "https://isepindoornavigationapi-vgq7.onrender.com/api/Account/update";
+
+            var json = JsonSerializer.Serialize(dto);
+            var content = new StringContent(json, Encoding.UTF8, "application/json");
+
+            try
+            {
+                var response = await client.PostAsync(url, content);
+                var responseBody = await response.Content.ReadAsStringAsync();
+                return JsonSerializer.Deserialize<RegisterResponseDTO>(responseBody);
+            }
+            catch (Exception ex)
+            {
+                return new RegisterResponseDTO { Success = false, Message = ex.Message };
+            }
+        }
     }
 }
