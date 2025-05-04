@@ -111,7 +111,7 @@ namespace IndoorMappingApp.Scripts.Services
             }
         }
 
-        public async Task<ApiResponseDTO> UpdateAccountSettingsAsync(UpdateAccountRequestDTO dto)
+        /*public async Task<ApiResponseDTO> UpdateAccountSettingsAsync(UpdateAccountRequestDTO dto)
         {
             var client = new HttpClient();
             var url = "https://isepindoornavigationapi-vgq7.onrender.com/api/Account/update"; // adjust if different
@@ -130,5 +130,6 @@ namespace IndoorMappingApp.Scripts.Services
                 return new ApiResponseDTO { Success = false, Message = ex.Message };
             }
         }
+        */
     }
 }

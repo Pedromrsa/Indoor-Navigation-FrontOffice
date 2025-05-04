@@ -18,7 +18,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("IndoorMappingApp")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+598f6cecc5a04677a838b21526db7320d830491e")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+bed3eeb127ada402398844c8606d65dd50b17301")]
 [assembly: System.Reflection.AssemblyProductAttribute("IndoorMappingApp")]
 [assembly: System.Reflection.AssemblyTitleAttribute("IndoorMappingApp")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

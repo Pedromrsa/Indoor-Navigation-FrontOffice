@@ -50,9 +50,13 @@
                         HasShadow="False"
                         BackgroundColor="White"
                         HorizontalOptions="FillAndExpand">
-                        <Entry Placeholder="Indicate the path with problems..."/>
-                    </Frame>
-
+                        <Picker x:Name="PathPicker"
+                                TextColor="Black"
+                            Title="Select Path..."
+                            ItemDisplayBinding="{Binding DisplayName}"
+                            SelectedItem="{Binding SelectedPath}"
+                            SelectedIndexChanged="PathPicker_SelectedIndexChanged" />
+                    </Frame>    
                     <Label Text="Please select the option that corresponds to the obstruction" FontSize="14" TextColor="Black" />
 
                     <Label Text="Select Elevator" FontSize="14" TextColor="Black" />
@@ -66,15 +70,10 @@
                              HasShadow="False"
                              BackgroundColor="White"
                              HorizontalOptions="FillAndExpand">
-                            <Picker TextColor="Black">
-                                <Picker.ItemsSource>
-                                    <x:Array Type="{x:Type x:String}">
-                                        <x:String>Elevator x is broken.</x:String>
-                                        <x:String>Elevator y is broken.</x:String>
-                                        <x:String>Elevator z is broken.</x:String>
-                                    </x:Array>
-                                </Picker.ItemsSource>
-                            </Picker>
+                            <Picker x:Name="ElevatorPicker"
+                                Title="Select Elevator..."
+                                TextColor="Black"
+                                ItemDisplayBinding="{Binding Descricao}" />
                         </Frame>
                     </HorizontalStackLayout>
 
@@ -98,7 +97,7 @@
                         BackgroundColor="White"
                         HorizontalOptions="FillAndExpand">
                             <!-- Text input for "Other problem" -->
-                        <Entry Placeholder="Please tell what's the other problem"/>
+                        <Entry TextColor="Black" Placeholder="Please tell what's the other problem"/>
                     </Frame>
 
                     <!-- Send Button -->

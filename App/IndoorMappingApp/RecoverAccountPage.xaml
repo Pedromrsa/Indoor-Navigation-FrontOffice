@@ -104,8 +104,7 @@
                     BackgroundColor="Red"
                     BorderColor="Black"
                     BorderWidth="1"
-					Clicked="OnSendEmailClicked"
-                    FontSize="16"
+					FontSize="16"
                     HorizontalOptions="FillAndExpand"
                     Text="Send Email"
                     TextColor="White"
@@ -117,7 +116,7 @@
                     BorderColor="Black"
                     BorderWidth="1"
                     IsVisible="Collapse"
-                    Clicked="OnVerifyClicked"
+                 
                     FontSize="16"
                     HorizontalOptions="FillAndExpand"
                     Text="Confirm"
