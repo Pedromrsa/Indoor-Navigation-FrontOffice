@@ -9,7 +9,7 @@ public partial class RecoverAccountPage : ContentPage
     {
         InitializeComponent();
     }
-/*
+
     async void OnSendEmailClicked(object sender, EventArgs e)
     {
         if (IsValidEmail(emailEntry.Text))
@@ -54,6 +54,11 @@ public partial class RecoverAccountPage : ContentPage
         }
     }
 
+    async void OnBackToMenuClicked(object sender, EventArgs e)
+    {
+        await Navigation.PushAsync(new LoginPage(), true);
+    }
+
     private bool IsValidEmail(string email)
     {
         if (!string.IsNullOrEmpty(email))
@@ -66,5 +71,5 @@ public partial class RecoverAccountPage : ContentPage
             return false;
         }
     }
-*/
+
 }

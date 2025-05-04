@@ -98,12 +98,22 @@
                     VerticalOptions="Center" />
                 </StackLayout>
 
-                <!--  Enter Button  -->
+                <!--  Back to Menu Button  -->
+                <Button
+                    x:Name="backMenuButton"
+                    Text="Back to Login"
+                    TextColor="Blue"
+                    BackgroundColor="Transparent"
+                    Clicked="OnBackToMenuClicked"
+                    HorizontalOptions="Center" />
+
+                <!--  Send Email Button  -->
                 <Button
                     x:Name="sendEmailButton"
                     BackgroundColor="Red"
                     BorderColor="Black"
                     BorderWidth="1"
+                    Clicked="OnSendEmailClicked"
 					FontSize="16"
                     HorizontalOptions="FillAndExpand"
                     Text="Send Email"
@@ -116,7 +126,7 @@
                     BorderColor="Black"
                     BorderWidth="1"
                     IsVisible="Collapse"
-                 
+                    Clicked="OnVerifyClicked"
                     FontSize="16"
                     HorizontalOptions="FillAndExpand"
                     Text="Confirm"
