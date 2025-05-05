@@ -13,6 +13,7 @@ using ImageSharpPointF = SixLabors.ImageSharp.PointF;
 using ImageSharpColor = SixLabors.ImageSharp.Color;
 using MauiPoint = Microsoft.Maui.Graphics.Point;
 using ImageSharpImage = SixLabors.ImageSharp.Image<SixLabors.ImageSharp.PixelFormats.Rgba32>;
+using SixLabors.ImageSharp.Drawing;
 
 
 namespace IndoorMappingApp.Scripts
@@ -33,12 +34,32 @@ namespace IndoorMappingApp.Scripts
                 .ToArray();
 
             var pen = new SolidPen(ImageSharpColor.Red, 5f);
+            var circleBrushBlue = new SolidBrush(ImageSharpColor.Blue);
+            var circleBrushGrey = new SolidBrush(ImageSharpColor.Gray);
+            float circleRadius = 8f;
 
             image.Mutate(ctx =>
             {
                 var path = new SixLabors.ImageSharp.Drawing.PathBuilder();
                 path.AddLines(convertedPoints); // convertedPoints é um PointF[]
                 ctx.Draw(pen, path.Build());
+
+                // Desenha pontos em cada coordenada
+                for (int i = 0; i < convertedPoints.Length; i++)
+                {
+                    var point = convertedPoints[i];
+
+                    if (i == 0 || i == convertedPoints.Length - 1)
+                    {
+                        // Origem e destino Azul
+                        ctx.Fill(circleBrushBlue, new EllipsePolygon(point, circleRadius));
+                    }
+                    else
+                    {
+                        // Pontos intermédios cinzento
+                        ctx.Fill(circleBrushGrey, new EllipsePolygon(point, circleRadius));
+                    }
+                }
             });
 
 

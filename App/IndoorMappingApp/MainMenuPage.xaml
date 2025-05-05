@@ -2,18 +2,24 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="IndoorMappingApp.MainMenuPage"
-             Title="MainMenuPage">
+             Title="MainMenuPage"
+             BackgroundColor="White">
     <ScrollView>
         <VerticalStackLayout Padding="20" Spacing="30" HorizontalOptions="Center">
 
             <!-- Mapa de fundo -->
             <Image
-    x:Name="ImagemMapa"
-    Source="mapa_isep.png"
-    Aspect="AspectFit"
-    AbsoluteLayout.LayoutBounds="0,0,1,1"
-    AbsoluteLayout.LayoutFlags="All" />
-
+                x:Name="ImagemMapa"
+                Source="mapa_isep.png"
+                Aspect="AspectFit"
+                AbsoluteLayout.LayoutBounds="0,0,1,1"
+                AbsoluteLayout.LayoutFlags="All" />
+            
+            <Label x:Name="PercursoLabel"
+               FontSize="14"
+               TextColor="Black"
+               Margin="10"
+               LineBreakMode="WordWrap" />
 
             <Button Text="Available Routes"
                     Clicked="OnRoutesClicked"
@@ -32,11 +38,13 @@
             <Button Text="B304"
             Clicked="OnB304Clicked"
             BackgroundColor="DodgerBlue"
+            HorizontalOptions="Fill"
             TextColor="White" />
 
             <Button Text="B404"
             Clicked="OnB404Clicked"
-            BackgroundColor="MediumPurple"
+            BackgroundColor="DodgerBlue"
+            HorizontalOptions="Fill"
             TextColor="White" />
 
 

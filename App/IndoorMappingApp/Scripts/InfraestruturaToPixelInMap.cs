@@ -15,16 +15,17 @@ namespace IndoorMappingApp.Scripts
             [3] = new Point(138, 317),
             [4] = new Point(138, 317),
             [5] = new Point(135, 322),
-            [6] = new Point(193, 430),
-            [7] = new Point(193, 430),
-            [8] = new Point(193, 430),
+            [6] = new Point(200, 450),
+            [7] = new Point(200, 450),
+            [8] = new Point(200, 450),
             [9] = new Point(243, 420),
             [10] = new Point(243, 420),
             [11] = new Point(278, 389),
             [12] = new Point(278, 389),
             [13] = new Point(440, 485),
             [14] = new Point(433, 421),
-            [15] = new Point(278, 389)
+            [15] = new Point(278, 400),
+            [18] = new Point(278, 400)
         };
     }
 

@@ -48,7 +48,7 @@ namespace IndoorMappingApp.Scripts.Services
         {
             try
             {
-                var response = await _httpClient.GetAsync("api/infraestrutura");
+                var response = await _httpClient.GetAsync("api/infraestrutura/GetAll");
 
                 if (response.IsSuccessStatusCode)
                 {

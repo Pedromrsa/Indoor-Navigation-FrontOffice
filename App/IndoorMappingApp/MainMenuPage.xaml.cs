@@ -6,6 +6,8 @@ namespace IndoorMappingApp;
 public partial class MainMenuPage : ContentPage, IQueryAttributable
 {
     private Dictionary<long, PointF> _infraIdToPixel = new();
+    private readonly string _mapFileName = "mapa_isep.png";
+
 
     private bool _isGuest;
     public bool IsGuest
@@ -50,18 +52,7 @@ public partial class MainMenuPage : ContentPage, IQueryAttributable
     {
         await MostrarCaminhoParaDestino(10);
     }
-
-    private async Task InicializarCoordenadasInfraestruturasAsync()
-    {
-        var api = new IndoorApiService();
-        var infraestruturas = await api.GetInfraestruturasAsync();
-
-        _infraIdToPixel = infraestruturas.ToDictionary(
-            infra => infra.Id,
-            infra => MapGeolocation.ConvertToPixel(infra.Latitude, infra.Longitude)
-        );
-    }
-
+    
     private async Task MostrarCaminhoParaDestino(long destinoId)
     {
         var api = new IndoorApiService();
@@ -73,6 +64,28 @@ public partial class MainMenuPage : ContentPage, IQueryAttributable
             return;
         }
 
+        // Busca todas as infraestruturas com tipo e descrição
+        var infraestruturas = await api.GetInfraestruturasAsync();
+        var steps = new List<string>();
+
+        for (int i = 0; i < resultado.InfraestruturasIds.Count - 1; i++)
+        {
+            var origemId = resultado.InfraestruturasIds[i];
+            var destinoStepId = resultado.InfraestruturasIds[i + 1];
+
+            var origem = infraestruturas.FirstOrDefault(x => x.Id == origemId);
+            var destino = infraestruturas.FirstOrDefault(x => x.Id == destinoStepId);
+
+            if (origem != null && destino != null)
+            {
+                steps.Add($"De {origem.TipoInfraestrutura} {origem.Descricao} ({origem.Piso}) A {destino.TipoInfraestrutura} {destino.Descricao} ({origem.Piso})");
+            }
+        }
+
+        // Atualiza o texto no ecrã
+        PercursoLabel.Text = string.Join("\n", steps);
+
+        // Continua pintando o mapa
         var pontos = resultado.InfraestruturasIds
             .Where(InfraestruturaToPixelInMap.Pixeis.ContainsKey)
             .Select(id => InfraestruturaToPixelInMap.Pixeis[id])
@@ -80,24 +93,16 @@ public partial class MainMenuPage : ContentPage, IQueryAttributable
 
         try
         {
-            // Envia o ImageSource atual diretamente
-            var novaImagem = await CaminhoMapPainter.PintarCaminhoAsync(ImagemMapa.Source, pontos);
+            var novaImagem = await CaminhoMapPainter.PintarCaminhoAsync(ImageSource.FromFile(_mapFileName), pontos);
             ImagemMapa.Source = novaImagem;
         }
         catch (Exception ex)
         {
             await DisplayAlert("Erro ao pintar caminho", ex.Message, "OK");
         }
-
-        await DisplayAlert("Caminho", resultado.Mensagem, "OK");
     }
 
 
-    protected override async void OnAppearing()
-    {
-        base.OnAppearing();
 
-        if (_infraIdToPixel.Count == 0)
-            await InicializarCoordenadasInfraestruturasAsync();
-    }
+
 }

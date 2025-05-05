@@ -14,6 +14,6 @@ namespace IndoorMappingApp.Scripts.DTOs
         public double Longitude { get; set; }
         public int Piso { get; set; }
         public bool Acessivel { get; set; }
-        public string Tipo { get; set; } = string.Empty;
+        public string TipoInfraestrutura { get; set; } = string.Empty;
     }
 }
