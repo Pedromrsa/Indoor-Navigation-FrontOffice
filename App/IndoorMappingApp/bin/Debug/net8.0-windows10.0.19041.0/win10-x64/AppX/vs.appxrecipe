@@ -29,25 +29,25 @@
     <AppXManifest Include="C:\Users\ASUS\Desktop\Indoor-Navigation-FrontOffice\App\IndoorMappingApp\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2025-05-04T15:08:23.741</Modified>
+      <Modified>2025-05-05T17:21:22.500</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\ASUS\Desktop\Indoor-Navigation-FrontOffice\App\IndoorMappingApp\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2025-05-04T14:25:28.482</Modified>
+      <Modified>2025-05-05T16:39:41.013</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ASUS\Desktop\Indoor-Navigation-FrontOffice\App\IndoorMappingApp\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\IndoorMappingApp.runtimeconfig.json">
       <PackagePath>IndoorMappingApp.runtimeconfig.json</PackagePath>
-      <Modified>2025-05-04T14:25:28.149</Modified>
+      <Modified>2025-05-05T16:39:40.691</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ASUS\Desktop\Indoor-Navigation-FrontOffice\App\IndoorMappingApp\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\IndoorMappingApp.dll">
       <PackagePath>IndoorMappingApp.dll</PackagePath>
-      <Modified>2025-05-04T15:08:22.366</Modified>
+      <Modified>2025-05-05T17:21:21.978</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ASUS\Desktop\Indoor-Navigation-FrontOffice\App\IndoorMappingApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\apphost.exe">
       <PackagePath>IndoorMappingApp.exe</PackagePath>
-      <Modified>2025-05-04T15:08:22.470</Modified>
+      <Modified>2025-05-05T17:21:21.983</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ASUS\Desktop\Indoor-Navigation-FrontOffice\App\IndoorMappingApp\Resources\Raw\AboutAssets.txt">
       <PackagePath>AboutAssets.txt</PackagePath>
@@ -87,219 +87,219 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ASUS\Desktop\Indoor-Navigation-FrontOffice\App\IndoorMappingApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appicon.ico">
       <PackagePath>appicon.ico</PackagePath>
-      <Modified>2025-05-04T14:14:51.373</Modified>
+      <Modified>2025-05-05T16:38:31.636</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ASUS\Desktop\Indoor-Navigation-FrontOffice\App\IndoorMappingApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-100.png">
       <PackagePath>appiconLargeTile.scale-100.png</PackagePath>
-      <Modified>2025-05-04T14:14:51.363</Modified>
+      <Modified>2025-05-05T16:38:31.621</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ASUS\Desktop\Indoor-Navigation-FrontOffice\App\IndoorMappingApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-125.png">
       <PackagePath>appiconLargeTile.scale-125.png</PackagePath>
-      <Modified>2025-05-04T14:14:51.363</Modified>
+      <Modified>2025-05-05T16:38:31.621</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ASUS\Desktop\Indoor-Navigation-FrontOffice\App\IndoorMappingApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-150.png">
       <PackagePath>appiconLargeTile.scale-150.png</PackagePath>
-      <Modified>2025-05-04T14:14:51.363</Modified>
+      <Modified>2025-05-05T16:38:31.621</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ASUS\Desktop\Indoor-Navigation-FrontOffice\App\IndoorMappingApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-200.png">
       <PackagePath>appiconLargeTile.scale-200.png</PackagePath>
-      <Modified>2025-05-04T14:14:51.363</Modified>
+      <Modified>2025-05-05T16:38:31.621</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ASUS\Desktop\Indoor-Navigation-FrontOffice\App\IndoorMappingApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-400.png">
       <PackagePath>appiconLargeTile.scale-400.png</PackagePath>
-      <Modified>2025-05-04T14:14:51.363</Modified>
+      <Modified>2025-05-05T16:38:31.621</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ASUS\Desktop\Indoor-Navigation-FrontOffice\App\IndoorMappingApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-16.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-16.png</PackagePath>
-      <Modified>2025-05-04T14:14:51.373</Modified>
+      <Modified>2025-05-05T16:38:31.628</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ASUS\Desktop\Indoor-Navigation-FrontOffice\App\IndoorMappingApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-24.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-24.png</PackagePath>
-      <Modified>2025-05-04T14:14:51.373</Modified>
+      <Modified>2025-05-05T16:38:31.628</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ASUS\Desktop\Indoor-Navigation-FrontOffice\App\IndoorMappingApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-256.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-256.png</PackagePath>
-      <Modified>2025-05-04T14:14:51.373</Modified>
+      <Modified>2025-05-05T16:38:31.628</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ASUS\Desktop\Indoor-Navigation-FrontOffice\App\IndoorMappingApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-32.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-32.png</PackagePath>
-      <Modified>2025-05-04T14:14:51.373</Modified>
+      <Modified>2025-05-05T16:38:31.628</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ASUS\Desktop\Indoor-Navigation-FrontOffice\App\IndoorMappingApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-48.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-48.png</PackagePath>
-      <Modified>2025-05-04T14:14:51.373</Modified>
+      <Modified>2025-05-05T16:38:31.628</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ASUS\Desktop\Indoor-Navigation-FrontOffice\App\IndoorMappingApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-16.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-16.png</PackagePath>
-      <Modified>2025-05-04T14:14:51.373</Modified>
+      <Modified>2025-05-05T16:38:31.628</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ASUS\Desktop\Indoor-Navigation-FrontOffice\App\IndoorMappingApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-24.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-24.png</PackagePath>
-      <Modified>2025-05-04T14:14:51.373</Modified>
+      <Modified>2025-05-05T16:38:31.628</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ASUS\Desktop\Indoor-Navigation-FrontOffice\App\IndoorMappingApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-256.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-256.png</PackagePath>
-      <Modified>2025-05-04T14:14:51.373</Modified>
+      <Modified>2025-05-05T16:38:31.628</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ASUS\Desktop\Indoor-Navigation-FrontOffice\App\IndoorMappingApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-32.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-32.png</PackagePath>
-      <Modified>2025-05-04T14:14:51.373</Modified>
+      <Modified>2025-05-05T16:38:31.628</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ASUS\Desktop\Indoor-Navigation-FrontOffice\App\IndoorMappingApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-48.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-48.png</PackagePath>
-      <Modified>2025-05-04T14:14:51.373</Modified>
+      <Modified>2025-05-05T16:38:31.628</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ASUS\Desktop\Indoor-Navigation-FrontOffice\App\IndoorMappingApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-100.png">
       <PackagePath>appiconLogo.scale-100.png</PackagePath>
-      <Modified>2025-05-04T14:14:51.373</Modified>
+      <Modified>2025-05-05T16:38:31.636</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ASUS\Desktop\Indoor-Navigation-FrontOffice\App\IndoorMappingApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-125.png">
       <PackagePath>appiconLogo.scale-125.png</PackagePath>
-      <Modified>2025-05-04T14:14:51.373</Modified>
+      <Modified>2025-05-05T16:38:31.636</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ASUS\Desktop\Indoor-Navigation-FrontOffice\App\IndoorMappingApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-150.png">
       <PackagePath>appiconLogo.scale-150.png</PackagePath>
-      <Modified>2025-05-04T14:14:51.373</Modified>
+      <Modified>2025-05-05T16:38:31.636</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ASUS\Desktop\Indoor-Navigation-FrontOffice\App\IndoorMappingApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-200.png">
       <PackagePath>appiconLogo.scale-200.png</PackagePath>
-      <Modified>2025-05-04T14:14:51.373</Modified>
+      <Modified>2025-05-05T16:38:31.635</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ASUS\Desktop\Indoor-Navigation-FrontOffice\App\IndoorMappingApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-400.png">
       <PackagePath>appiconLogo.scale-400.png</PackagePath>
-      <Modified>2025-05-04T14:14:51.373</Modified>
+      <Modified>2025-05-05T16:38:31.635</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ASUS\Desktop\Indoor-Navigation-FrontOffice\App\IndoorMappingApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-16.png">
       <PackagePath>appiconLogo.targetsize-16.png</PackagePath>
-      <Modified>2025-05-04T14:14:51.373</Modified>
+      <Modified>2025-05-05T16:38:31.635</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ASUS\Desktop\Indoor-Navigation-FrontOffice\App\IndoorMappingApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-24.png">
       <PackagePath>appiconLogo.targetsize-24.png</PackagePath>
-      <Modified>2025-05-04T14:14:51.373</Modified>
+      <Modified>2025-05-05T16:38:31.628</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ASUS\Desktop\Indoor-Navigation-FrontOffice\App\IndoorMappingApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-256.png">
       <PackagePath>appiconLogo.targetsize-256.png</PackagePath>
-      <Modified>2025-05-04T14:14:51.373</Modified>
+      <Modified>2025-05-05T16:38:31.628</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ASUS\Desktop\Indoor-Navigation-FrontOffice\App\IndoorMappingApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-32.png">
       <PackagePath>appiconLogo.targetsize-32.png</PackagePath>
-      <Modified>2025-05-04T14:14:51.373</Modified>
+      <Modified>2025-05-05T16:38:31.628</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ASUS\Desktop\Indoor-Navigation-FrontOffice\App\IndoorMappingApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-48.png">
       <PackagePath>appiconLogo.targetsize-48.png</PackagePath>
-      <Modified>2025-05-04T14:14:51.373</Modified>
+      <Modified>2025-05-05T16:38:31.628</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ASUS\Desktop\Indoor-Navigation-FrontOffice\App\IndoorMappingApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-100.png">
       <PackagePath>appiconMediumTile.scale-100.png</PackagePath>
-      <Modified>2025-05-04T14:14:51.363</Modified>
+      <Modified>2025-05-05T16:38:31.621</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ASUS\Desktop\Indoor-Navigation-FrontOffice\App\IndoorMappingApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-125.png">
       <PackagePath>appiconMediumTile.scale-125.png</PackagePath>
-      <Modified>2025-05-04T14:14:51.363</Modified>
+      <Modified>2025-05-05T16:38:31.621</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ASUS\Desktop\Indoor-Navigation-FrontOffice\App\IndoorMappingApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-150.png">
       <PackagePath>appiconMediumTile.scale-150.png</PackagePath>
-      <Modified>2025-05-04T14:14:51.363</Modified>
+      <Modified>2025-05-05T16:38:31.621</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ASUS\Desktop\Indoor-Navigation-FrontOffice\App\IndoorMappingApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-200.png">
       <PackagePath>appiconMediumTile.scale-200.png</PackagePath>
-      <Modified>2025-05-04T14:14:51.363</Modified>
+      <Modified>2025-05-05T16:38:31.621</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ASUS\Desktop\Indoor-Navigation-FrontOffice\App\IndoorMappingApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-400.png">
       <PackagePath>appiconMediumTile.scale-400.png</PackagePath>
-      <Modified>2025-05-04T14:14:51.363</Modified>
+      <Modified>2025-05-05T16:38:31.621</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ASUS\Desktop\Indoor-Navigation-FrontOffice\App\IndoorMappingApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-100.png">
       <PackagePath>appiconSmallTile.scale-100.png</PackagePath>
-      <Modified>2025-05-04T14:14:51.370</Modified>
+      <Modified>2025-05-05T16:38:31.628</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ASUS\Desktop\Indoor-Navigation-FrontOffice\App\IndoorMappingApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-125.png">
       <PackagePath>appiconSmallTile.scale-125.png</PackagePath>
-      <Modified>2025-05-04T14:14:51.363</Modified>
+      <Modified>2025-05-05T16:38:31.628</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ASUS\Desktop\Indoor-Navigation-FrontOffice\App\IndoorMappingApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-150.png">
       <PackagePath>appiconSmallTile.scale-150.png</PackagePath>
-      <Modified>2025-05-04T14:14:51.363</Modified>
+      <Modified>2025-05-05T16:38:31.628</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ASUS\Desktop\Indoor-Navigation-FrontOffice\App\IndoorMappingApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-200.png">
       <PackagePath>appiconSmallTile.scale-200.png</PackagePath>
-      <Modified>2025-05-04T14:14:51.363</Modified>
+      <Modified>2025-05-05T16:38:31.621</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ASUS\Desktop\Indoor-Navigation-FrontOffice\App\IndoorMappingApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-400.png">
       <PackagePath>appiconSmallTile.scale-400.png</PackagePath>
-      <Modified>2025-05-04T14:14:51.363</Modified>
+      <Modified>2025-05-05T16:38:31.621</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ASUS\Desktop\Indoor-Navigation-FrontOffice\App\IndoorMappingApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-100.png">
       <PackagePath>appiconStoreLogo.scale-100.png</PackagePath>
-      <Modified>2025-05-04T14:14:51.373</Modified>
+      <Modified>2025-05-05T16:38:31.628</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ASUS\Desktop\Indoor-Navigation-FrontOffice\App\IndoorMappingApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-125.png">
       <PackagePath>appiconStoreLogo.scale-125.png</PackagePath>
-      <Modified>2025-05-04T14:14:51.370</Modified>
+      <Modified>2025-05-05T16:38:31.628</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ASUS\Desktop\Indoor-Navigation-FrontOffice\App\IndoorMappingApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-150.png">
       <PackagePath>appiconStoreLogo.scale-150.png</PackagePath>
-      <Modified>2025-05-04T14:14:51.370</Modified>
+      <Modified>2025-05-05T16:38:31.628</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ASUS\Desktop\Indoor-Navigation-FrontOffice\App\IndoorMappingApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-200.png">
       <PackagePath>appiconStoreLogo.scale-200.png</PackagePath>
-      <Modified>2025-05-04T14:14:51.370</Modified>
+      <Modified>2025-05-05T16:38:31.628</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ASUS\Desktop\Indoor-Navigation-FrontOffice\App\IndoorMappingApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-400.png">
       <PackagePath>appiconStoreLogo.scale-400.png</PackagePath>
-      <Modified>2025-05-04T14:14:51.370</Modified>
+      <Modified>2025-05-05T16:38:31.628</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ASUS\Desktop\Indoor-Navigation-FrontOffice\App\IndoorMappingApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-100.png">
       <PackagePath>appiconWideTile.scale-100.png</PackagePath>
-      <Modified>2025-05-04T14:14:51.363</Modified>
+      <Modified>2025-05-05T16:38:31.621</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ASUS\Desktop\Indoor-Navigation-FrontOffice\App\IndoorMappingApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-125.png">
       <PackagePath>appiconWideTile.scale-125.png</PackagePath>
-      <Modified>2025-05-04T14:14:51.363</Modified>
+      <Modified>2025-05-05T16:38:31.621</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ASUS\Desktop\Indoor-Navigation-FrontOffice\App\IndoorMappingApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-150.png">
       <PackagePath>appiconWideTile.scale-150.png</PackagePath>
-      <Modified>2025-05-04T14:14:51.363</Modified>
+      <Modified>2025-05-05T16:38:31.621</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ASUS\Desktop\Indoor-Navigation-FrontOffice\App\IndoorMappingApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-200.png">
       <PackagePath>appiconWideTile.scale-200.png</PackagePath>
-      <Modified>2025-05-04T14:14:51.363</Modified>
+      <Modified>2025-05-05T16:38:31.621</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ASUS\Desktop\Indoor-Navigation-FrontOffice\App\IndoorMappingApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-400.png">
       <PackagePath>appiconWideTile.scale-400.png</PackagePath>
-      <Modified>2025-05-04T14:14:51.363</Modified>
+      <Modified>2025-05-05T16:38:31.621</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ASUS\Desktop\Indoor-Navigation-FrontOffice\App\IndoorMappingApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\burguer_menu.scale-100.png">
       <PackagePath>burguer_menu.scale-100.png</PackagePath>
-      <Modified>2025-05-04T14:14:51.363</Modified>
+      <Modified>2025-05-05T16:38:31.612</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ASUS\Desktop\Indoor-Navigation-FrontOffice\App\IndoorMappingApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-100.png">
       <PackagePath>dotnet_bot.scale-100.png</PackagePath>
-      <Modified>2025-05-04T14:14:51.363</Modified>
+      <Modified>2025-05-05T16:38:31.621</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ASUS\Desktop\Indoor-Navigation-FrontOffice\App\IndoorMappingApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-125.png">
       <PackagePath>dotnet_bot.scale-125.png</PackagePath>
-      <Modified>2025-05-04T14:14:51.363</Modified>
+      <Modified>2025-05-05T16:38:31.621</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ASUS\Desktop\Indoor-Navigation-FrontOffice\App\IndoorMappingApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-150.png">
       <PackagePath>dotnet_bot.scale-150.png</PackagePath>
-      <Modified>2025-05-04T14:14:51.363</Modified>
+      <Modified>2025-05-05T16:38:31.621</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ASUS\Desktop\Indoor-Navigation-FrontOffice\App\IndoorMappingApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-200.png">
       <PackagePath>dotnet_bot.scale-200.png</PackagePath>
-      <Modified>2025-05-04T14:14:51.363</Modified>
+      <Modified>2025-05-05T16:38:31.621</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ASUS\Desktop\Indoor-Navigation-FrontOffice\App\IndoorMappingApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-400.png">
       <PackagePath>dotnet_bot.scale-400.png</PackagePath>
-      <Modified>2025-05-04T14:14:51.363</Modified>
+      <Modified>2025-05-05T16:38:31.621</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ASUS\Desktop\Indoor-Navigation-FrontOffice\App\IndoorMappingApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\mapa_isep.scale-100.png">
       <PackagePath>mapa_isep.scale-100.png</PackagePath>
-      <Modified>2025-05-04T14:14:51.363</Modified>
+      <Modified>2025-05-05T16:38:31.621</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ASUS\Desktop\Indoor-Navigation-FrontOffice\App\IndoorMappingApp\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\IndoorMappingApp.deps.json">
       <PackagePath>IndoorMappingApp.deps.json</PackagePath>
-      <Modified>2025-05-04T14:25:27.982</Modified>
+      <Modified>2025-05-05T16:39:40.548</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ASUS\.nuget\packages\microsoft.windows.sdk.net.ref\10.0.19041.54\lib\net8.0\Microsoft.Windows.SDK.NET.dll">
       <PackagePath>Microsoft.Windows.SDK.NET.dll</PackagePath>

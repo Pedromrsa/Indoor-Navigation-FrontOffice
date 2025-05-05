@@ -41,7 +41,13 @@ public partial class PathProblems : ContentPage
                     PropertyNameCaseInsensitive = true
                 });
 
-                var accessiblePaths = pathList.Where(p => p.Acessivel).ToList();
+                // Filtra caminhos acessíveis e elimina duplicatas de DisplayName
+                var accessiblePaths = pathList
+                    .Where(p => p.Acessivel)
+                    .GroupBy(p => p.DisplayName) // Agrupa por DisplayName
+                    .Select(g => g.First()) // Seleciona o primeiro de cada grupo
+                    .ToList();
+
                 _paths = new ObservableCollection<PathDetail>(accessiblePaths);
 
                 this.BindingContext = this;
@@ -58,6 +64,13 @@ public partial class PathProblems : ContentPage
             await DisplayAlert("Exception", ex.Message, "OK");
         }
     }
+
+    private async void OnBurgerMenuClicked(object sender, EventArgs e)
+    {
+        await Shell.Current.GoToAsync("options");
+    }
+
+
 
     private async void LoadElevatorsAsync()
     {
@@ -81,7 +94,7 @@ public partial class PathProblems : ContentPage
                     .ToList();
 
                 ElevatorPicker.ItemsSource = uniqueElevators;
-                ElevatorPicker.ItemDisplayBinding = new Binding("Descricao"); // Mostra a descrição no Picker
+                ElevatorPicker.ItemDisplayBinding = new Binding("DisplayName");
             }
             else
             {
@@ -93,6 +106,26 @@ public partial class PathProblems : ContentPage
         {
             await DisplayAlert("Erro", ex.Message, "OK");
         }
+    }
+
+    private void OnProblemOptionCheckedChanged(object sender, CheckedChangedEventArgs e)
+    {
+        if (!e.Value) return; // Ignora quando desmarcado
+
+        var changedCheckBox = (CheckBox)sender;
+
+        // Desmarca todas as outras
+        if (changedCheckBox != ElevatorProblemCheckBox)
+            ElevatorProblemCheckBox.IsChecked = false;
+
+        if (changedCheckBox != ObstructionCheckBox)
+            ObstructionCheckBox.IsChecked = false;
+
+        if (changedCheckBox != OtherProblemCheckBox)
+            OtherProblemCheckBox.IsChecked = false;
+
+        // Exemplo opcional: ativar/desativar o Entry de "Other problem"
+        OtherProblemEntry.IsEnabled = changedCheckBox == OtherProblemCheckBox;
     }
 
     private void PathPicker_SelectedIndexChanged(object sender, EventArgs e)
@@ -107,6 +140,7 @@ public partial class PathProblems : ContentPage
     {
         await Navigation.PopAsync();
     }
+
 }
 
 // Modelos
@@ -119,6 +153,8 @@ public class Infrastructure
     public int Piso { get; set; }
     public bool Acessivel { get; set; }
     public string TipoInfraestrutura { get; set; }
+
+    public string DisplayName => $"{Descricao} - Elevator is broken";
 
     public override string ToString()
     {

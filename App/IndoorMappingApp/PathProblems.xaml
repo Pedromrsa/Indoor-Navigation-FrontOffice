@@ -28,7 +28,8 @@
                      VerticalOptions="Center"
                      Margin="10,0"
                      HeightRequest="24"
-                     WidthRequest="24" />
+                     WidthRequest="24"
+                     Clicked="OnBurgerMenuClicked"/>
         </Grid>
 
 
@@ -62,7 +63,7 @@
                     <Label Text="Select Elevator" FontSize="14" TextColor="Black" />
                     <!-- Option 1: Elevator broken (Checkbox + Picker) -->
                 <HorizontalStackLayout Spacing="10" VerticalOptions="Center">
-                        <CheckBox Color="#666666" />
+                        <CheckBox x:Name="ElevatorProblemCheckBox" Color="#666666" CheckedChanged="OnProblemOptionCheckedChanged" />
                         <Frame
                              Padding="0"
                              BorderColor="Black"
@@ -71,7 +72,7 @@
                              BackgroundColor="White"
                              HorizontalOptions="FillAndExpand">
                             <Picker x:Name="ElevatorPicker"
-                                Title="Select Elevator..."
+                                Title="Select Broken Elevator..."
                                 TextColor="Black"
                                 ItemDisplayBinding="{Binding Descricao}" />
                         </Frame>
@@ -79,13 +80,13 @@
 
                 <!-- Option 2: Obstruction in the path -->
                 <HorizontalStackLayout Spacing="10" VerticalOptions="Center">
-                     <CheckBox Color="#666666" />
+                        <CheckBox x:Name="ObstructionCheckBox" Color="#666666" CheckedChanged="OnProblemOptionCheckedChanged" />
                     <Label Text="Obstruction in the path." VerticalOptions="Center" TextColor="Black" />
                 </HorizontalStackLayout>
 
                 <!-- Option 3: Other problem -->
                 <HorizontalStackLayout Spacing="10" VerticalOptions="Center">
-                        <CheckBox Color="#666666"/>
+                        <CheckBox x:Name="OtherProblemCheckBox" Color="#666666" CheckedChanged="OnProblemOptionCheckedChanged"/>
                     <Label Text="Other problem." VerticalOptions="Center" TextColor="Black" />
                 </HorizontalStackLayout>
 
@@ -97,7 +98,7 @@
                         BackgroundColor="White"
                         HorizontalOptions="FillAndExpand">
                             <!-- Text input for "Other problem" -->
-                        <Entry TextColor="Black" Placeholder="Please tell what's the other problem"/>
+                        <Entry x:Name="OtherProblemEntry" TextColor="Black" Placeholder="Please tell what's the other problem" IsEnabled="False"/>
                     </Frame>
 
                     <!-- Send Button -->
