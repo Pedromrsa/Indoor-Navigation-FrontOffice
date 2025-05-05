@@ -10,14 +10,11 @@ public partial class RegisterPage : ContentPage
         InitializeComponent();
         _api = new IndoorApiService();
 
-        LanguagePicker.ItemsSource = new[] { "English", "Portuguese" };
-        LimitationPicker.ItemsSource = new[] { "Tetraplegic", "Paraplegia" };
-
+        LimitationPicker.ItemsSource = new[] { "Tetraplegic", "Paraplegia", "Normal" };
         NameEntry.TextChanged += (s, e) => ValidateForm();
         EmailEntry.TextChanged += (s, e) => ValidateForm();
         PasswordEntry.TextChanged += (s, e) => ValidateForm();
         LimitationPicker.SelectedIndexChanged += (s, e) => ValidateForm();
-        LanguagePicker.SelectedIndexChanged += (s, e) => ValidateForm();
     }
 
     void ValidateForm()
@@ -26,8 +23,7 @@ public partial class RegisterPage : ContentPage
             !string.IsNullOrWhiteSpace(NameEntry.Text) &&
             !string.IsNullOrWhiteSpace(EmailEntry.Text) &&
             !string.IsNullOrWhiteSpace(PasswordEntry.Text) &&
-            LimitationPicker.SelectedIndex >= 0 &&
-            LanguagePicker.SelectedIndex >= 0;
+            LimitationPicker.SelectedIndex >= 0;
 
         RegisterButton.IsEnabled = isValid;
     }
@@ -42,11 +38,11 @@ public partial class RegisterPage : ContentPage
 
         var dto = new RegisterRequestDTO
         {
-            Name = NameEntry.Text,
-            Email = EmailEntry.Text,
-            Password = PasswordEntry.Text,
-            Limitation = LimitationPicker.SelectedIndex,  
-            Language = LanguagePicker.SelectedIndex     
+            name = NameEntry.Text,
+            email = EmailEntry.Text,
+            password = PasswordEntry.Text,
+            tipoId = 4,  
+            mobilidadeId = LanguagePicker.SelectedIndex     
         };
 
         var result = await _api.RegisterAsync(dto);

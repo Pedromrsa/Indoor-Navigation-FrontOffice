@@ -1059,9 +1059,6 @@ C:\Users\jdvpl\Desktop\TASSI\Project\Project_Real\App\IndoorMappingApp\bin\Debug
 C:\Users\jdvpl\Desktop\TASSI\Project\Project_Real\App\IndoorMappingApp\bin\Debug\net8.0-android\com.companyname.indoormappingapp-Signed.aab
 C:\Users\jdvpl\Desktop\TASSI\Project\Project_Real\App\IndoorMappingApp\bin\Debug\net8.0-android\com.companyname.indoormappingapp-Signed.apk
 C:\Users\jdvpl\Desktop\TASSI\Project\Project_Real\App\IndoorMappingApp\bin\Debug\net8.0-android\com.companyname.indoormappingapp-Signed.apk.idsig
-C:\Users\jdvpl\Desktop\TASSI\Project\Project_Real\App\IndoorMappingApp\bin\Debug\net8.0-android\Microsoft.Maui.Controls.HotReload.Forms.dll
-C:\Users\jdvpl\Desktop\TASSI\Project\Project_Real\App\IndoorMappingApp\bin\Debug\net8.0-android\Microsoft.VisualStudio.DesignTools.MobileTapContracts.dll
-C:\Users\jdvpl\Desktop\TASSI\Project\Project_Real\App\IndoorMappingApp\bin\Debug\net8.0-android\Microsoft.VisualStudio.DesignTools.TapContract.dll
 C:\Users\jdvpl\Desktop\TASSI\Project\Project_Real\App\IndoorMappingApp\obj\Debug\net8.0-android\.NETCoreApp,Version=v8.0.AssemblyAttributes.cs
 C:\Users\jdvpl\Desktop\TASSI\Project\Project_Real\App\IndoorMappingApp\obj\Debug\net8.0-android\build.props
 C:\Users\jdvpl\Desktop\TASSI\Project\Project_Real\App\IndoorMappingApp\obj\Debug\net8.0-android\adb.props
@@ -1179,7 +1176,6 @@ C:\Users\jdvpl\Desktop\TASSI\Project\Project_Real\App\IndoorMappingApp\obj\Debug
 C:\Users\jdvpl\Desktop\TASSI\Project\Project_Real\App\IndoorMappingApp\obj\Debug\net8.0-android\IndoorMappingApp.csproj.CoreCompileInputs.cache
 C:\Users\jdvpl\Desktop\TASSI\Project\Project_Real\App\IndoorMappingApp\obj\Debug\net8.0-android\IndoorMappingApp.sourcelink.json
 C:\Users\jdvpl\Desktop\TASSI\Project\Project_Real\App\IndoorMappingApp\obj\Debug\net8.0-android\XamlC.stamp
-C:\Users\jdvpl\Desktop\TASSI\Project\Project_Real\App\IndoorMappingApp\obj\Debug\net8.0-android\IndoorMa.D8021EC4.Up2Date
 C:\Users\jdvpl\Desktop\TASSI\Project\Project_Real\App\IndoorMappingApp\obj\Debug\net8.0-android\IndoorMappingApp.dll
 C:\Users\jdvpl\Desktop\TASSI\Project\Project_Real\App\IndoorMappingApp\obj\Debug\net8.0-android\IndoorMappingApp.pdb
 C:\Users\jdvpl\Desktop\TASSI\Project\Project_Real\App\IndoorMappingApp\obj\Debug\net8.0-android\IndoorMappingApp.genruntimeconfig.cache
@@ -1226,7 +1222,6 @@ C:\Users\jdvpl\Desktop\TASSI\Project\Project_Real\App\IndoorMappingApp\obj\Debug
 C:\Users\jdvpl\Desktop\TASSI\Project\Project_Real\App\IndoorMappingApp\obj\Debug\net8.0-android\android\assets\Microsoft.Extensions.Primitives.dll
 C:\Users\jdvpl\Desktop\TASSI\Project\Project_Real\App\IndoorMappingApp\obj\Debug\net8.0-android\android\assets\Microsoft.Maui.Controls.Compatibility.dll
 C:\Users\jdvpl\Desktop\TASSI\Project\Project_Real\App\IndoorMappingApp\obj\Debug\net8.0-android\android\assets\Microsoft.Maui.Controls.dll
-C:\Users\jdvpl\Desktop\TASSI\Project\Project_Real\App\IndoorMappingApp\obj\Debug\net8.0-android\android\assets\Microsoft.Maui.Controls.HotReload.Forms.dll
 C:\Users\jdvpl\Desktop\TASSI\Project\Project_Real\App\IndoorMappingApp\obj\Debug\net8.0-android\android\assets\Microsoft.Maui.Controls.pdb
 C:\Users\jdvpl\Desktop\TASSI\Project\Project_Real\App\IndoorMappingApp\obj\Debug\net8.0-android\android\assets\Microsoft.Maui.Controls.Xaml.dll
 C:\Users\jdvpl\Desktop\TASSI\Project\Project_Real\App\IndoorMappingApp\obj\Debug\net8.0-android\android\assets\Microsoft.Maui.Controls.Xaml.pdb
@@ -1238,8 +1233,6 @@ C:\Users\jdvpl\Desktop\TASSI\Project\Project_Real\App\IndoorMappingApp\obj\Debug
 C:\Users\jdvpl\Desktop\TASSI\Project\Project_Real\App\IndoorMappingApp\obj\Debug\net8.0-android\android\assets\Microsoft.Maui.pdb
 C:\Users\jdvpl\Desktop\TASSI\Project\Project_Real\App\IndoorMappingApp\obj\Debug\net8.0-android\android\assets\Microsoft.VisualBasic.Core.dll
 C:\Users\jdvpl\Desktop\TASSI\Project\Project_Real\App\IndoorMappingApp\obj\Debug\net8.0-android\android\assets\Microsoft.VisualBasic.dll
-C:\Users\jdvpl\Desktop\TASSI\Project\Project_Real\App\IndoorMappingApp\obj\Debug\net8.0-android\android\assets\Microsoft.VisualStudio.DesignTools.MobileTapContracts.dll
-C:\Users\jdvpl\Desktop\TASSI\Project\Project_Real\App\IndoorMappingApp\obj\Debug\net8.0-android\android\assets\Microsoft.VisualStudio.DesignTools.TapContract.dll
 C:\Users\jdvpl\Desktop\TASSI\Project\Project_Real\App\IndoorMappingApp\obj\Debug\net8.0-android\android\assets\Microsoft.Win32.Primitives.dll
 C:\Users\jdvpl\Desktop\TASSI\Project\Project_Real\App\IndoorMappingApp\obj\Debug\net8.0-android\android\assets\Microsoft.Win32.Registry.dll
 C:\Users\jdvpl\Desktop\TASSI\Project\Project_Real\App\IndoorMappingApp\obj\Debug\net8.0-android\android\assets\Mono.Android.dll

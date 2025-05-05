@@ -92,21 +92,6 @@
                         TitleColor="Black" />
                 </Frame>
 
-
-                <!--  Language picker  -->
-                <Frame
-                    Padding="0"
-                    BorderColor="Black"
-                    CornerRadius="0"
-                    HasShadow="False"
-                    HorizontalOptions="FillAndExpand">
-                    <Picker
-                        x:Name="LanguagePicker"
-                        Title="Select language"
-                        Background="White"
-                        FontSize="17" />
-                </Frame>
-
                 <!--  Already have an account?  -->
                 <Button
                     BackgroundColor="Transparent"

@@ -8,11 +8,11 @@ namespace IndoorMappingApp.Scripts.DTOs
 {
     public class RegisterRequestDTO
     {
-        public string Name { get; set; }
-        public string Email { get; set; }
-        public string Password { get; set; }
-        public int Limitation { get; set; }
-        public int Language { get; set; }
+        public string name { get; set; }
+        public string email { get; set; }
+        public string password { get; set; }
+        public int tipoId { get; set; } // 4 User
+        public int mobilidadeId { get; set; } 
     }
 
 
