@@ -30,7 +30,7 @@
     <AppXManifest Include="C:\Users\jdvpl\Desktop\TASSI\Project\Project_Real\App\IndoorMappingApp\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2025-05-05T22:52:59.011</Modified>
+      <Modified>2025-05-06T09:50:34.870</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
@@ -44,11 +44,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\jdvpl\Desktop\TASSI\Project\Project_Real\App\IndoorMappingApp\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\IndoorMappingApp.dll">
       <PackagePath>IndoorMappingApp.dll</PackagePath>
-      <Modified>2025-05-05T22:52:57.852</Modified>
+      <Modified>2025-05-06T09:50:34.107</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\jdvpl\Desktop\TASSI\Project\Project_Real\App\IndoorMappingApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\apphost.exe">
       <PackagePath>IndoorMappingApp.exe</PackagePath>
-      <Modified>2025-05-05T22:52:57.863</Modified>
+      <Modified>2025-05-06T09:50:34.141</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\jdvpl\Desktop\TASSI\Project\Project_Real\App\IndoorMappingApp\Resources\Raw\AboutAssets.txt">
       <PackagePath>AboutAssets.txt</PackagePath>

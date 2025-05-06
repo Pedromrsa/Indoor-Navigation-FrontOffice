@@ -10,7 +10,7 @@ public partial class RegisterPage : ContentPage
         InitializeComponent();
         _api = new IndoorApiService();
 
-        LimitationPicker.ItemsSource = new[] { "Tetraplegic", "Paraplegia", "Normal" };
+        LimitationPicker.ItemsSource = new[] { "Tetraplegic", "Paraplegic", "Normal" };
         NameEntry.TextChanged += (s, e) => ValidateForm();
         EmailEntry.TextChanged += (s, e) => ValidateForm();
         PasswordEntry.TextChanged += (s, e) => ValidateForm();
@@ -42,7 +42,7 @@ public partial class RegisterPage : ContentPage
             email = EmailEntry.Text,
             password = PasswordEntry.Text,
             tipoId = 4,  
-            mobilidadeId = LanguagePicker.SelectedIndex     
+            mobilidadeId = LimitationPicker.SelectedIndex     
         };
 
         var result = await _api.RegisterAsync(dto);
