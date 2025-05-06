@@ -1,11 +1,7 @@
 ﻿using IndoorMappingApp.Scripts.DTOs;
-using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Net.Http.Json;
 using System.Text;
 using System.Text.Json;
-using System.Threading.Tasks;
 
 namespace IndoorMappingApp.Scripts.Services
 {
@@ -66,6 +62,7 @@ namespace IndoorMappingApp.Scripts.Services
 
             return new List<GetInfraestruturaDTO>();
         }
+
         public async Task<HttpResponseMessage?> RegisterAsync(RegisterRequestDTO dto)
         {
             HttpResponseMessage response = new();
@@ -107,23 +104,43 @@ namespace IndoorMappingApp.Scripts.Services
             }
         }
 
-        public async Task<bool> RequestRecoveryTokenAsync(string email)
+        //public async Task<bool> RequestRecoveryTokenAsync(string email)
+        //{
+        //    try
+        //    {
+        //        var payload = new ValidateTokenResponseDTO
+        //        {
+        //            Message = email
+        //        };
+
+        //        var response = await _httpClient.PostAsJsonAsync("api/Auth/recover", payload);
+        //        return response.IsSuccessStatusCode;
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        Console.WriteLine($"Error in RequestRecoveryTokenAsync: {ex.Message}");
+        //        return false;
+        //    }
+        //}
+
+        public async Task<bool> ValidateEmailExistance(string email)
         {
             try
             {
-                var payload = new RecoverAccountRequestDTO
-                {
-                    Email = email
-                };
 
-                var response = await _httpClient.PostAsJsonAsync("api/Auth/recover", payload);
-                return response.IsSuccessStatusCode;
+                HttpResponseMessage response = await _httpClient.PostAsync($"api/Auth/request-recovery-token?email={Uri.EscapeDataString(email)}", null);
+
+                if (response.IsSuccessStatusCode)
+                {
+                    return true;
+                }
             }
             catch (Exception ex)
             {
-                Console.WriteLine($"Error in RequestRecoveryTokenAsync: {ex.Message}");
-                return false;
+                Console.WriteLine($"Error on Validating data: {ex.Message}");
             }
+
+            return false;
         }
 
         public async Task<bool> ValidateRecoveryTokenAsync(string token)
@@ -154,6 +171,6 @@ namespace IndoorMappingApp.Scripts.Services
                 return false;
             }
         }
-        
+
     }
 }

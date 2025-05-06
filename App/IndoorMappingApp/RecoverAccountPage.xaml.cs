@@ -5,6 +5,7 @@ namespace IndoorMappingApp;
 
 public partial class RecoverAccountPage : ContentPage
 {
+
     public RecoverAccountPage()
     {
         InitializeComponent();
@@ -15,9 +16,14 @@ public partial class RecoverAccountPage : ContentPage
         if (IsValidEmail(emailEntry.Text))
         {
             var apiService = new IndoorApiService();
-            bool isEmailSent = await apiService.RequestRecoveryTokenAsync(emailEntry.Text);
-            if (isEmailSent)
+
+            bool response =  await apiService.ValidateEmailExistance(emailEntry.Text);
+
+            if (response)
             {
+                //apiService = new IndoorApiService();
+                //bool isEmailSent = await apiService.RequestRecoveryTokenAsync(emailEntry.Text);
+
                 sendEmailButton.IsVisible = false;
                 verifyButton.IsVisible = true;
                 sendEmailLabel.IsVisible = false;
@@ -38,7 +44,6 @@ public partial class RecoverAccountPage : ContentPage
             return;
         }
     }
-
     async void OnVerifyClicked(object sender, EventArgs e)
     {
         var apiService = new IndoorApiService();
@@ -46,7 +51,7 @@ public partial class RecoverAccountPage : ContentPage
 
         if (isValidToken)
         {
-            //await Navigation.PushAsync(new ResetPasswordPage(tokenEntry.Text), true);
+            await Navigation.PushAsync(new RecoverPasswordPage(tokenEntry.Text), true);
         }
         else
         {
@@ -63,7 +68,7 @@ public partial class RecoverAccountPage : ContentPage
     {
         if (!string.IsNullOrEmpty(email))
         {
-            var pattern = @"^[^@\s]+@[^@\s]+\.[^@\s]+$";
+            var pattern = @"^[^@\s]+@isep\.ipp\.pt$";
             return Regex.IsMatch(email, pattern, RegexOptions.IgnoreCase);
         }
         else
