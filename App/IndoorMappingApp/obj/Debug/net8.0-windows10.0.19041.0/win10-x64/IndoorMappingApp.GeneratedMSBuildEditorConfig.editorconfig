@@ -8,7 +8,7 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = IndoorMappingApp
-build_property.ProjectDir = C:\Catarina\GitHub\Indoor-Navigation-FrontOffice\App\IndoorMappingApp\
+build_property.ProjectDir = C:\Users\jdvpl\Desktop\TASSI\Project\Project_Real\App\IndoorMappingApp\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.CsWinRTAotOptimizerEnabled = true
@@ -22,91 +22,91 @@ build_property.CsWinRTUseWindowsUIXamlProjections = false
 build_property.EffectiveAnalysisLevelStyle = 8.0
 build_property.EnableCodeStyleSeverity = 
 
-[C:/Catarina/GitHub/Indoor-Navigation-FrontOffice/App/IndoorMappingApp/AccountSettings.xaml]
+[C:/Users/jdvpl/Desktop/TASSI/Project/Project_Real/App/IndoorMappingApp/AccountSettings.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = IndoorMappingApp.AccountSettings.xaml
 build_metadata.AdditionalFiles.TargetPath = AccountSettings.xaml
 build_metadata.AdditionalFiles.RelativePath = AccountSettings.xaml
 
-[C:/Catarina/GitHub/Indoor-Navigation-FrontOffice/App/IndoorMappingApp/App.xaml]
+[C:/Users/jdvpl/Desktop/TASSI/Project/Project_Real/App/IndoorMappingApp/App.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = IndoorMappingApp.App.xaml
 build_metadata.AdditionalFiles.TargetPath = App.xaml
 build_metadata.AdditionalFiles.RelativePath = App.xaml
 
-[C:/Catarina/GitHub/Indoor-Navigation-FrontOffice/App/IndoorMappingApp/AppShell.xaml]
+[C:/Users/jdvpl/Desktop/TASSI/Project/Project_Real/App/IndoorMappingApp/AppShell.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = IndoorMappingApp.AppShell.xaml
 build_metadata.AdditionalFiles.TargetPath = AppShell.xaml
 build_metadata.AdditionalFiles.RelativePath = AppShell.xaml
 
-[C:/Catarina/GitHub/Indoor-Navigation-FrontOffice/App/IndoorMappingApp/AvailableRoutesPage.xaml]
+[C:/Users/jdvpl/Desktop/TASSI/Project/Project_Real/App/IndoorMappingApp/AvailableRoutesPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = IndoorMappingApp.AvailableRoutesPage.xaml
 build_metadata.AdditionalFiles.TargetPath = AvailableRoutesPage.xaml
 build_metadata.AdditionalFiles.RelativePath = AvailableRoutesPage.xaml
 
-[C:/Catarina/GitHub/Indoor-Navigation-FrontOffice/App/IndoorMappingApp/FeedbackOptionsPage.xaml]
+[C:/Users/jdvpl/Desktop/TASSI/Project/Project_Real/App/IndoorMappingApp/FeedbackOptionsPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = IndoorMappingApp.FeedbackOptionsPage.xaml
 build_metadata.AdditionalFiles.TargetPath = FeedbackOptionsPage.xaml
 build_metadata.AdditionalFiles.RelativePath = FeedbackOptionsPage.xaml
 
-[C:/Catarina/GitHub/Indoor-Navigation-FrontOffice/App/IndoorMappingApp/LoginPage.xaml]
+[C:/Users/jdvpl/Desktop/TASSI/Project/Project_Real/App/IndoorMappingApp/LoginPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = IndoorMappingApp.LoginPage.xaml
 build_metadata.AdditionalFiles.TargetPath = LoginPage.xaml
 build_metadata.AdditionalFiles.RelativePath = LoginPage.xaml
 
-[C:/Catarina/GitHub/Indoor-Navigation-FrontOffice/App/IndoorMappingApp/MainMenuPage.xaml]
+[C:/Users/jdvpl/Desktop/TASSI/Project/Project_Real/App/IndoorMappingApp/MainMenuPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = IndoorMappingApp.MainMenuPage.xaml
 build_metadata.AdditionalFiles.TargetPath = MainMenuPage.xaml
 build_metadata.AdditionalFiles.RelativePath = MainMenuPage.xaml
 
-[C:/Catarina/GitHub/Indoor-Navigation-FrontOffice/App/IndoorMappingApp/MainPage.xaml]
+[C:/Users/jdvpl/Desktop/TASSI/Project/Project_Real/App/IndoorMappingApp/MainPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = IndoorMappingApp.MainPage.xaml
 build_metadata.AdditionalFiles.TargetPath = MainPage.xaml
 build_metadata.AdditionalFiles.RelativePath = MainPage.xaml
 
-[C:/Catarina/GitHub/Indoor-Navigation-FrontOffice/App/IndoorMappingApp/MenuPage.xaml]
+[C:/Users/jdvpl/Desktop/TASSI/Project/Project_Real/App/IndoorMappingApp/MenuPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = IndoorMappingApp.MenuPage.xaml
 build_metadata.AdditionalFiles.TargetPath = MenuPage.xaml
 build_metadata.AdditionalFiles.RelativePath = MenuPage.xaml
 
-[C:/Catarina/GitHub/Indoor-Navigation-FrontOffice/App/IndoorMappingApp/OptionsPage.xaml]
+[C:/Users/jdvpl/Desktop/TASSI/Project/Project_Real/App/IndoorMappingApp/OptionsPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = IndoorMappingApp.OptionsPage.xaml
 build_metadata.AdditionalFiles.TargetPath = OptionsPage.xaml
 build_metadata.AdditionalFiles.RelativePath = OptionsPage.xaml
 
-[C:/Catarina/GitHub/Indoor-Navigation-FrontOffice/App/IndoorMappingApp/PathProblems.xaml]
+[C:/Users/jdvpl/Desktop/TASSI/Project/Project_Real/App/IndoorMappingApp/PathProblems.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = IndoorMappingApp.PathProblems.xaml
 build_metadata.AdditionalFiles.TargetPath = PathProblems.xaml
 build_metadata.AdditionalFiles.RelativePath = PathProblems.xaml
 
-[C:/Catarina/GitHub/Indoor-Navigation-FrontOffice/App/IndoorMappingApp/RecoverAccountPage.xaml]
+[C:/Users/jdvpl/Desktop/TASSI/Project/Project_Real/App/IndoorMappingApp/RecoverAccountPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = IndoorMappingApp.RecoverAccountPage.xaml
 build_metadata.AdditionalFiles.TargetPath = RecoverAccountPage.xaml
 build_metadata.AdditionalFiles.RelativePath = RecoverAccountPage.xaml
 
-[C:/Catarina/GitHub/Indoor-Navigation-FrontOffice/App/IndoorMappingApp/RegisterPage.xaml]
+[C:/Users/jdvpl/Desktop/TASSI/Project/Project_Real/App/IndoorMappingApp/RegisterPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = IndoorMappingApp.RegisterPage.xaml
 build_metadata.AdditionalFiles.TargetPath = RegisterPage.xaml
 build_metadata.AdditionalFiles.RelativePath = RegisterPage.xaml
 
-[C:/Catarina/GitHub/Indoor-Navigation-FrontOffice/App/IndoorMappingApp/Resources/Styles/Colors.xaml]
+[C:/Users/jdvpl/Desktop/TASSI/Project/Project_Real/App/IndoorMappingApp/Resources/Styles/Colors.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = IndoorMappingApp.Resources.Styles.Colors.xaml
 build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Colors.xaml
 build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Colors.xaml
 
-[C:/Catarina/GitHub/Indoor-Navigation-FrontOffice/App/IndoorMappingApp/Resources/Styles/Styles.xaml]
+[C:/Users/jdvpl/Desktop/TASSI/Project/Project_Real/App/IndoorMappingApp/Resources/Styles/Styles.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = IndoorMappingApp.Resources.Styles.Styles.xaml
 build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Styles.xaml

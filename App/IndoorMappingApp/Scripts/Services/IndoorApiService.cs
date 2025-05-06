@@ -66,18 +66,14 @@ namespace IndoorMappingApp.Scripts.Services
 
             return new List<GetInfraestruturaDTO>();
         }
-        public async Task<RegisterResponseDTO?> RegisterAsync(RegisterRequestDTO dto)
+        public async Task<HttpResponseMessage?> RegisterAsync(RegisterRequestDTO dto)
         {
+            HttpResponseMessage response = new();
             try
             {
+                response = await _httpClient.PostAsJsonAsync("api/Auth/register2", dto);
                 // POST /api/Auth/register2 with JSON body
-                var response = await _httpClient.PostAsJsonAsync("api/Auth/register2",dto);
-
-                if (response.IsSuccessStatusCode)
-                {
-                    return await response.Content.ReadFromJsonAsync<RegisterResponseDTO>();
-                }
-                else
+                if (!response.IsSuccessStatusCode)
                 {
                     var error = await response.Content.ReadAsStringAsync();
                     Console.WriteLine($"Registration failed: {error}");
@@ -88,7 +84,7 @@ namespace IndoorMappingApp.Scripts.Services
                 Console.WriteLine($"Error in RegisterAsync: {ex.Message}");
             }
 
-            return null;
+            return response;
         }
 
         public async Task<RegisterResponseDTO> UpdateAccountSettingsAsync(UpdateAccountRequestDTO dto)
@@ -103,16 +99,7 @@ namespace IndoorMappingApp.Scripts.Services
             {
                 var response = await client.PostAsync(url, content);
                 var responseBody = await response.Content.ReadAsStringAsync();
-
-                if (string.IsNullOrWhiteSpace(responseBody))
-                {
-                    return new RegisterResponseDTO { Success = false, Message = "Empty response from server." };
-                }
-
-                return JsonSerializer.Deserialize<RegisterResponseDTO>(responseBody, new JsonSerializerOptions
-                {
-                    PropertyNameCaseInsensitive = true
-                });
+                return JsonSerializer.Deserialize<RegisterResponseDTO>(responseBody);
             }
             catch (Exception ex)
             {

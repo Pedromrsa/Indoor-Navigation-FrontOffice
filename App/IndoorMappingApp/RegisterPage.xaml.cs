@@ -10,7 +10,7 @@ public partial class RegisterPage : ContentPage
         InitializeComponent();
         _api = new IndoorApiService();
 
-        LimitationPicker.ItemsSource = new[] { "Tetraplegic", "Paraplegic", "Normal" };
+        LimitationPicker.ItemsSource = new[] { "Normal", "Paraplegic", "Tetraplegic" };
         NameEntry.TextChanged += (s, e) => ValidateForm();
         EmailEntry.TextChanged += (s, e) => ValidateForm();
         PasswordEntry.TextChanged += (s, e) => ValidateForm();
@@ -38,22 +38,23 @@ public partial class RegisterPage : ContentPage
 
         var dto = new RegisterRequestDTO
         {
-            name = NameEntry.Text,
+            nome = NameEntry.Text,
             email = EmailEntry.Text,
             password = PasswordEntry.Text,
-            tipoId = 4,  
-            mobilidadeId = LimitationPicker.SelectedIndex     
+            tipoId = 4,
+            mobilidadeId = LimitationPicker.SelectedIndex + 1
         };
 
-        var result = await _api.RegisterAsync(dto);
-        if (result != null && result.Success)
+        var result = await _api.RegisterAsync(dto); 
+        if (result != null && result.IsSuccessStatusCode)
         {
-            await DisplayAlert("Registered", result.Message ?? "OK", "OK");
-            await Navigation.PopAsync();
+
+            await DisplayAlert("Registered", "Welcome to the application!", "Ok");
+            await Navigation.PushAsync(new MainMenuPage());
         }
         else
         {
-            await DisplayAlert("Error", result?.Message ?? "Registration failed", "OK");
+            await DisplayAlert("Error", "Registration failed!", "OK");
         }
     }
 
