@@ -27,13 +27,6 @@
                     HorizontalOptions="Start"
                     Padding="0" />
 
-            <Button Text="Check Diary"
-                    Clicked="OnDiaryClicked"
-                    BackgroundColor="Transparent"
-                    TextColor="Black"
-                    HorizontalOptions="Start"
-                    Padding="0" />
-
             <!-- Option with underline -->
             <Grid>
                 <Button Text="Path Problems? Share them"

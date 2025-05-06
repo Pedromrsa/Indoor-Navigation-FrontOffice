@@ -51,7 +51,8 @@
                         BackgroundColor="Red"
                         TextColor="White"
                         CornerRadius="6"
-                        HeightRequest="50" />
+                        HeightRequest="50" 
+                        Clicked="OnSaveChangesClicked" />
             </VerticalStackLayout>
         </ScrollView>
     </VerticalStackLayout>

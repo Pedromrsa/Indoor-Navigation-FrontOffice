@@ -103,7 +103,16 @@ namespace IndoorMappingApp.Scripts.Services
             {
                 var response = await client.PostAsync(url, content);
                 var responseBody = await response.Content.ReadAsStringAsync();
-                return JsonSerializer.Deserialize<RegisterResponseDTO>(responseBody);
+
+                if (string.IsNullOrWhiteSpace(responseBody))
+                {
+                    return new RegisterResponseDTO { Success = false, Message = "Empty response from server." };
+                }
+
+                return JsonSerializer.Deserialize<RegisterResponseDTO>(responseBody, new JsonSerializerOptions
+                {
+                    PropertyNameCaseInsensitive = true
+                });
             }
             catch (Exception ex)
             {
@@ -158,26 +167,6 @@ namespace IndoorMappingApp.Scripts.Services
                 return false;
             }
         }
-
-        /*public async Task<ApiResponseDTO> UpdateAccountSettingsAsync(UpdateAccountRequestDTO dto)
-        {
-            var client = new HttpClient();
-            var url = "https://isepindoornavigationapi-vgq7.onrender.com/api/Account/update"; // adjust if different
-
-            var json = JsonSerializer.Serialize(dto);
-            var content = new StringContent(json, Encoding.UTF8, "application/json");
-
-            try
-            {
-                var response = await client.PostAsync(url, content);
-                var responseBody = await response.Content.ReadAsStringAsync();
-                return JsonSerializer.Deserialize<ApiResponseDTO>(responseBody);
-            }
-            catch (Exception ex)
-            {
-                return new ApiResponseDTO { Success = false, Message = ex.Message };
-            }
-        }
-        */
+        
     }
 }

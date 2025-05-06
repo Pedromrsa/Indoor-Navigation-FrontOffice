@@ -6,6 +6,10 @@ namespace IndoorMappingApp;
 public partial class AccountSettings : ContentPage
 {
     readonly IndoorApiService _api = new IndoorApiService();
+    public AccountSettings()
+    {
+        InitializeComponent();
+    }
 
     private async void OnSaveChangesClicked(object sender, EventArgs e)
     {

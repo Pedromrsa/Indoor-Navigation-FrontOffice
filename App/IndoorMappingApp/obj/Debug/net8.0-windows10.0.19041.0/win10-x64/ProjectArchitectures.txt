@@ -1,1 +1,1 @@
-C:\Users\jdvpl\Desktop\TASSI\Project\Project_Real\App\IndoorMappingApp\IndoorMappingApp.csproj;x64
+C:\Catarina\GitHub\Indoor-Navigation-FrontOffice\App\IndoorMappingApp\IndoorMappingApp.csproj;x64
