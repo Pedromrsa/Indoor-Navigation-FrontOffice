@@ -16,29 +16,30 @@ public partial class AccountSettings : ContentPage
         string newPassword = NewPasswordEntry.Text;
         string confirmPassword = ConfirmPasswordEntry.Text;
 
-        if (string.IsNullOrWhiteSpace(newPassword) || string.IsNullOrWhiteSpace(confirmPassword))
+        // If new password is provided, ensure both fields are filled and match
+        if (!string.IsNullOrWhiteSpace(newPassword) && !string.IsNullOrWhiteSpace(confirmPassword))
         {
-            await DisplayAlert("Validation Error", "Please fill in both password fields.", "OK");
-            return;
+            if (newPassword != confirmPassword)
+            {
+                await DisplayAlert("Validation Error", "Passwords do not match.", "OK");
+                return;
+            }
+        }
+        else
+        {
+            // If new password is blank, do not include it in the update
+            newPassword = null; // Or keep it as null to retain the previous value
         }
 
-        if (newPassword != confirmPassword)
-        {
-            await DisplayAlert("Validation Error", "Passwords do not match.", "OK");
-            return;
-        }
-
-        if (LimitationPicker.SelectedIndex < 0 || LanguagePicker.SelectedIndex < 0)
-        {
-            await DisplayAlert("Validation Error", "Please select both limitation and language.", "OK");
-            return;
-        }
+        // If either Limitation or Language is not selected, retain the previous values
+        int? limitation = (LimitationPicker.SelectedIndex >= 0) ? LimitationPicker.SelectedIndex : (int?)null;
+        int? language = (LanguagePicker.SelectedIndex >= 0) ? LanguagePicker.SelectedIndex : (int?)null;
 
         var dto = new UpdateAccountRequestDTO
         {
             NewPassword = newPassword,
-            Limitation = LimitationPicker.SelectedIndex,
-            Language = LanguagePicker.SelectedIndex
+            Limitation = (int)limitation,
+            Language = (int)language
         };
 
         var result = await _api.UpdateAccountSettingsAsync(dto);
