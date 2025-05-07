@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage
     x:Class="IndoorMappingApp.MenuPage"
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
@@ -10,30 +11,30 @@
         HorizontalOptions="Center"
         Spacing="15">
 
-        <!--  Dynamic localization via TranslateExtension  -->
+        <!--  Use the real keys from your RESX  -->
         <Button
             BackgroundColor="Red"
             Clicked="OnLoginClicked"
-            Text="{helpers:Translate LoginPrompt}"
+            Text="{helpers:Translate MenuPage_Button_LoginPrompt}"
             TextColor="White" />
 
         <Button
             BackgroundColor="Gray"
             Clicked="OnRegisterClicked"
-            Text="{helpers:Translate RegisterTitle}"
+            Text="{helpers:Translate MenuPage_Button_RegisterTitle}"
             TextColor="White" />
 
         <Button
             BackgroundColor="Green"
             Clicked="OnGuestClicked"
-            Text="{helpers:Translate TryAsGuest}"
+            Text="{helpers:Translate MenuPage_Button_TryAsGuest}"
             TextColor="White" />
 
-        <!--  Language switch button  -->
+        <!--  Now this will pick up the Portuguese label from your RESX  -->
         <Button
             BackgroundColor="Blue"
             Clicked="OnToggleLanguageClicked"
-            Text="Portugues"
+            Text="{helpers:Translate MenuPage_Button_Portuguese}"
             TextColor="White" />
 
     </VerticalStackLayout>

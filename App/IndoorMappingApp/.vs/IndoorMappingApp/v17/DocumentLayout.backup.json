@@ -3,12 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\jdvpl\\Desktop\\TASSI\\Project\\Project_Real\\App\\IndoorMappingApp\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{CCE8AD22-C2AD-499F-BE91-C7087F165FC1}|IndoorMappingApp.csproj|c:\\users\\jdvpl\\desktop\\tassi\\project\\project_real\\app\\indoormappingapp\\menupage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{CCE8AD22-C2AD-499F-BE91-C7087F165FC1}|IndoorMappingApp.csproj|solutionrelative:menupage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{CCE8AD22-C2AD-499F-BE91-C7087F165FC1}|IndoorMappingApp.csproj|c:\\users\\jdvpl\\desktop\\tassi\\project\\project_real\\app\\indoormappingapp\\menupage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CCE8AD22-C2AD-499F-BE91-C7087F165FC1}|IndoorMappingApp.csproj|solutionrelative:menupage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CCE8AD22-C2AD-499F-BE91-C7087F165FC1}|IndoorMappingApp.csproj|c:\\users\\jdvpl\\desktop\\tassi\\project\\project_real\\app\\indoormappingapp\\menupage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{CCE8AD22-C2AD-499F-BE91-C7087F165FC1}|IndoorMappingApp.csproj|solutionrelative:menupage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{CCE8AD22-C2AD-499F-BE91-C7087F165FC1}|IndoorMappingApp.csproj|c:\\users\\jdvpl\\desktop\\tassi\\project\\project_real\\app\\indoormappingapp\\resources\\strings\\appresources.pt.resx||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{CCE8AD22-C2AD-499F-BE91-C7087F165FC1}|IndoorMappingApp.csproj|solutionrelative:resources\\strings\\appresources.pt.resx||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
       "AbsoluteMoniker": "D:0:0:{CCE8AD22-C2AD-499F-BE91-C7087F165FC1}|IndoorMappingApp.csproj|c:\\users\\jdvpl\\desktop\\tassi\\project\\project_real\\app\\indoormappingapp\\translateextension.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -19,8 +23,7 @@
       "RelativeMoniker": "D:0:0:{CCE8AD22-C2AD-499F-BE91-C7087F165FC1}|IndoorMappingApp.csproj|solutionrelative:localizationresourcemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CCE8AD22-C2AD-499F-BE91-C7087F165FC1}|IndoorMappingApp.csproj|c:\\users\\jdvpl\\desktop\\tassi\\project\\project_real\\app\\indoormappingapp\\mainmenupage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{CCE8AD22-C2AD-499F-BE91-C7087F165FC1}|IndoorMappingApp.csproj|solutionrelative:mainmenupage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\jdvpl\\.nuget\\packages\\microsoft.maui.controls.build.tasks\\8.0.100\\buildTransitive\\netstandard2.0\\Microsoft.Maui.Controls.targets||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
       "AbsoluteMoniker": "D:0:0:{CCE8AD22-C2AD-499F-BE91-C7087F165FC1}|IndoorMappingApp.csproj|c:\\users\\jdvpl\\desktop\\tassi\\project\\project_real\\app\\indoormappingapp\\registerpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
@@ -82,37 +85,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 167,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "TranslateExtension.cs",
-              "DocumentMoniker": "C:\\Users\\jdvpl\\Desktop\\TASSI\\Project\\Project_Real\\App\\IndoorMappingApp\\TranslateExtension.cs",
-              "RelativeDocumentMoniker": "TranslateExtension.cs",
-              "ToolTip": "C:\\Users\\jdvpl\\Desktop\\TASSI\\Project\\Project_Real\\App\\IndoorMappingApp\\TranslateExtension.cs",
-              "RelativeToolTip": "TranslateExtension.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-07T23:13:34.726Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 7,
-              "Title": "IndoorMappingApp",
-              "DocumentMoniker": "C:\\Users\\jdvpl\\Desktop\\TASSI\\Project\\Project_Real\\App\\IndoorMappingApp\\IndoorMappingApp.csproj",
-              "RelativeDocumentMoniker": "IndoorMappingApp.csproj",
-              "ToolTip": "C:\\Users\\jdvpl\\Desktop\\TASSI\\Project\\Project_Real\\App\\IndoorMappingApp\\IndoorMappingApp.csproj",
-              "RelativeToolTip": "IndoorMappingApp.csproj",
-              "ViewState": "AgIAAD4AAAAAAAAAAAAuwGEAAAAPAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-05-07T23:06:56.106Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
               "Title": "MauiProgram.cs",
               "DocumentMoniker": "C:\\Users\\jdvpl\\Desktop\\TASSI\\Project\\Project_Real\\App\\IndoorMappingApp\\MauiProgram.cs",
               "RelativeDocumentMoniker": "MauiProgram.cs",
@@ -125,33 +102,59 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "LocalizationResourceManager.cs",
               "DocumentMoniker": "C:\\Users\\jdvpl\\Desktop\\TASSI\\Project\\Project_Real\\App\\IndoorMappingApp\\LocalizationResourceManager.cs",
               "RelativeDocumentMoniker": "LocalizationResourceManager.cs",
               "ToolTip": "C:\\Users\\jdvpl\\Desktop\\TASSI\\Project\\Project_Real\\App\\IndoorMappingApp\\LocalizationResourceManager.cs",
               "RelativeToolTip": "LocalizationResourceManager.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-07T22:40:47.438Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "PathProblems.xaml",
-              "DocumentMoniker": "C:\\Users\\jdvpl\\Desktop\\TASSI\\Project\\Project_Real\\App\\IndoorMappingApp\\PathProblems.xaml",
-              "RelativeDocumentMoniker": "PathProblems.xaml",
-              "ToolTip": "C:\\Users\\jdvpl\\Desktop\\TASSI\\Project\\Project_Real\\App\\IndoorMappingApp\\PathProblems.xaml",
-              "RelativeToolTip": "PathProblems.xaml",
-              "ViewState": "AgIAADoAAAAAAAAAAAAgwFsAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "MenuPage.xaml",
+              "DocumentMoniker": "C:\\Users\\jdvpl\\Desktop\\TASSI\\Project\\Project_Real\\App\\IndoorMappingApp\\MenuPage.xaml",
+              "RelativeDocumentMoniker": "MenuPage.xaml",
+              "ToolTip": "C:\\Users\\jdvpl\\Desktop\\TASSI\\Project\\Project_Real\\App\\IndoorMappingApp\\MenuPage.xaml",
+              "RelativeToolTip": "MenuPage.xaml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-05-07T22:41:21.784Z",
+              "WhenOpened": "2025-05-05T22:56:58.128Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 8,
+              "Title": "IndoorMappingApp",
+              "DocumentMoniker": "C:\\Users\\jdvpl\\Desktop\\TASSI\\Project\\Project_Real\\App\\IndoorMappingApp\\IndoorMappingApp.csproj",
+              "RelativeDocumentMoniker": "IndoorMappingApp.csproj",
+              "ToolTip": "C:\\Users\\jdvpl\\Desktop\\TASSI\\Project\\Project_Real\\App\\IndoorMappingApp\\IndoorMappingApp.csproj",
+              "RelativeToolTip": "IndoorMappingApp.csproj",
+              "ViewState": "AgIAAD4AAAAAAAAAAAAuwGEAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-05-07T23:06:56.106Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "TranslateExtension.cs",
+              "DocumentMoniker": "C:\\Users\\jdvpl\\Desktop\\TASSI\\Project\\Project_Real\\App\\IndoorMappingApp\\TranslateExtension.cs",
+              "RelativeDocumentMoniker": "TranslateExtension.cs",
+              "ToolTip": "C:\\Users\\jdvpl\\Desktop\\TASSI\\Project\\Project_Real\\App\\IndoorMappingApp\\TranslateExtension.cs",
+              "RelativeToolTip": "TranslateExtension.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-07T23:13:34.726Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "RegisterPage.xaml",
               "DocumentMoniker": "C:\\Users\\jdvpl\\Desktop\\TASSI\\Project\\Project_Real\\App\\IndoorMappingApp\\RegisterPage.xaml",
               "RelativeDocumentMoniker": "RegisterPage.xaml",
@@ -164,46 +167,59 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "MainMenuPage.xaml",
-              "DocumentMoniker": "C:\\Users\\jdvpl\\Desktop\\TASSI\\Project\\Project_Real\\App\\IndoorMappingApp\\MainMenuPage.xaml",
-              "RelativeDocumentMoniker": "MainMenuPage.xaml",
-              "ToolTip": "C:\\Users\\jdvpl\\Desktop\\TASSI\\Project\\Project_Real\\App\\IndoorMappingApp\\MainMenuPage.xaml",
-              "RelativeToolTip": "MainMenuPage.xaml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAMAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "AppResources.pt.resx",
+              "DocumentMoniker": "C:\\Users\\jdvpl\\Desktop\\TASSI\\Project\\Project_Real\\App\\IndoorMappingApp\\Resources\\Strings\\AppResources.pt.resx",
+              "RelativeDocumentMoniker": "Resources\\Strings\\AppResources.pt.resx",
+              "ToolTip": "C:\\Users\\jdvpl\\Desktop\\TASSI\\Project\\Project_Real\\App\\IndoorMappingApp\\Resources\\Strings\\AppResources.pt.resx",
+              "RelativeToolTip": "Resources\\Strings\\AppResources.pt.resx",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
+              "WhenOpened": "2025-05-07T23:20:00.208Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "PathProblems.xaml",
+              "DocumentMoniker": "C:\\Users\\jdvpl\\Desktop\\TASSI\\Project\\Project_Real\\App\\IndoorMappingApp\\PathProblems.xaml",
+              "RelativeDocumentMoniker": "PathProblems.xaml",
+              "ToolTip": "C:\\Users\\jdvpl\\Desktop\\TASSI\\Project\\Project_Real\\App\\IndoorMappingApp\\PathProblems.xaml",
+              "RelativeToolTip": "PathProblems.xaml",
+              "ViewState": "AgIAADoAAAAAAAAAAAAgwFsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-05-07T22:29:42.114Z",
+              "WhenOpened": "2025-05-07T22:41:21.784Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "MenuPage.xaml",
-              "DocumentMoniker": "C:\\Users\\jdvpl\\Desktop\\TASSI\\Project\\Project_Real\\App\\IndoorMappingApp\\MenuPage.xaml",
-              "RelativeDocumentMoniker": "MenuPage.xaml",
-              "ToolTip": "C:\\Users\\jdvpl\\Desktop\\TASSI\\Project\\Project_Real\\App\\IndoorMappingApp\\MenuPage.xaml",
-              "RelativeToolTip": "MenuPage.xaml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACgAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-05-05T22:56:58.128Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
               "Title": "MenuPage.xaml.cs",
               "DocumentMoniker": "C:\\Users\\jdvpl\\Desktop\\TASSI\\Project\\Project_Real\\App\\IndoorMappingApp\\MenuPage.xaml.cs",
               "RelativeDocumentMoniker": "MenuPage.xaml.cs",
               "ToolTip": "C:\\Users\\jdvpl\\Desktop\\TASSI\\Project\\Project_Real\\App\\IndoorMappingApp\\MenuPage.xaml.cs",
               "RelativeToolTip": "MenuPage.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACgAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAA+AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-07T19:38:15.124Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 5,
+              "Title": "Microsoft.Maui.Controls.targets",
+              "DocumentMoniker": "C:\\Users\\jdvpl\\.nuget\\packages\\microsoft.maui.controls.build.tasks\\8.0.100\\buildTransitive\\netstandard2.0\\Microsoft.Maui.Controls.targets",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\.nuget\\packages\\microsoft.maui.controls.build.tasks\\8.0.100\\buildTransitive\\netstandard2.0\\Microsoft.Maui.Controls.targets",
+              "ToolTip": "C:\\Users\\jdvpl\\.nuget\\packages\\microsoft.maui.controls.build.tasks\\8.0.100\\buildTransitive\\netstandard2.0\\Microsoft.Maui.Controls.targets",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\.nuget\\packages\\microsoft.maui.controls.build.tasks\\8.0.100\\buildTransitive\\netstandard2.0\\Microsoft.Maui.Controls.targets",
+              "ViewState": "AgIAAH0AAAAAAAAAAAAewJ0AAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003801|",
+              "WhenOpened": "2025-05-07T23:19:47.6Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
               "Title": "OptionsPage.xaml",
               "DocumentMoniker": "C:\\Users\\jdvpl\\Desktop\\TASSI\\Project\\Project_Real\\App\\IndoorMappingApp\\OptionsPage.xaml",
               "RelativeDocumentMoniker": "OptionsPage.xaml",
@@ -216,7 +232,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 12,
               "Title": "FeedbackOptionsPage.xaml",
               "DocumentMoniker": "C:\\Users\\jdvpl\\Desktop\\TASSI\\Project\\Project_Real\\App\\IndoorMappingApp\\FeedbackOptionsPage.xaml",
               "RelativeDocumentMoniker": "FeedbackOptionsPage.xaml",
@@ -229,7 +245,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 13,
               "Title": "AvailableRoutesPage.xaml",
               "DocumentMoniker": "C:\\Users\\jdvpl\\Desktop\\TASSI\\Project\\Project_Real\\App\\IndoorMappingApp\\AvailableRoutesPage.xaml",
               "RelativeDocumentMoniker": "AvailableRoutesPage.xaml",
@@ -242,7 +258,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "LoginPage.xaml",
               "DocumentMoniker": "C:\\Users\\jdvpl\\Desktop\\TASSI\\Project\\Project_Real\\App\\IndoorMappingApp\\LoginPage.xaml",
               "RelativeDocumentMoniker": "LoginPage.xaml",
@@ -255,7 +271,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 14,
               "Title": "AccountSettings.xaml",
               "DocumentMoniker": "C:\\Users\\jdvpl\\Desktop\\TASSI\\Project\\Project_Real\\App\\IndoorMappingApp\\AccountSettings.xaml",
               "RelativeDocumentMoniker": "AccountSettings.xaml",
@@ -268,7 +284,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 16,
               "Title": "RegisterPage.xaml.cs",
               "DocumentMoniker": "C:\\Users\\jdvpl\\Desktop\\TASSI\\Project\\Project_Real\\App\\IndoorMappingApp\\RegisterPage.xaml.cs",
               "RelativeDocumentMoniker": "RegisterPage.xaml.cs",
@@ -281,7 +297,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 15,
               "Title": "AppShell.xaml",
               "DocumentMoniker": "C:\\Users\\jdvpl\\Desktop\\TASSI\\Project\\Project_Real\\App\\IndoorMappingApp\\AppShell.xaml",
               "RelativeDocumentMoniker": "AppShell.xaml",
@@ -294,7 +310,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 17,
               "Title": "IndoorApiService.cs",
               "DocumentMoniker": "C:\\Users\\jdvpl\\Desktop\\TASSI\\Project\\Project_Real\\App\\IndoorMappingApp\\Scripts\\Services\\IndoorApiService.cs",
               "RelativeDocumentMoniker": "Scripts\\Services\\IndoorApiService.cs",
@@ -307,7 +323,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 18,
               "Title": "MainActivity.cs",
               "DocumentMoniker": "C:\\Users\\jdvpl\\Desktop\\TASSI\\Project\\Project_Real\\App\\IndoorMappingApp\\Platforms\\Android\\MainActivity.cs",
               "RelativeDocumentMoniker": "Platforms\\Android\\MainActivity.cs",
