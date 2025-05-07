@@ -1,23 +1,40 @@
-namespace IndoorMappingApp;
+using System;
+using System.Globalization;
+using Microsoft.Maui.Controls;
 
-public partial class MenuPage : ContentPage
+namespace IndoorMappingApp
 {
-    public MenuPage()
+    public partial class MenuPage : ContentPage
     {
-        InitializeComponent();
-    }
-
-    async void OnLoginClicked(object sender, EventArgs e)
-        => await Navigation.PushAsync(new LoginPage());
-
-    async void OnRegisterClicked(object sender, EventArgs e)
-        => await Navigation.PushAsync(new RegisterPage());
-
-    private async void OnGuestClicked(object sender, EventArgs e)
-    {
-        await Shell.Current.GoToAsync("mainmenu", true, new Dictionary<string, object>
+        public MenuPage()
         {
-            { "IsGuest", true }
-        });
+            InitializeComponent();
+        }
+
+        async void OnLoginClicked(object sender, EventArgs e)
+            => await Navigation.PushAsync(new LoginPage());
+
+        async void OnRegisterClicked(object sender, EventArgs e)
+            => await Navigation.PushAsync(new RegisterPage());
+
+        async void OnGuestClicked(object sender, EventArgs e)
+        {
+            await Shell.Current.GoToAsync("mainmenu", true, new Dictionary<string, object>
+            {
+                { "IsGuest", true }
+            });
+        }
+
+        // Called by the "Português" button
+        void OnToggleLanguageClicked(object sender, EventArgs e)
+        {
+            // Switch between English (en-US) and Portuguese (pt-PT)
+            var current = CultureInfo.CurrentUICulture.TwoLetterISOLanguageName;
+            var newCulture = current == "pt"
+                ? new CultureInfo("en-US")
+                : new CultureInfo("pt-PT");
+
+            LocalizationResourceManager.Instance.SetCulture(newCulture);
+        }
     }
 }

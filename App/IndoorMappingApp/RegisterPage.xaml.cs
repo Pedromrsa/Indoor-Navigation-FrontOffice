@@ -49,12 +49,12 @@ public partial class RegisterPage : ContentPage
         if (result != null && result.IsSuccessStatusCode)
         {
 
-            await DisplayAlert("Registered", "Welcome to the application!", "Ok");
-            await Navigation.PushAsync(new MainMenuPage());
+            await DisplayAlert("Registered", "Ok", "Ok");
+            await Navigation.PopAsync();
         }
         else
         {
-            await DisplayAlert("Error", "Registration failed!", "OK");
+            await DisplayAlert("Error", "Registration failed", "OK");
         }
     }
 

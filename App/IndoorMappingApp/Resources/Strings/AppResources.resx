@@ -1,0 +1,381 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AccountSettings_Title" xml:space="preserve">
+    <value> Account Settings</value>
+  </data>
+  <data name="Button_AvailableRoutes" xml:space="preserve">
+    <value> Available Routes</value>
+  </data>
+  <data name="Button_Dest_B304" xml:space="preserve">
+    <value>B304</value>
+  </data>
+  <data name="Button_Dest_B404" xml:space="preserve">
+    <value>B404</value>
+  </data>
+  <data name="Button_Enter" xml:space="preserve">
+    <value>Enter</value>
+  </data>
+  <data name="Button_ForgotPassword" xml:space="preserve">
+    <value>Forgot Password?</value>
+  </data>
+  <data name="Button_Options" xml:space="preserve">
+    <value>Options</value>
+  </data>
+  <data name="Button_Register" xml:space="preserve">
+    <value>Register</value>
+  </data>
+  <data name="Button_SaveChanges" xml:space="preserve">
+    <value>Save Changes</value>
+  </data>
+  <data name="Button_SendFeedback" xml:space="preserve">
+    <value> Send Feedback</value>
+  </data>
+  <data name="Entry_Email_Placeholder" xml:space="preserve">
+    <value>ISEP E-mail</value>
+  </data>
+  <data name="Entry_NewPassword_Placeholder" xml:space="preserve">
+    <value>***********</value>
+  </data>
+  <data name="Entry_Password_Placeholder" xml:space="preserve">
+    <value>Password</value>
+  </data>
+  <data name="FeedbackOptions_Title" xml:space="preserve">
+    <value>Feedback Options</value>
+  </data>
+  <data name="Label_ChooseDestination" xml:space="preserve">
+    <value>Choose a destination:</value>
+  </data>
+  <data name="Label_ConfirmPassword" xml:space="preserve">
+    <value> Confirm Password</value>
+  </data>
+  <data name="Label_DontHaveAccount" xml:space="preserve">
+    <value> Don’t have an account?</value>
+  </data>
+  <data name="Label_IsepNumber" xml:space="preserve">
+    <value>ISEP Number</value>
+  </data>
+  <data name="Label_IsepNumber_Feedback" xml:space="preserve">
+    <value>ISEP Number</value>
+  </data>
+  <data name="Label_Language" xml:space="preserve">
+    <value>Language</value>
+  </data>
+  <data name="Label_LogoText" xml:space="preserve">
+    <value> Project Logo</value>
+  </data>
+  <data name="Label_NewPassword" xml:space="preserve">
+    <value> New Password</value>
+  </data>
+  <data name="Label_PathRelated" xml:space="preserve">
+    <value>Is this message related to any path?</value>
+  </data>
+  <data name="Label_PhysicalLimitation" xml:space="preserve">
+    <value>Physical Limitation</value>
+  </data>
+  <data name="LoginPage_Label_Login" xml:space="preserve">
+    <value>Login</value>
+  </data>
+  <data name="LoginPage_Title" xml:space="preserve">
+    <value>Login</value>
+  </data>
+  <data name="MainMenuPage_Label_RouteInfo" xml:space="preserve">
+    <value> (e.g. “Current route…”)</value>
+  </data>
+  <data name="MainMenuPage_Title" xml:space="preserve">
+    <value>Main Menu</value>
+  </data>
+  <data name="MenuPage_Button_LoginPrompt" xml:space="preserve">
+    <value>Login</value>
+  </data>
+  <data name="MenuPage_Button_Portuguese" xml:space="preserve">
+    <value>Portuguese</value>
+  </data>
+  <data name="MenuPage_Button_RegisterTitle" xml:space="preserve">
+    <value>Register</value>
+  </data>
+  <data name="MenuPage_Button_TryAsGuest" xml:space="preserve">
+    <value>Try as Guest</value>
+  </data>
+  <data name="Option1_Text" xml:space="preserve">
+    <value>The path x seems very optimal.</value>
+  </data>
+  <data name="Option2_Text" xml:space="preserve">
+    <value>The path x is always full of people.</value>
+  </data>
+  <data name="Option3_Text" xml:space="preserve">
+    <value>This app is too slow to work on a daily basis.</value>
+  </data>
+  <data name="Option4_Text" xml:space="preserve">
+    <value>The neurolink is not working properly.</value>
+  </data>
+  <data name="Option5_Text" xml:space="preserve">
+    <value> My position on the map is inaccurate.</value>
+  </data>
+  <data name="OptionsPage_Title" xml:space="preserve">
+    <value>Options</value>
+  </data>
+  <data name="Options_AccountSettings" xml:space="preserve">
+    <value>Account Settings</value>
+  </data>
+  <data name="Options_GiveUsFeedback" xml:space="preserve">
+    <value>Give us Feedback</value>
+  </data>
+  <data name="Options_Logout" xml:space="preserve">
+    <value>Log Out</value>
+  </data>
+  <data name="Options_PathProblems" xml:space="preserve">
+    <value>Path Problems? Share them.</value>
+  </data>
+  <data name="PathProblems_Button_SendWarning" xml:space="preserve">
+    <value>Send warning</value>
+  </data>
+  <data name="PathProblems_Checkbox_Obstruction" xml:space="preserve">
+    <value>Obstruction in the path.</value>
+  </data>
+  <data name="PathProblems_Checkbox_OtherProblem" xml:space="preserve">
+    <value>Other problem.</value>
+  </data>
+  <data name="PathProblems_IsepNumber" xml:space="preserve">
+    <value>ISEP Number</value>
+  </data>
+  <data name="PathProblems_ObstructionInstruction" xml:space="preserve">
+    <value>Please select the option that corresponds to the obstruction.</value>
+  </data>
+  <data name="PathProblems_OtherProblem_Placeholder" xml:space="preserve">
+    <value>Please tell what’s the other problem</value>
+  </data>
+  <data name="PathProblems_Picker_SelectElevator" xml:space="preserve">
+    <value>Select Broken Elevator...</value>
+  </data>
+  <data name="PathProblems_Picker_SelectPath" xml:space="preserve">
+    <value>Select Path...</value>
+  </data>
+  <data name="PathProblems_ProjectLogo" xml:space="preserve">
+    <value>Project Logo</value>
+  </data>
+  <data name="PathProblems_SelectElevator" xml:space="preserve">
+    <value>Select Elevator</value>
+  </data>
+  <data name="PathProblems_Title" xml:space="preserve">
+    <value>Path Problems</value>
+  </data>
+  <data name="PathProblems_WhatPathQuestion" xml:space="preserve">
+    <value>What path has the problem?</value>
+  </data>
+  <data name="Picker_Language_English" xml:space="preserve">
+    <value>English</value>
+  </data>
+  <data name="Picker_Language_Portuguese" xml:space="preserve">
+    <value>Portuguese</value>
+  </data>
+  <data name="Picker_Limitation_None" xml:space="preserve">
+    <value>None</value>
+  </data>
+  <data name="Picker_Limitation_Paraplegic" xml:space="preserve">
+    <value>Paraplegic</value>
+  </data>
+  <data name="Picker_Limitation_Quadriplegic" xml:space="preserve">
+    <value>Quadriplegic</value>
+  </data>
+  <data name="Picker_Path_No" xml:space="preserve">
+    <value>No</value>
+  </data>
+  <data name="Picker_Path_Title" xml:space="preserve">
+    <value> Select your option</value>
+  </data>
+  <data name="Picker_Path_Yes_X" xml:space="preserve">
+    <value>Path x \ Yes</value>
+  </data>
+  <data name="Picker_Path_Yes_Y" xml:space="preserve">
+    <value>Path y \ Yes</value>
+  </data>
+  <data name="RecoverAccount_Button_BackToLogin" xml:space="preserve">
+    <value>Back to Login</value>
+  </data>
+  <data name="RecoverAccount_Button_Confirm" xml:space="preserve">
+    <value>Confirm</value>
+  </data>
+  <data name="RecoverAccount_Button_SendEmail" xml:space="preserve">
+    <value>Send Email</value>
+  </data>
+  <data name="RecoverAccount_Label_EnterEmail" xml:space="preserve">
+    <value>Please provide the email associated to your account.</value>
+  </data>
+  <data name="RecoverAccount_Label_EnterToken" xml:space="preserve">
+    <value>We’ve sent you a verification token. Please enter it below.</value>
+  </data>
+  <data name="RecoverAccount_Label_Instructions" xml:space="preserve">
+    <value>A mail will be sent to your email box with instructions to change the password.</value>
+  </data>
+  <data name="RecoverAccount_Placeholder_Email" xml:space="preserve">
+    <value>ISEP E-mail</value>
+  </data>
+  <data name="RecoverAccount_Placeholder_Token" xml:space="preserve">
+    <value>Verification token</value>
+  </data>
+  <data name="RecoverAccount_Title" xml:space="preserve">
+    <value>Recover Account</value>
+  </data>
+  <data name="RecoverPassword_Button_BackToLogin" xml:space="preserve">
+    <value>Back to Login</value>
+  </data>
+  <data name="RecoverPassword_Button_Change" xml:space="preserve">
+    <value>Change Password</value>
+  </data>
+  <data name="RecoverPassword_Label_CreateNew" xml:space="preserve">
+    <value>Create a New Password</value>
+  </data>
+  <data name="RecoverPassword_Label_Header" xml:space="preserve">
+    <value>Password Recovery</value>
+  </data>
+  <data name="RecoverPassword_MismatchMessage" xml:space="preserve">
+    <value>Passwords don’t match!</value>
+  </data>
+  <data name="RecoverPassword_Placeholder_Confirm" xml:space="preserve">
+    <value>Confirm Password</value>
+  </data>
+  <data name="RecoverPassword_Placeholder_New" xml:space="preserve">
+    <value> New Password</value>
+  </data>
+  <data name="RecoverPassword_Title" xml:space="preserve">
+    <value>Password Recovery</value>
+  </data>
+  <data name="RegisterPage_Button_AlreadyHave" xml:space="preserve">
+    <value>Already have an account? Login</value>
+  </data>
+  <data name="RegisterPage_Button_Register" xml:space="preserve">
+    <value>Register</value>
+  </data>
+  <data name="RegisterPage_Label_Header" xml:space="preserve">
+    <value>Register</value>
+  </data>
+  <data name="RegisterPage_Picker_LimitationTitle" xml:space="preserve">
+    <value>Select physical limitation</value>
+  </data>
+  <data name="RegisterPage_Placeholder_Email" xml:space="preserve">
+    <value>Enter your ISEP E-mail</value>
+  </data>
+  <data name="RegisterPage_Placeholder_Name" xml:space="preserve">
+    <value>Enter your full name</value>
+  </data>
+  <data name="RegisterPage_Placeholder_Password" xml:space="preserve">
+    <value>Enter password</value>
+  </data>
+</root>

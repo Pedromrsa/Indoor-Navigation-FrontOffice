@@ -18,7 +18,7 @@ namespace IndoorMappingApp
 #if DEBUG
     		builder.Logging.AddDebug();
 #endif
-
+            builder.Services.AddSingleton(LocalizationResourceManager.Instance);
             return builder.Build();
         }
     }
