@@ -33,7 +33,7 @@ namespace IndoorMappingApp
                     Description = "Check the app today for new updates.",
                     Schedule = new NotificationRequestSchedule
                     {
-                        NotifyTime = DateTime.Now.AddSeconds(30), // Set to 9 AM today or tomorrow
+                        NotifyTime = DateTime.Now.AddSeconds(30),
                         RepeatType = NotificationRepeat.Daily
                     }
                 };

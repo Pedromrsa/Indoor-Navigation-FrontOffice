@@ -1,5 +1,0 @@
-images\burguer_menu;images\burguer_menu
-images\dotnet_bot;images\dotnet_bot
-images\mapa_isep;images\mapa_isep
-raw\aboutassets;raw\AboutAssets
-raw\mapa_isep;raw\mapa_isep

@@ -1,1 +1,0 @@
-C:\Catarina\GitHub\Indoor-Navigation-FrontOffice\App\IndoorMappingApp\IndoorMappingApp.csproj;x64
