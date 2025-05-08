@@ -159,8 +159,17 @@
   <data name="Entry_Password_Placeholder" xml:space="preserve">
     <value>Password</value>
   </data>
+  <data name="Error" xml:space="preserve">
+    <value>Error</value>
+  </data>
+  <data name="Feedback" xml:space="preserve">
+    <value>Feedback</value>
+  </data>
   <data name="FeedbackOptions_Title" xml:space="preserve">
     <value>Feedback Options</value>
+  </data>
+  <data name="FeedbackSubmitted" xml:space="preserve">
+    <value>Feedback Summited</value>
   </data>
   <data name="Label_ChooseDestination" xml:space="preserve">
     <value>Choose a destination:</value>
@@ -191,6 +200,9 @@
   </data>
   <data name="Label_PhysicalLimitation" xml:space="preserve">
     <value>Physical Limitation</value>
+  </data>
+  <data name="LimitationPicker" xml:space="preserve">
+    <value>Select a Limitation</value>
   </data>
   <data name="LoginPage_Label_Login" xml:space="preserve">
     <value>Login</value>
@@ -228,20 +240,38 @@
   <data name="MenuPage_Button_TryAsGuest" xml:space="preserve">
     <value>Try as Guest</value>
   </data>
+  <data name="None" xml:space="preserve">
+    <value>None</value>
+  </data>
   <data name="Notification" xml:space="preserve">
     <value>Daily Reminder Notification</value>
+  </data>
+  <data name="Option1" xml:space="preserve">
+    <value>Option 1</value>
   </data>
   <data name="Option1_Text" xml:space="preserve">
     <value>The path x seems very optimal.</value>
   </data>
+  <data name="Option2" xml:space="preserve">
+    <value>Option 2</value>
+  </data>
   <data name="Option2_Text" xml:space="preserve">
     <value>The path x is always full of people.</value>
+  </data>
+  <data name="Option3" xml:space="preserve">
+    <value>Option 3</value>
   </data>
   <data name="Option3_Text" xml:space="preserve">
     <value>This app is too slow to work on a daily basis.</value>
   </data>
+  <data name="Option4" xml:space="preserve">
+    <value>Option 4</value>
+  </data>
   <data name="Option4_Text" xml:space="preserve">
     <value>The neurolink is not working properly.</value>
+  </data>
+  <data name="Option5" xml:space="preserve">
+    <value>Option 5</value>
   </data>
   <data name="Option5_Text" xml:space="preserve">
     <value> My position on the map is inaccurate.</value>
@@ -260,6 +290,9 @@
   </data>
   <data name="Options_PathProblems" xml:space="preserve">
     <value>Path Problems? Share them.</value>
+  </data>
+  <data name="Paraplegic" xml:space="preserve">
+    <value>Paraplegic</value>
   </data>
   <data name="PathProblems_Button_SendWarning" xml:space="preserve">
     <value>Send warning</value>
@@ -428,6 +461,21 @@
   </data>
   <data name="Request_Failed" xml:space="preserve">
     <value>Request Failure</value>
+  </data>
+  <data name="SelectLanguage" xml:space="preserve">
+    <value>Select Language</value>
+  </data>
+  <data name="SettingsFailed" xml:space="preserve">
+    <value>Update Failed.</value>
+  </data>
+  <data name="SettingsSucess" xml:space="preserve">
+    <value>Settings updated successfully.</value>
+  </data>
+  <data name="Success" xml:space="preserve">
+    <value>Success</value>
+  </data>
+  <data name="Tetraplegic" xml:space="preserve">
+    <value>Tetraplegic</value>
   </data>
   <data name="ValidationError_Email" xml:space="preserve">
     <value>Please enter your email or recheck its format.</value>

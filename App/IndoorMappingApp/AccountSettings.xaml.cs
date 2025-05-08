@@ -13,6 +13,8 @@ public partial class AccountSettings : ContentPage
 
     private async void OnSaveChangesClicked(object sender, EventArgs e)
     {
+        var lrm = LocalizationResourceManager.Instance;
+
         string newPassword = NewPasswordEntry.Text;
         string confirmPassword = ConfirmPasswordEntry.Text;
 
@@ -21,7 +23,11 @@ public partial class AccountSettings : ContentPage
         {
             if (newPassword != confirmPassword)
             {
-                await DisplayAlert("Validation Error", "Passwords do not match.", "OK");
+                //await DisplayAlert("Validation Error", "Passwords do not match.", "OK");
+                await DisplayAlert(
+                    lrm["ValidationError_Title"],
+                    lrm["RecoverPassword_MismatchMessage"],
+                    lrm["Button_OK"]);
                 return;
             }
         }
@@ -46,11 +52,21 @@ public partial class AccountSettings : ContentPage
 
         if (result != null && result.Success)
         {
-            await DisplayAlert("Success", result.Message ?? "Settings updated successfully.", "OK");
+            //await DisplayAlert("Success", result.Message ?? "Settings updated successfully.", "OK");
+            await DisplayAlert(
+                    lrm["Registration_Success_Title"],
+                    lrm["SettingsSucess"],
+                    lrm["Button_OK"]);
+            return;
         }
         else
         {
-            await DisplayAlert("Error", result?.Message ?? "Update failed", "OK");
+            //await DisplayAlert("Error", result?.Message ?? "Update failed", "OK");
+            await DisplayAlert(
+                    lrm["Error"],
+                    lrm["SettingsFailed"],
+                    lrm["Button_OK"]);
+            return;
         }
     }
 }

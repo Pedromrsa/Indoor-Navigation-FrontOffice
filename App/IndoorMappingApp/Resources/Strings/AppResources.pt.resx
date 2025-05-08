@@ -159,8 +159,17 @@
   <data name="Entry_Password_Placeholder" xml:space="preserve">
     <value>Palavra-passe</value>
   </data>
+  <data name="Error" xml:space="preserve">
+    <value>Erro</value>
+  </data>
+  <data name="Feedback" xml:space="preserve">
+    <value>Opinião</value>
+  </data>
   <data name="FeedbackOptions_Title" xml:space="preserve">
     <value>Opções de Feedback</value>
+  </data>
+  <data name="FeedbackSubmitted" xml:space="preserve">
+    <value>Opinião submetida</value>
   </data>
   <data name="Label_ChooseDestination" xml:space="preserve">
     <value>Escolhe um destino:</value>
@@ -191,6 +200,9 @@
   </data>
   <data name="Label_PhysicalLimitation" xml:space="preserve">
     <value>Limitação Física</value>
+  </data>
+  <data name="LimitationPicker" xml:space="preserve">
+    <value>Selecione a limitação</value>
   </data>
   <data name="LoginPage_Label_Login" xml:space="preserve">
     <value>Iniciar Sessão</value>
@@ -228,20 +240,38 @@
   <data name="MenuPage_Button_TryAsGuest" xml:space="preserve">
     <value>Experimentar como Convidado</value>
   </data>
+  <data name="None" xml:space="preserve">
+    <value>Nenhuma</value>
+  </data>
   <data name="Notification" xml:space="preserve">
     <value>Notificação de lembrete diário</value>
+  </data>
+  <data name="Option1" xml:space="preserve">
+    <value>Opção 1</value>
   </data>
   <data name="Option1_Text" xml:space="preserve">
     <value>O percurso x parece muito otimizado.</value>
   </data>
+  <data name="Option2" xml:space="preserve">
+    <value>Opção 2</value>
+  </data>
   <data name="Option2_Text" xml:space="preserve">
     <value>O percurso x está sempre cheio de pessoas.</value>
+  </data>
+  <data name="Option3" xml:space="preserve">
+    <value>Opção 3</value>
   </data>
   <data name="Option3_Text" xml:space="preserve">
     <value>Esta app é demasiado lenta para uso diário.</value>
   </data>
+  <data name="Option4" xml:space="preserve">
+    <value>Opção 4</value>
+  </data>
   <data name="Option4_Text" xml:space="preserve">
     <value>O neurolink não está a funcionar corretamente.</value>
+  </data>
+  <data name="Option5" xml:space="preserve">
+    <value>Opção 5</value>
   </data>
   <data name="Option5_Text" xml:space="preserve">
     <value>A minha posição no mapa está incorreta.</value>
@@ -260,6 +290,9 @@
   </data>
   <data name="Options_PathProblems" xml:space="preserve">
     <value>Problemas no Percurso? Partilhe-os.</value>
+  </data>
+  <data name="Paraplegic" xml:space="preserve">
+    <value>Paraplegico</value>
   </data>
   <data name="PathProblems_Button_SendWarning" xml:space="preserve">
     <value>Enviar alerta</value>
@@ -428,6 +461,21 @@
   </data>
   <data name="Request_Failed" xml:space="preserve">
     <value>Pedido falhado</value>
+  </data>
+  <data name="SelectLanguage" xml:space="preserve">
+    <value>Seleciona a linguagem</value>
+  </data>
+  <data name="SettingsFailed" xml:space="preserve">
+    <value>Atualização falhada.</value>
+  </data>
+  <data name="SettingsSucess" xml:space="preserve">
+    <value>Definições atualizadas com sucesso.</value>
+  </data>
+  <data name="Success" xml:space="preserve">
+    <value>Sucesso</value>
+  </data>
+  <data name="Tetraplegic" xml:space="preserve">
+    <value>Tetraplegico</value>
   </data>
   <data name="ValidationError_Email" xml:space="preserve">
     <value>Por favor coloque o email ou verifique o formato deste.</value>

@@ -9,16 +9,23 @@ public partial class FeedbackOptionsPage : ContentPage
 
     private void OnSendFeedbackClicked(object sender, EventArgs e)
     {
+        var lrm = LocalizationResourceManager.Instance;
+
         var selectedFeedback = new List<string>();
 
-        if (Option1.IsChecked) selectedFeedback.Add("The path x seems very optimal.");
-        if (Option2.IsChecked) selectedFeedback.Add("The path x is always full of people.");
-        if (Option3.IsChecked) selectedFeedback.Add("This app is too slow to work on a daily basis.");
-        if (Option4.IsChecked) selectedFeedback.Add("The neurolinc is not working properly.");
-        if (Option5.IsChecked) selectedFeedback.Add("My position on the map is inaccurate.");
+        if (Option1.IsChecked) selectedFeedback.Add(lrm["Option1_Text"]);
+        if (Option2.IsChecked) selectedFeedback.Add((lrm["Option2_Text"]));
+        if (Option3.IsChecked) selectedFeedback.Add((lrm["Option3_Text"]));
+        if (Option4.IsChecked) selectedFeedback.Add((lrm["Option4_Text"]));
+        if (Option5.IsChecked) selectedFeedback.Add((lrm["Option5_Text"]));
 
         string result = string.Join("\n", selectedFeedback);
-        DisplayAlert("Feedback Submitted", result, "OK");
+        //DisplayAlert("Feedback Submitted", result, "OK");
+        DisplayAlert(
+                    lrm["Feedback"],
+                    lrm["FeedbackSubmitted"],
+                    lrm["Button_OK"]);
+
     }
 
 }

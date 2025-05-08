@@ -1,46 +1,54 @@
-<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="IndoorMappingApp.FeedbackOptionsPage"
-             BackgroundColor="White">
+<ContentPage
+    x:Class="IndoorMappingApp.FeedbackOptionsPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:helpers="clr-namespace:IndoorMappingApp.Helpers"
+    BackgroundColor="White">
 
     <Grid RowDefinitions="Auto,*">
 
-        <!-- Top Bar -->
-        <Grid BackgroundColor="Red" HeightRequest="50" Padding="0" RowSpacing="0">
+        <!--  Top Bar  -->
+        <Grid
+            Padding="0"
+            BackgroundColor="Red"
+            HeightRequest="50"
+            RowSpacing="0">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="*" />
                 <ColumnDefinition Width="Auto" />
             </Grid.ColumnDefinitions>
 
-            <Label Text="Project Logo"
-                   VerticalOptions="Center"
-                   TextColor="White"
-                   FontAttributes="Bold"
-                   Margin="10,0" />
+            <Label
+                Margin="10,0"
+                FontAttributes="Bold"
+                Text="{helpers:Translate PathProblems_ProjectLogo}"
+                TextColor="White"
+                VerticalOptions="Center" />
 
-            <ImageButton Source="burguer_menu.png"
-                         BackgroundColor="Transparent"
-                         Grid.Column="1"
-                         HorizontalOptions="End"
-                         VerticalOptions="Center"
-                         Margin="10,0"
-                         HeightRequest="24"
-                         WidthRequest="24" />
+            <ImageButton
+                Grid.Column="1"
+                Margin="10,0"
+                BackgroundColor="Transparent"
+                HeightRequest="24"
+                HorizontalOptions="End"
+                Source="burguer_menu.png"
+                VerticalOptions="Center"
+                WidthRequest="24" />
         </Grid>
 
-        <!-- Scrollable Content -->
+        <!--  Scrollable Content  -->
         <ScrollView Grid.Row="1">
-            <VerticalStackLayout Spacing="20" Padding="20">
+            <VerticalStackLayout Padding="20" Spacing="20">
 
-                <!-- ISEP Number Label -->
-                <Label Text="ISEP Number"
-                       FontSize="16"
-                       TextColor="Black" />
+                <!--  ISEP Number Label  -->
+                <Label
+                    FontSize="16"
+                    Text="{helpers:Translate Label_IsepNumber_Feedback}"
+                    TextColor="Black" />
 
-                <!-- Picker -->
-                <Label Text="Is this message related to any path?" />
-                <Picker x:Name="PathPicker"
-                        Title="Select your option">
+                <!--  Picker  -->
+                <Label Text="{helpers:Translate Label_PathRelated}" />
+                <Picker x:Name="PathPicker" Title="{helpers:Translate Picker_Path_Title}">
                     <Picker.ItemsSource>
                         <x:Array Type="{x:Type x:String}">
                             <x:String>No</x:String>
@@ -50,44 +58,45 @@
                     </Picker.ItemsSource>
                 </Picker>
 
-                <!-- Feedback Options -->
-                <Label Text="Feedback" />
+                <!--  Feedback Options  -->
+                <Label Text="{helpers:Translate Picker_Path_Title}" />
 
                 <VerticalStackLayout Padding="10" BackgroundColor="White">
                     <HorizontalStackLayout>
                         <CheckBox x:Name="Option1" />
-                        <Label Text="The path x seems very optimal." VerticalOptions="Center" />
+                        <Label Text="{helpers:Translate Option1_Text}" VerticalOptions="Center" />
                     </HorizontalStackLayout>
 
                     <HorizontalStackLayout>
                         <CheckBox x:Name="Option2" />
-                        <Label Text="The path x is always full of people." VerticalOptions="Center" />
+                        <Label Text="{helpers:Translate Option2_Text}" VerticalOptions="Center" />
                     </HorizontalStackLayout>
 
                     <HorizontalStackLayout>
                         <CheckBox x:Name="Option3" />
-                        <Label Text="This app is too slow to work on a daily basis." VerticalOptions="Center" />
+                        <Label Text="{helpers:Translate Option3_Text}" VerticalOptions="Center" />
                     </HorizontalStackLayout>
 
                     <HorizontalStackLayout>
                         <CheckBox x:Name="Option4" />
-                        <Label Text="The neurolinc is not working properly." VerticalOptions="Center" />
+                        <Label Text="{helpers:Translate Option4_Text}" VerticalOptions="Center" />
                     </HorizontalStackLayout>
 
                     <HorizontalStackLayout>
                         <CheckBox x:Name="Option5" />
-                        <Label Text="My position on the map is inaccurate." VerticalOptions="Center" />
+                        <Label Text="{helpers:Translate Option5_Text}" VerticalOptions="Center" />
                     </HorizontalStackLayout>
                 </VerticalStackLayout>
 
-                <!-- Send Button -->
-                <Button Text="Send Feedback"
-                        BackgroundColor="Red"
-                        TextColor="White"
-                        CornerRadius="10"
-                        HorizontalOptions="Center"
-                        WidthRequest="200"
-                        Clicked="OnSendFeedbackClicked" />
+                <!--  Send Button  -->
+                <Button
+                    BackgroundColor="Red"
+                    Clicked="OnSendFeedbackClicked"
+                    CornerRadius="10"
+                    HorizontalOptions="Center"
+                    Text="{helpers:Translate Button_SendFeedback}"
+                    TextColor="White"
+                    WidthRequest="200" />
 
             </VerticalStackLayout>
         </ScrollView>

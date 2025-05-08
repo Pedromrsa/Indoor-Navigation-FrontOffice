@@ -1,35 +1,39 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="IndoorMappingApp.AccountSettings"
-             Title="AccountSettings">
+<ContentPage
+    x:Class="IndoorMappingApp.AccountSettings"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:helpers="clr-namespace:IndoorMappingApp.Helpers"
+    Title="{helpers:Translate Options_AccountSettings}">
     <VerticalStackLayout Padding="0">
 
-        <!-- Content Form -->
+        <!--  Content Form  -->
         <ScrollView>
             <VerticalStackLayout Padding="20" Spacing="20">
 
-                <!-- ISEP Number Label -->
-                <Label Text="ISEP Number" FontSize="14" />
+                <!--  ISEP Number Label  -->
+                <Label FontSize="14" Text="{helpers:Translate Label_IsepNumber_Feedback}" />
 
-                <!-- New Password -->
-                <Label Text="New Password" FontSize="14" />
-                <Entry x:Name="NewPasswordEntry"
-                        IsPassword="True"
-                        Placeholder="***********"
-                        FontSize="14"/>
+                <!--  New Password  -->
+                <Label FontSize="14" Text="{helpers:Translate Entry_Password_Placeholder}" />
+                <Entry
+                    x:Name="NewPasswordEntry"
+                    FontSize="14"
+                    IsPassword="True"
+                    Placeholder="***********" />
 
-                <!-- Confirm Password -->
-                <Label Text="Confirm Password" FontSize="14" />
-                <Entry x:Name="ConfirmPasswordEntry"
-                        IsPassword="True"
-                        Placeholder=""
-                        FontSize="14"
-                        BackgroundColor="White"/>
+                <!--  Confirm Password  -->
+                <Label FontSize="14" Text="{helpers:Translate RecoverPassword_Placeholder_Confirm}" />
+                <Entry
+                    x:Name="ConfirmPasswordEntry"
+                    BackgroundColor="White"
+                    FontSize="14"
+                    IsPassword="True"
+                    Placeholder="" />
 
-                <!-- Physical Limitation Dropdown -->
-                <Label Text="Physical Limitation" FontSize="14" />
-                <Picker x:Name="LimitationPicker" Title="Select Limitation">
+                <!--  Physical Limitation Dropdown  -->
+                <Label FontSize="14" Text="{helpers:Translate Label_PhysicalLimitation}" />
+                <Picker x:Name="LimitationPicker" Title="{helpers:Translate LimitationPicker}">
                     <Picker.Items>
                         <x:String>None</x:String>
                         <x:String>Paraplegic</x:String>
@@ -37,22 +41,23 @@
                     </Picker.Items>
                 </Picker>
 
-                <!-- Language Dropdown -->
-                <Label Text="Language" FontSize="14" />
-                <Picker x:Name="LanguagePicker" Title="Select Language">
+                <!--  Language Dropdown  -->
+                <Label FontSize="14" Text="{helpers:Translate Label_Language}" />
+                <Picker x:Name="LanguagePicker" Title="{helpers:Translate SelectLanguage}">
                     <Picker.Items>
                         <x:String>English</x:String>
                         <x:String>Portuguese</x:String>
                     </Picker.Items>
                 </Picker>
 
-                <!-- Save Changes Button -->
-                <Button Text="Save Changes"
-                        BackgroundColor="Red"
-                        TextColor="White"
-                        CornerRadius="6"
-                        HeightRequest="50" 
-                        Clicked="OnSaveChangesClicked" />
+                <!--  Save Changes Button  -->
+                <Button
+                    BackgroundColor="Red"
+                    Clicked="OnSaveChangesClicked"
+                    CornerRadius="6"
+                    HeightRequest="50"
+                    Text="{helpers:Translate Button_SaveChanges}"
+                    TextColor="White" />
             </VerticalStackLayout>
         </ScrollView>
     </VerticalStackLayout>

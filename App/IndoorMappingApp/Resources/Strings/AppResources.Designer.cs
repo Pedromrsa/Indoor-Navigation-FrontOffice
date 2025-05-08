@@ -187,11 +187,38 @@ namespace IndoorMappingApp.Resources.Strings {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Error.
+        /// </summary>
+        internal static string Error {
+            get {
+                return ResourceManager.GetString("Error", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Feedback.
+        /// </summary>
+        internal static string Feedback {
+            get {
+                return ResourceManager.GetString("Feedback", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Feedback Options.
         /// </summary>
         internal static string FeedbackOptions_Title {
             get {
                 return ResourceManager.GetString("FeedbackOptions_Title", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Feedback Summited.
+        /// </summary>
+        internal static string FeedbackSubmitted {
+            get {
+                return ResourceManager.GetString("FeedbackSubmitted", resourceCulture);
             }
         }
         
@@ -282,6 +309,15 @@ namespace IndoorMappingApp.Resources.Strings {
         internal static string Label_PhysicalLimitation {
             get {
                 return ResourceManager.GetString("Label_PhysicalLimitation", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Select a Limitation.
+        /// </summary>
+        internal static string LimitationPicker {
+            get {
+                return ResourceManager.GetString("LimitationPicker", resourceCulture);
             }
         }
         
@@ -394,11 +430,29 @@ namespace IndoorMappingApp.Resources.Strings {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to None.
+        /// </summary>
+        internal static string None {
+            get {
+                return ResourceManager.GetString("None", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Daily Reminder Notification.
         /// </summary>
         internal static string Notification {
             get {
                 return ResourceManager.GetString("Notification", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Option 1.
+        /// </summary>
+        internal static string Option1 {
+            get {
+                return ResourceManager.GetString("Option1", resourceCulture);
             }
         }
         
@@ -412,11 +466,29 @@ namespace IndoorMappingApp.Resources.Strings {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Option 2.
+        /// </summary>
+        internal static string Option2 {
+            get {
+                return ResourceManager.GetString("Option2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to The path x is always full of people..
         /// </summary>
         internal static string Option2_Text {
             get {
                 return ResourceManager.GetString("Option2_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Option 3.
+        /// </summary>
+        internal static string Option3 {
+            get {
+                return ResourceManager.GetString("Option3", resourceCulture);
             }
         }
         
@@ -430,11 +502,29 @@ namespace IndoorMappingApp.Resources.Strings {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Option 4.
+        /// </summary>
+        internal static string Option4 {
+            get {
+                return ResourceManager.GetString("Option4", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to The neurolink is not working properly..
         /// </summary>
         internal static string Option4_Text {
             get {
                 return ResourceManager.GetString("Option4_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Option 5.
+        /// </summary>
+        internal static string Option5 {
+            get {
+                return ResourceManager.GetString("Option5", resourceCulture);
             }
         }
         
@@ -489,6 +579,15 @@ namespace IndoorMappingApp.Resources.Strings {
         internal static string OptionsPage_Title {
             get {
                 return ResourceManager.GetString("OptionsPage_Title", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Paraplegic.
+        /// </summary>
+        internal static string Paraplegic {
+            get {
+                return ResourceManager.GetString("Paraplegic", resourceCulture);
             }
         }
         
@@ -993,6 +1092,51 @@ namespace IndoorMappingApp.Resources.Strings {
         internal static string Request_Failed {
             get {
                 return ResourceManager.GetString("Request_Failed", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Select Language.
+        /// </summary>
+        internal static string SelectLanguage {
+            get {
+                return ResourceManager.GetString("SelectLanguage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Update Failed..
+        /// </summary>
+        internal static string SettingsFailed {
+            get {
+                return ResourceManager.GetString("SettingsFailed", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Settings updated successfully..
+        /// </summary>
+        internal static string SettingsSucess {
+            get {
+                return ResourceManager.GetString("SettingsSucess", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Success.
+        /// </summary>
+        internal static string Success {
+            get {
+                return ResourceManager.GetString("Success", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Tetraplegic.
+        /// </summary>
+        internal static string Tetraplegic {
+            get {
+                return ResourceManager.GetString("Tetraplegic", resourceCulture);
             }
         }
         
