@@ -56,12 +56,18 @@ public partial class MainMenuPage : ContentPage, IQueryAttributable
     
     private async Task MostrarCaminhoParaDestino(long destinoId)
     {
+        var lrm = LocalizationResourceManager.Instance;
+
         var api = new IndoorApiService();
         var resultado = await api.ObterMelhorCaminhoAsync(destinoId);
 
         if (resultado == null || resultado.InfraestruturasIds == null || !resultado.InfraestruturasIds.Any())
         {
-            await DisplayAlert("Erro", "Não foi possível obter o caminho.", "OK");
+            //await DisplayAlert("Erro", "Não foi possível obter o caminho.", "OK");
+            await DisplayAlert(
+                    lrm["Registration_Failure_Title"],
+                    lrm["Path_Message"],
+                    lrm["Button_OK"]);
             return;
         }
 

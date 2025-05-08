@@ -493,6 +493,15 @@ namespace IndoorMappingApp.Resources.Strings {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to It was not possible to obtain a path..
+        /// </summary>
+        internal static string Path_Message {
+            get {
+                return ResourceManager.GetString("Path_Message", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Send warning.
         /// </summary>
         internal static string PathProblems_Button_SendWarning {

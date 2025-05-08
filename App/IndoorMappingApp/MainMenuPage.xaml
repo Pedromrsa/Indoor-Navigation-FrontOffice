@@ -1,51 +1,61 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="IndoorMappingApp.MainMenuPage"
-             Title="MainMenuPage"
-             BackgroundColor="White">
+<ContentPage
+    x:Class="IndoorMappingApp.MainMenuPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:helpers="clr-namespace:IndoorMappingApp.Helpers"
+    Title="{helpers:Translate MainMenuPage_Title}"
+    BackgroundColor="White">
     <ScrollView>
-        <VerticalStackLayout Padding="20" Spacing="30" HorizontalOptions="Center">
+        <VerticalStackLayout
+            Padding="20"
+            HorizontalOptions="Center"
+            Spacing="30">
 
-            <!-- Mapa de fundo -->
+            <!--  Mapa de fundo  -->
             <Image
                 x:Name="ImagemMapa"
-                Source="mapa_isep.png"
-                Aspect="AspectFit"
                 AbsoluteLayout.LayoutBounds="0,0,1,1"
-                AbsoluteLayout.LayoutFlags="All" />
-            
-            <Label x:Name="PercursoLabel"
-               FontSize="14"
-               TextColor="Black"
-               Margin="10"
-               LineBreakMode="WordWrap" />
+                AbsoluteLayout.LayoutFlags="All"
+                Aspect="AspectFit"
+                Source="mapa_isep.png" />
 
-            <Button Text="Available Routes"
-                    Clicked="OnRoutesClicked"
-                    HorizontalOptions="Fill" />
+            <Label
+                x:Name="PercursoLabel"
+                Margin="10"
+                FontSize="14"
+                LineBreakMode="WordWrap"
+                TextColor="Black" />
 
-            <!-- Botão só visível se for utilizador registado -->
-            <Button Text="Options"
-                    x:Name="OptionsButton"
-                    Clicked="OnOptionsClicked"
-                    HorizontalOptions="Fill"
-                    IsVisible="False" />
+            <Button
+                Clicked="OnRoutesClicked"
+                HorizontalOptions="Fill"
+                Text="{helpers:Translate Button_AvailableRoutes}" />
 
-            <!-- Botões de destino -->
-            <Label Text="Escolhe um destino:" FontAttributes="Bold" />
+            <!--  Botão só visível se for utilizador registado  -->
+            <Button
+                x:Name="OptionsButton"
+                Clicked="OnOptionsClicked"
+                HorizontalOptions="Fill"
+                IsVisible="False"
+                Text="{helpers:Translate Button_Options}" />
 
-            <Button Text="B304"
-            Clicked="OnB304Clicked"
-            BackgroundColor="DodgerBlue"
-            HorizontalOptions="Fill"
-            TextColor="White" />
+            <!--  Botões de destino  -->
+            <Label FontAttributes="Bold" Text="{helpers:Translate Label_ChooseDestination}" />
 
-            <Button Text="B404"
-            Clicked="OnB404Clicked"
-            BackgroundColor="DodgerBlue"
-            HorizontalOptions="Fill"
-            TextColor="White" />
+            <Button
+                BackgroundColor="DodgerBlue"
+                Clicked="OnB304Clicked"
+                HorizontalOptions="Fill"
+                Text="B304"
+                TextColor="White" />
+
+            <Button
+                BackgroundColor="DodgerBlue"
+                Clicked="OnB404Clicked"
+                HorizontalOptions="Fill"
+                Text="B404"
+                TextColor="White" />
 
 
         </VerticalStackLayout>

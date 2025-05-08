@@ -297,6 +297,9 @@
   <data name="PathProblems_WhatPathQuestion" xml:space="preserve">
     <value>What path has the problem?</value>
   </data>
+  <data name="Path_Message" xml:space="preserve">
+    <value>It was not possible to obtain a path.</value>
+  </data>
   <data name="Picker_Language_English" xml:space="preserve">
     <value>English</value>
   </data>
