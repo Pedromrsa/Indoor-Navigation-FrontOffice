@@ -13,6 +13,8 @@ public partial class RecoverPasswordPage : ContentPage
 
     async void OnChangePasswordButtonClicked(object sender, EventArgs e)
     {
+        var lrm = LocalizationResourceManager.Instance;
+
         var apiService = new IndoorApiService();
         bool isValidToken = await apiService.ResetPasswordAsync(Token, passwordEntry.Text);
 
@@ -30,17 +32,20 @@ public partial class RecoverPasswordPage : ContentPage
 
     private void ConfirmPasswordEntry_TextChanged(object sender, TextChangedEventArgs e)
     {
+        var lrm = LocalizationResourceManager.Instance;
         if (!string.IsNullOrEmpty(confirmPasswordEntry.Text))
         {
             if (passwordEntry.Text == confirmPasswordEntry.Text)
             {
-                matchLabel.Text = "Passwords match!";
+                //matchLabel.Text = "Passwords match!";
+                matchLabel.Text = lrm["RecoverPassword_MatchMessage"];
                 matchLabel.TextColor = Colors.Green;
                 changePasswordButton.IsEnabled = true;
             }
             else
             {
-                matchLabel.Text = "Passwords don't match!";
+                //matchLabel.Text = "Passwords don't match!";
+                matchLabel.Text = lrm["RecoverPassword_MismatchMessage"];
                 matchLabel.TextColor = Colors.Red;
                 changePasswordButton.IsEnabled = false;
             }

@@ -357,6 +357,9 @@
   <data name="RecoverPassword_Label_Header" xml:space="preserve">
     <value>Password Recovery</value>
   </data>
+  <data name="RecoverPassword_MatchMessage" xml:space="preserve">
+    <value>Passwords match!</value>
+  </data>
   <data name="RecoverPassword_MismatchMessage" xml:space="preserve">
     <value>Passwords don’t match!</value>
   </data>

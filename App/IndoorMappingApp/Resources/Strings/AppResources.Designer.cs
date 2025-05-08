@@ -790,6 +790,15 @@ namespace IndoorMappingApp.Resources.Strings {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Passwords match!.
+        /// </summary>
+        internal static string RecoverPassword_MatchMessage {
+            get {
+                return ResourceManager.GetString("RecoverPassword_MatchMessage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Passwords don’t match!.
         /// </summary>
         internal static string RecoverPassword_MismatchMessage {
