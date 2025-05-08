@@ -18,7 +18,10 @@ namespace IndoorMappingApp
 
             MainPage = new AppShell();
 
+            Preferences.Clear(); // for demonstrating purposes
+
             ScheduleDailyReminder();
+            
         }
 
         public void ScheduleDailyReminder()

@@ -60,6 +60,8 @@ namespace IndoorMappingApp
             }
         }
 
+
+
         private void CancelDailyReminder()
         {
             LocalNotificationCenter.Current.Cancel(1000); // Cancel by ID

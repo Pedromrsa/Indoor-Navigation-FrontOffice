@@ -14,38 +14,44 @@
             <Grid>
                 <Button Text="Account Settings"
                         Clicked="OnAccountSettingsClicked"
-                        BackgroundColor="Transparent"
+                        BackgroundColor="LightGrey"
                         TextColor="Black"
-                        HorizontalOptions="Start"
+                        FontSize="16"
+                        HorizontalOptions="Fill"
                         Padding="0" />
             </Grid>
 
             <Button Text="Give Us Feedback"
                     Clicked="OnFeedbackClicked"
-                    BackgroundColor="Transparent"
+                    BackgroundColor="LightGrey"
                     TextColor="Black"
-                    HorizontalOptions="Start"
+                    FontSize="16"
+                    HorizontalOptions="Fill"
                     Padding="0" />
 
             <!-- Option with underline -->
             <Grid>
                 <Button Text="Path Problems? Share them"
                         Clicked="OnPathProblemsClicked"
-                        BackgroundColor="Transparent"
+                        BackgroundColor="LightGrey"
                         TextColor="Black"
-                        HorizontalOptions="Start"
+                        FontSize="16"
+                        HorizontalOptions="Fill"
                         Padding="0" />
             </Grid>
 
+            <HorizontalStackLayout VerticalOptions="Center" Spacing="10" >
+                <Button Text="Daily Reminder Notification" FontSize="16" TextColor="Black" BackgroundColor="LightGrey" VerticalOptions="Center"/>
+                <Switch x:Name="DailyReminderSwitch" Toggled="OnReminderToggled" VerticalOptions="Center" ThumbColor="Red"/>
+            </HorizontalStackLayout>
+
             <Button Text="Log Out"
                     Clicked="OnLogoutClicked"
-                    BackgroundColor="Transparent"
+                    BackgroundColor="LightGrey"
                     TextColor="Black"
-                    HorizontalOptions="Start"
+                    FontSize="16"
+                    HorizontalOptions="Fill"
                     Padding="0" />
-
-            <Label Text="Daily Reminder Notification" FontSize="14" />
-            <Switch x:Name="DailyReminderSwitch" Toggled="OnReminderToggled" />
 
         </StackLayout>
 
