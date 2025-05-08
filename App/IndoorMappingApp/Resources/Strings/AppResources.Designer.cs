@@ -115,6 +115,15 @@ namespace IndoorMappingApp.Resources.Strings {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Ok.
+        /// </summary>
+        internal static string Button_OK {
+            get {
+                return ResourceManager.GetString("Button_OK", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Options.
         /// </summary>
         internal static string Button_Options {
@@ -808,6 +817,33 @@ namespace IndoorMappingApp.Resources.Strings {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Normal.
+        /// </summary>
+        internal static string RegisterPage_Limitation_Normal {
+            get {
+                return ResourceManager.GetString("RegisterPage_Limitation_Normal", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Paraplegic.
+        /// </summary>
+        internal static string RegisterPage_Limitation_Paraplegic {
+            get {
+                return ResourceManager.GetString("RegisterPage_Limitation_Paraplegic", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Tetraplegic.
+        /// </summary>
+        internal static string RegisterPage_Limitation_Tetraplegic {
+            get {
+                return ResourceManager.GetString("RegisterPage_Limitation_Tetraplegic", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Select physical limitation.
         /// </summary>
         internal static string RegisterPage_Picker_LimitationTitle {
@@ -840,6 +876,60 @@ namespace IndoorMappingApp.Resources.Strings {
         internal static string RegisterPage_Placeholder_Password {
             get {
                 return ResourceManager.GetString("RegisterPage_Placeholder_Password", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Registration failed!.
+        /// </summary>
+        internal static string Registration_Failure_Message {
+            get {
+                return ResourceManager.GetString("Registration_Failure_Message", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Error!.
+        /// </summary>
+        internal static string Registration_Failure_Title {
+            get {
+                return ResourceManager.GetString("Registration_Failure_Title", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Registration complete!.
+        /// </summary>
+        internal static string Registration_Success_Message {
+            get {
+                return ResourceManager.GetString("Registration_Success_Message", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Sucess!.
+        /// </summary>
+        internal static string Registration_Success_Title {
+            get {
+                return ResourceManager.GetString("Registration_Success_Title", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Enter name.
+        /// </summary>
+        internal static string ValidationError_EnterName {
+            get {
+                return ResourceManager.GetString("ValidationError_EnterName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Validation Error.
+        /// </summary>
+        internal static string ValidationError_Title {
+            get {
+                return ResourceManager.GetString("ValidationError_Title", resourceCulture);
             }
         }
     }

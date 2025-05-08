@@ -1,20 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage
     x:Class="IndoorMappingApp.RegisterPage"
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:helpers="clr-namespace:IndoorMappingApp.Helpers"
     BackgroundColor="White">
 
-    <!--  1. Center container  -->
+    <!--  Center container  -->
     <Grid HorizontalOptions="Center" VerticalOptions="Center">
-
-        <!--  2. Grey box frame  -->
         <Frame
             Padding="20"
             BackgroundColor="#D3D3D3"
             BorderColor="Transparent"
             CornerRadius="0">
 
-            <!--  3. Inputs and labels  -->
             <VerticalStackLayout HorizontalOptions="CenterAndExpand" Spacing="17">
 
                 <!--  Page heading  -->
@@ -22,10 +21,10 @@
                     Margin="0,0,0,20"
                     FontSize="20"
                     HorizontalOptions="Center"
-                    Text="Register"
+                    Text="{helpers:Translate RegisterPage_Label_Header}"
                     TextColor="Black" />
 
-                <!--  Name  -->
+                <!--  Name entry  -->
                 <Frame
                     Padding="0"
                     BorderColor="Black"
@@ -36,13 +35,12 @@
                         x:Name="NameEntry"
                         Background="White"
                         FontSize="17"
-                        Placeholder="Enter your full name"
+                        Placeholder="{helpers:Translate RegisterPage_Placeholder_Name}"
                         PlaceholderColor="Black"
                         TextColor="Black" />
                 </Frame>
 
-
-                <!--  Email  -->
+                <!--  Email entry  -->
                 <Frame
                     Padding="0"
                     BorderColor="Black"
@@ -54,12 +52,12 @@
                         Background="White"
                         FontSize="17"
                         Keyboard="Email"
-                        Placeholder="Enter your ISEP E-mail"
+                        Placeholder="{helpers:Translate RegisterPage_Placeholder_Email}"
                         PlaceholderColor="Black"
                         TextColor="Black" />
                 </Frame>
 
-                <!--  Password  -->
+                <!--  Password entry  -->
                 <Frame
                     Padding="0"
                     BorderColor="Black"
@@ -71,12 +69,12 @@
                         Background="White"
                         FontSize="17"
                         IsPassword="True"
-                        Placeholder="Enter password"
+                        Placeholder="{helpers:Translate RegisterPage_Placeholder_Password}"
                         PlaceholderColor="Black"
                         TextColor="Black" />
                 </Frame>
 
-                <!--  Disability Picker  -->
+                <!--  Disability picker  -->
                 <Frame
                     Padding="0"
                     BorderColor="Black"
@@ -85,7 +83,7 @@
                     HorizontalOptions="FillAndExpand">
                     <Picker
                         x:Name="LimitationPicker"
-                        Title="Select physical limitation"
+                        Title="{helpers:Translate RegisterPage_Picker_LimitationTitle}"
                         BackgroundColor="White"
                         FontSize="17"
                         TextColor="Black"
@@ -99,11 +97,10 @@
                     Clicked="OnLoginClicked"
                     FontSize="17"
                     HorizontalOptions="Center"
-                    Text="Already have an account? Login"
+                    Text="{helpers:Translate RegisterPage_Button_AlreadyHave}"
                     TextColor="#2e52f3" />
 
-
-                <!--  5. Register button  -->
+                <!--  Register button  -->
                 <Button
                     x:Name="RegisterButton"
                     BackgroundColor="Red"
@@ -113,7 +110,7 @@
                     FontSize="16"
                     HorizontalOptions="FillAndExpand"
                     IsEnabled="False"
-                    Text="Register"
+                    Text="{helpers:Translate RegisterPage_Button_Register}"
                     TextColor="White" />
 
             </VerticalStackLayout>

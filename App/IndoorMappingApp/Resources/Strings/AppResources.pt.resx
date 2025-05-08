@@ -135,6 +135,9 @@
   <data name="Button_ForgotPassword" xml:space="preserve">
     <value>Esqueceu-se da Palavra-passe?</value>
   </data>
+  <data name="Button_OK" xml:space="preserve">
+    <value>Ok</value>
+  </data>
   <data name="Button_Options" xml:space="preserve">
     <value>Opções</value>
   </data>
@@ -366,6 +369,15 @@
   <data name="RegisterPage_Label_Header" xml:space="preserve">
     <value>Registar</value>
   </data>
+  <data name="RegisterPage_Limitation_Normal" xml:space="preserve">
+    <value>Normal</value>
+  </data>
+  <data name="RegisterPage_Limitation_Paraplegic" xml:space="preserve">
+    <value>Paraplégico</value>
+  </data>
+  <data name="RegisterPage_Limitation_Tetraplegic" xml:space="preserve">
+    <value>Tetraplégico</value>
+  </data>
   <data name="RegisterPage_Picker_LimitationTitle" xml:space="preserve">
     <value>Selecione a limitação física</value>
   </data>
@@ -377,5 +389,23 @@
   </data>
   <data name="RegisterPage_Placeholder_Password" xml:space="preserve">
     <value>Introduza a palavra-passe</value>
+  </data>
+  <data name="Registration_Failure_Message" xml:space="preserve">
+    <value>Registro falhou!</value>
+  </data>
+  <data name="Registration_Failure_Title" xml:space="preserve">
+    <value>Erro!</value>
+  </data>
+  <data name="Registration_Success_Message" xml:space="preserve">
+    <value>Registo completado!</value>
+  </data>
+  <data name="Registration_Success_Title" xml:space="preserve">
+    <value>Sucesso!</value>
+  </data>
+  <data name="ValidationError_EnterName" xml:space="preserve">
+    <value>Coloque nome</value>
+  </data>
+  <data name="ValidationError_Title" xml:space="preserve">
+    <value>Erro de validação</value>
   </data>
 </root>
