@@ -286,6 +286,33 @@ namespace IndoorMappingApp.Resources.Strings {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Login Error!.
+        /// </summary>
+        internal static string Login_Failure_Title {
+            get {
+                return ResourceManager.GetString("Login_Failure_Title", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Invalid Credentials.
+        /// </summary>
+        internal static string Login_Invalid_Credentials {
+            get {
+                return ResourceManager.GetString("Login_Invalid_Credentials", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Please enter both email and password..
+        /// </summary>
+        internal static string Login_Validation_Error {
+            get {
+                return ResourceManager.GetString("Login_Validation_Error", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Login.
         /// </summary>
         internal static string LoginPage_Label_Login {
@@ -718,7 +745,7 @@ namespace IndoorMappingApp.Resources.Strings {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Back to Login.
+        ///   Looks up a localized string similar to Forgot Password?.
         /// </summary>
         internal static string RecoverPassword_Button_BackToLogin {
             get {

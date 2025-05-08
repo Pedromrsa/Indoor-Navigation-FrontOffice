@@ -198,6 +198,15 @@
   <data name="LoginPage_Title" xml:space="preserve">
     <value>Iniciar Sessão</value>
   </data>
+  <data name="Login_Failure_Title" xml:space="preserve">
+    <value>Erro de Iniciar sessão!</value>
+  </data>
+  <data name="Login_Invalid_Credentials" xml:space="preserve">
+    <value>Credenciais inválidas</value>
+  </data>
+  <data name="Login_Validation_Error" xml:space="preserve">
+    <value>Por favor coloque o mail e a palavra-passe.</value>
+  </data>
   <data name="MainMenuPage_Label_RouteInfo" xml:space="preserve">
     <value>(e.g. “Percurso atual…”)</value>
   </data>
@@ -337,7 +346,7 @@
     <value>Recuperar Conta</value>
   </data>
   <data name="RecoverPassword_Button_BackToLogin" xml:space="preserve">
-    <value>Voltar ao Início de Sessão</value>
+    <value>Esqueceu da palavra-passe?</value>
   </data>
   <data name="RecoverPassword_Button_Change" xml:space="preserve">
     <value>Alterar Palavra-passe</value>

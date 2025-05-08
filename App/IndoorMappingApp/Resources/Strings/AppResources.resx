@@ -198,6 +198,15 @@
   <data name="LoginPage_Title" xml:space="preserve">
     <value>Login</value>
   </data>
+  <data name="Login_Failure_Title" xml:space="preserve">
+    <value>Login Error!</value>
+  </data>
+  <data name="Login_Invalid_Credentials" xml:space="preserve">
+    <value>Invalid Credentials</value>
+  </data>
+  <data name="Login_Validation_Error" xml:space="preserve">
+    <value>Please enter both email and password.</value>
+  </data>
   <data name="MainMenuPage_Label_RouteInfo" xml:space="preserve">
     <value> (e.g. “Current route…”)</value>
   </data>
@@ -337,7 +346,7 @@
     <value>Recover Account</value>
   </data>
   <data name="RecoverPassword_Button_BackToLogin" xml:space="preserve">
-    <value>Back to Login</value>
+    <value>Forgot Password?</value>
   </data>
   <data name="RecoverPassword_Button_Change" xml:space="preserve">
     <value>Change Password</value>
