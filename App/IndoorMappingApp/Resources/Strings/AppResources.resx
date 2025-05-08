@@ -328,7 +328,7 @@
     <value>Send Email</value>
   </data>
   <data name="RecoverAccount_Label_EnterEmail" xml:space="preserve">
-    <value>Please provide the email associated to your account.</value>
+    <value>The email provided does not have a registered account.</value>
   </data>
   <data name="RecoverAccount_Label_EnterToken" xml:space="preserve">
     <value>We’ve sent you a verification token. Please enter it below.</value>
@@ -368,6 +368,9 @@
   </data>
   <data name="RecoverPassword_Title" xml:space="preserve">
     <value>Password Recovery</value>
+  </data>
+  <data name="Recover_Email_Text" xml:space="preserve">
+    <value>Please provide the email associated to your account.</value>
   </data>
   <data name="RegisterPage_Button_AlreadyHave" xml:space="preserve">
     <value>Already have an account? Login</value>
@@ -411,10 +414,19 @@
   <data name="Registration_Success_Title" xml:space="preserve">
     <value>Sucess!</value>
   </data>
+  <data name="Request_Failed" xml:space="preserve">
+    <value>Request Failure</value>
+  </data>
+  <data name="ValidationError_Email" xml:space="preserve">
+    <value>Please enter your email or recheck its format.</value>
+  </data>
   <data name="ValidationError_EnterName" xml:space="preserve">
     <value>Enter name</value>
   </data>
   <data name="ValidationError_Title" xml:space="preserve">
     <value>Validation Error</value>
+  </data>
+  <data name="ValidationError_Token" xml:space="preserve">
+    <value>Wrong token provided. Please provide a valid token</value>
   </data>
 </root>

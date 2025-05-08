@@ -28,6 +28,7 @@ namespace IndoorMappingApp
 
             if (string.IsNullOrWhiteSpace(email) || string.IsNullOrWhiteSpace(password))
             {
+                //DisplayAlert("Login Error", "Please enter both email and password.", "OK");
                 await DisplayAlert(
                    lrm["Login_Failure_Title"],
                    lrm["Login_Validation_Error"],
@@ -64,6 +65,7 @@ namespace IndoorMappingApp
                     }
                     else
                     {
+                        //await DisplayAlert("Login Error", $"Invalid Credentials", "OK");
                         await DisplayAlert(
                                 lrm["Login_Failure_Title"],
                                 lrm["Login_Invalid_Credentials"],

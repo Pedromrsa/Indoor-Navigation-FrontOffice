@@ -664,6 +664,15 @@ namespace IndoorMappingApp.Resources.Strings {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Please provide the email associated to your account..
+        /// </summary>
+        internal static string Recover_Email_Text {
+            get {
+                return ResourceManager.GetString("Recover_Email_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Back to Login.
         /// </summary>
         internal static string RecoverAccount_Button_BackToLogin {
@@ -691,7 +700,7 @@ namespace IndoorMappingApp.Resources.Strings {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Please provide the email associated to your account..
+        ///   Looks up a localized string similar to The email provided does not have a registered account..
         /// </summary>
         internal static string RecoverAccount_Label_EnterEmail {
             get {
@@ -943,6 +952,24 @@ namespace IndoorMappingApp.Resources.Strings {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Request Failure.
+        /// </summary>
+        internal static string Request_Failed {
+            get {
+                return ResourceManager.GetString("Request_Failed", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Please enter your email or recheck its format..
+        /// </summary>
+        internal static string ValidationError_Email {
+            get {
+                return ResourceManager.GetString("ValidationError_Email", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Enter name.
         /// </summary>
         internal static string ValidationError_EnterName {
@@ -957,6 +984,15 @@ namespace IndoorMappingApp.Resources.Strings {
         internal static string ValidationError_Title {
             get {
                 return ResourceManager.GetString("ValidationError_Title", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Wrong token provided. Please provide a valid token.
+        /// </summary>
+        internal static string ValidationError_Token {
+            get {
+                return ResourceManager.GetString("ValidationError_Token", resourceCulture);
             }
         }
     }

@@ -1,6 +1,5 @@
 using IndoorMappingApp.Scripts.Services;
 using System.Text.RegularExpressions;
-
 namespace IndoorMappingApp;
 
 public partial class RecoverAccountPage : ContentPage
@@ -13,6 +12,8 @@ public partial class RecoverAccountPage : ContentPage
 
     async void OnSendEmailClicked(object sender, EventArgs e)
     {
+        var lrm = LocalizationResourceManager.Instance;
+
         if (IsValidEmail(emailEntry.Text))
         {
             var apiService = new IndoorApiService();
@@ -35,17 +36,27 @@ public partial class RecoverAccountPage : ContentPage
             else
             {
                 emailEntry.Text = string.Empty;
-                await DisplayAlert("Request Failure", "The email provided does not have a registered account.", "OK");
+                //await DisplayAlert("Request Failure", "The email provided does not have a registered account.", "OK");
+                await DisplayAlert(
+                   lrm["Request_Failed"],
+                   lrm["RecoverAccount_Label_EnterEmail"],
+                   lrm["Button_OK"]);
             }
         }
         else
         {
-            await DisplayAlert("Validation Error", "Please enter your email or recheck its format.", "OK");
+            //await DisplayAlert("Validation Error", "Please enter your email or recheck its format.", "OK");
+            await DisplayAlert(
+                   lrm["ValidationError_Title"],
+                   lrm["ValidationError_Email"],
+                   lrm["Button_OK"]);
             return;
         }
     }
     async void OnVerifyClicked(object sender, EventArgs e)
     {
+        var lrm = LocalizationResourceManager.Instance;
+
         var apiService = new IndoorApiService();
         bool isValidToken = await apiService.ValidateRecoveryTokenAsync(tokenEntry.Text);
 
@@ -55,7 +66,11 @@ public partial class RecoverAccountPage : ContentPage
         }
         else
         {
-            await DisplayAlert("Validation Error", "Wrong token provided. Please provide a valid token", "OK");
+            //await DisplayAlert("Validation Error", "Wrong token provided. Please provide a valid token", "OK");
+            await DisplayAlert(
+                    lrm["ValidationError_Title"],
+                    lrm["ValidationError_Token"],
+                    lrm["Button_OK"]);
         }
     }
 

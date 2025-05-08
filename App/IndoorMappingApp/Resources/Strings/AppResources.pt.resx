@@ -328,7 +328,7 @@
     <value>Enviar E-mail</value>
   </data>
   <data name="RecoverAccount_Label_EnterEmail" xml:space="preserve">
-    <value>Por favor, forneça o e-mail associado à sua conta.</value>
+    <value>O email fornecido não está registado.</value>
   </data>
   <data name="RecoverAccount_Label_EnterToken" xml:space="preserve">
     <value>Enviámos-lhe um token de verificação. Por favor, introduza-o abaixo.</value>
@@ -368,6 +368,9 @@
   </data>
   <data name="RecoverPassword_Title" xml:space="preserve">
     <value>Recuperação de Palavra-passe</value>
+  </data>
+  <data name="Recover_Email_Text" xml:space="preserve">
+    <value>Por favor forneça o email associado á sua conta.</value>
   </data>
   <data name="RegisterPage_Button_AlreadyHave" xml:space="preserve">
     <value>Já tem uma conta? Iniciar Sessão</value>
@@ -411,10 +414,19 @@
   <data name="Registration_Success_Title" xml:space="preserve">
     <value>Sucesso!</value>
   </data>
+  <data name="Request_Failed" xml:space="preserve">
+    <value>Pedido falhado</value>
+  </data>
+  <data name="ValidationError_Email" xml:space="preserve">
+    <value>Por favor coloque o email ou verifique o formato deste.</value>
+  </data>
   <data name="ValidationError_EnterName" xml:space="preserve">
     <value>Coloque nome</value>
   </data>
   <data name="ValidationError_Title" xml:space="preserve">
     <value>Erro de validação</value>
+  </data>
+  <data name="ValidationError_Token" xml:space="preserve">
+    <value>Token errado. Por favor dê um token válido.</value>
   </data>
 </root>
