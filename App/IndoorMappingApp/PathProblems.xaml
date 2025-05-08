@@ -1,119 +1,162 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="IndoorMappingApp.PathProblems"
-             Shell.NavBarIsVisible="False"
-             BackgroundColor="White"
-             Title="PathProblems">
+<ContentPage
+    x:Class="IndoorMappingApp.PathProblems"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:helpers="clr-namespace:IndoorMappingApp.Helpers"
+    Title="PathProblems"
+    BackgroundColor="White"
+    Shell.NavBarIsVisible="False">
 
     <Grid RowDefinitions="Auto,*">
 
-        <!-- Top Bar -->
-        <Grid BackgroundColor="Red" HeightRequest="50" Padding="0" RowSpacing="0" Grid.Row="0">
+        <!--  Top Bar  -->
+        <Grid
+            Grid.Row="0"
+            Padding="0"
+            BackgroundColor="Red"
+            HeightRequest="50"
+            RowSpacing="0">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="*" />
                 <ColumnDefinition Width="Auto" />
             </Grid.ColumnDefinitions>
 
-            <Label Text="Project Logo"
-               VerticalOptions="Center"
-               TextColor="White"
-               FontAttributes="Bold"
-               Margin="10,0" />
+            <Label
+                Margin="10,0"
+                FontAttributes="Bold"
+                Text="Project Logo"
+                TextColor="White"
+                VerticalOptions="Center" />
 
-            <ImageButton Source="burguer_menu.png"
-                     BackgroundColor="Transparent"
-                     Grid.Column="1"
-                     HorizontalOptions="End"
-                     VerticalOptions="Center"
-                     Margin="10,0"
-                     HeightRequest="24"
-                     WidthRequest="24"
-                     Clicked="OnBurgerMenuClicked"/>
+            <ImageButton
+                Grid.Column="1"
+                Margin="10,0"
+                BackgroundColor="Transparent"
+                Clicked="OnBurgerMenuClicked"
+                HeightRequest="24"
+                HorizontalOptions="End"
+                Source="burguer_menu.png"
+                VerticalOptions="Center"
+                WidthRequest="24" />
         </Grid>
 
 
 
 
-        <VerticalStackLayout Grid.Row="1"  Padding="0">
+        <VerticalStackLayout Grid.Row="1" Padding="0">
 
-        <!-- Content Form -->
-        <ScrollView>
-            <VerticalStackLayout Padding="20" Spacing="20">
+            <!--  Content Form  -->
+            <ScrollView>
+                <VerticalStackLayout Padding="20" Spacing="20">
 
-                <Label Text="ISEP Number" FontSize="14" TextColor="Black" />
+                    <Label
+                        FontSize="14"
+                        Text="{helpers:Translate Label_IsepNumber}"
+                        TextColor="Black" />
 
-                <Label Text="What path has the problem?" FontSize="14" TextColor="Black" />
+                    <Label
+                        FontSize="14"
+                        Text="{helpers:Translate PathProblems_WhatPathQuestion}"
+                        TextColor="Black" />
                     <Frame
                         Padding="0"
+                        BackgroundColor="White"
                         BorderColor="Black"
                         CornerRadius="0"
                         HasShadow="False"
-                        BackgroundColor="White"
                         HorizontalOptions="FillAndExpand">
-                        <Picker x:Name="PathPicker"
-                                TextColor="Black"
-                            Title="Select Path..."
+                        <Picker
+                            x:Name="PathPicker"
+                            Title="{helpers:Translate PathProblems_Picker_SelectPath}"
                             ItemDisplayBinding="{Binding DisplayName}"
+                            SelectedIndexChanged="PathPicker_SelectedIndexChanged"
                             SelectedItem="{Binding SelectedPath}"
-                            SelectedIndexChanged="PathPicker_SelectedIndexChanged" />
-                    </Frame>    
-                    <Label Text="Please select the option that corresponds to the obstruction" FontSize="14" TextColor="Black" />
+                            TextColor="Black" />
+                    </Frame>
+                    <Label
+                        FontSize="14"
+                        Text="{helpers:Translate PathProblems_ObstructionInstruction}"
+                        TextColor="Black" />
 
-                    <Label Text="Select Elevator" FontSize="14" TextColor="Black" />
-                    <!-- Option 1: Elevator broken (Checkbox + Picker) -->
-                <HorizontalStackLayout Spacing="10" VerticalOptions="Center">
-                        <CheckBox x:Name="ElevatorProblemCheckBox" Color="#666666" CheckedChanged="OnProblemOptionCheckedChanged" />
+                    <Label
+                        FontSize="14"
+                        Text="{helpers:Translate PathProblems_SelectElevator}"
+                        TextColor="Black" />
+                    <!--  Option 1: Elevator broken (Checkbox + Picker)  -->
+                    <HorizontalStackLayout Spacing="10" VerticalOptions="Center">
+                        <CheckBox
+                            x:Name="ElevatorProblemCheckBox"
+                            CheckedChanged="OnProblemOptionCheckedChanged"
+                            Color="#666666" />
                         <Frame
-                             Padding="0"
-                             BorderColor="Black"
-                             CornerRadius="0"
-                             HasShadow="False"
-                             BackgroundColor="White"
-                             HorizontalOptions="FillAndExpand">
-                            <Picker x:Name="ElevatorPicker"
-                                Title="Select Broken Elevator..."
-                                TextColor="Black"
-                                ItemDisplayBinding="{Binding Descricao}" />
+                            Padding="0"
+                            BackgroundColor="White"
+                            BorderColor="Black"
+                            CornerRadius="0"
+                            HasShadow="False"
+                            HorizontalOptions="FillAndExpand">
+                            <Picker
+                                x:Name="ElevatorPicker"
+                                Title="{helpers:Translate PathProblems_Picker_SelectElevator}"
+                                ItemDisplayBinding="{Binding Descricao}"
+                                TextColor="Black" />
                         </Frame>
                     </HorizontalStackLayout>
 
-                <!-- Option 2: Obstruction in the path -->
-                <HorizontalStackLayout Spacing="10" VerticalOptions="Center">
-                        <CheckBox x:Name="ObstructionCheckBox" Color="#666666" CheckedChanged="OnProblemOptionCheckedChanged" />
-                    <Label Text="Obstruction in the path." VerticalOptions="Center" TextColor="Black" />
-                </HorizontalStackLayout>
+                    <!--  Option 2: Obstruction in the path  -->
+                    <HorizontalStackLayout Spacing="10" VerticalOptions="Center">
+                        <CheckBox
+                            x:Name="ObstructionCheckBox"
+                            CheckedChanged="OnProblemOptionCheckedChanged"
+                            Color="#666666" />
+                        <Label
+                            Text="{helpers:Translate PathProblems_Checkbox_Obstruction}"
+                            TextColor="Black"
+                            VerticalOptions="Center" />
+                    </HorizontalStackLayout>
 
-                <!-- Option 3: Other problem -->
-                <HorizontalStackLayout Spacing="10" VerticalOptions="Center">
-                        <CheckBox x:Name="OtherProblemCheckBox" Color="#666666" CheckedChanged="OnProblemOptionCheckedChanged"/>
-                    <Label Text="Other problem." VerticalOptions="Center" TextColor="Black" />
-                </HorizontalStackLayout>
+                    <!--  Option 3: Other problem  -->
+                    <HorizontalStackLayout Spacing="10" VerticalOptions="Center">
+                        <CheckBox
+                            x:Name="OtherProblemCheckBox"
+                            CheckedChanged="OnProblemOptionCheckedChanged"
+                            Color="#666666" />
+                        <Label
+                            Text="{helpers:Translate PathProblems_Checkbox_OtherProblem}"
+                            TextColor="Black"
+                            VerticalOptions="Center" />
+                    </HorizontalStackLayout>
 
                     <Frame
                         Padding="0"
+                        BackgroundColor="White"
                         BorderColor="Black"
                         CornerRadius="0"
                         HasShadow="False"
-                        BackgroundColor="White"
                         HorizontalOptions="FillAndExpand">
-                            <!-- Text input for "Other problem" -->
-                        <Entry x:Name="OtherProblemEntry" TextColor="Black" Placeholder="Please tell what's the other problem" IsEnabled="False"/>
+                        <!--  Text input for "Other problem"  -->
+                        <Entry
+                            x:Name="OtherProblemEntry"
+                            IsEnabled="False"
+                            Placeholder="{helpers:Translate PathProblems_OtherProblem_Placeholder}"
+                            TextColor="Black" />
                     </Frame>
 
-                    <!-- Send Button -->
-                <Button Text="Send warning"
+                    <!--  Send Button  -->
+                    <Button
                         BackgroundColor="Red"
-                        TextColor="White"
-                        FontAttributes="Bold"
                         CornerRadius="10"
+                        FontAttributes="Bold"
                         HeightRequest="50"
-                        WidthRequest="180"
-                        HorizontalOptions="Center" />
+                        HorizontalOptions="Center"
+                        Text="{helpers:Translate PathProblems_Button_SendWarning}"
+                        TextColor="White"
+                        WidthRequest="180" />
 
-            </VerticalStackLayout>
-        </ScrollView>
+                </VerticalStackLayout>
+            </ScrollView>
 
-    </VerticalStackLayout>
+        </VerticalStackLayout>
     </Grid>
 </ContentPage>
