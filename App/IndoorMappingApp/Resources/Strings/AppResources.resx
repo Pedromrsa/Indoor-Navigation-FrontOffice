@@ -207,6 +207,9 @@
   <data name="Login_Validation_Error" xml:space="preserve">
     <value>Please enter both email and password.</value>
   </data>
+  <data name="Logout_message" xml:space="preserve">
+    <value>You have been logged out.</value>
+  </data>
   <data name="MainMenuPage_Label_RouteInfo" xml:space="preserve">
     <value> (e.g. “Current route…”)</value>
   </data>
@@ -224,6 +227,9 @@
   </data>
   <data name="MenuPage_Button_TryAsGuest" xml:space="preserve">
     <value>Try as Guest</value>
+  </data>
+  <data name="Notification" xml:space="preserve">
+    <value>Daily Reminder Notification</value>
   </data>
   <data name="Option1_Text" xml:space="preserve">
     <value>The path x seems very optimal.</value>

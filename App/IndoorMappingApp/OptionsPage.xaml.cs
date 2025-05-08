@@ -36,6 +36,8 @@ namespace IndoorMappingApp
 
         private async void OnLogoutClicked(object sender, EventArgs e)
         {
+            var lrm = LocalizationResourceManager.Instance;
+
             // Clear user session data
             Preferences.Remove("AuthToken");
             Preferences.Remove("UserId");
@@ -45,7 +47,11 @@ namespace IndoorMappingApp
             //await Navigation.PushAsync(new LoginPage());
 
             // You could show a confirmation dialog or navigate to a login page
-            await DisplayAlert("Logout", "You have been logged out.", "OK");
+            //await DisplayAlert("Logout", "You have been logged out.", "OK");
+            await DisplayAlert(
+                   lrm["Options_Logout"],
+                   lrm["Logout_message"],
+                   lrm["Button_OK"]);
         }
 
         private void OnReminderToggled(object sender, ToggledEventArgs e)

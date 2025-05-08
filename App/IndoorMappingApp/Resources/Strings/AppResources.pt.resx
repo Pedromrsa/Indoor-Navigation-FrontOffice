@@ -207,6 +207,9 @@
   <data name="Login_Validation_Error" xml:space="preserve">
     <value>Por favor coloque o mail e a palavra-passe.</value>
   </data>
+  <data name="Logout_message" xml:space="preserve">
+    <value>Foste desconectado.</value>
+  </data>
   <data name="MainMenuPage_Label_RouteInfo" xml:space="preserve">
     <value>(e.g. “Percurso atual…”)</value>
   </data>
@@ -224,6 +227,9 @@
   </data>
   <data name="MenuPage_Button_TryAsGuest" xml:space="preserve">
     <value>Experimentar como Convidado</value>
+  </data>
+  <data name="Notification" xml:space="preserve">
+    <value>Notificação de lembrete diário</value>
   </data>
   <data name="Option1_Text" xml:space="preserve">
     <value>O percurso x parece muito otimizado.</value>

@@ -331,6 +331,15 @@ namespace IndoorMappingApp.Resources.Strings {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to You have been logged out..
+        /// </summary>
+        internal static string Logout_message {
+            get {
+                return ResourceManager.GetString("Logout_message", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to  (e.g. “Current route…”).
         /// </summary>
         internal static string MainMenuPage_Label_RouteInfo {
@@ -381,6 +390,15 @@ namespace IndoorMappingApp.Resources.Strings {
         internal static string MenuPage_Button_TryAsGuest {
             get {
                 return ResourceManager.GetString("MenuPage_Button_TryAsGuest", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Daily Reminder Notification.
+        /// </summary>
+        internal static string Notification {
+            get {
+                return ResourceManager.GetString("Notification", resourceCulture);
             }
         }
         
