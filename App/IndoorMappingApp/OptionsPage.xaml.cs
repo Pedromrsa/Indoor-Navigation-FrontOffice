@@ -1,10 +1,16 @@
-﻿namespace IndoorMappingApp
+﻿using Plugin.LocalNotification.AndroidOption;
+using Plugin.LocalNotification;
+
+namespace IndoorMappingApp
 {
     public partial class OptionsPage : ContentPage
     {
         public OptionsPage()
         {
             InitializeComponent();
+
+            // Set the toggle based on saved preference
+            DailyReminderSwitch.IsToggled = Preferences.Get("DailyNotificationSet", false);
         }
 
 
@@ -42,6 +48,25 @@
             await DisplayAlert("Logout", "You have been logged out.", "OK");
         }
 
+        private void OnReminderToggled(object sender, ToggledEventArgs e)
+        {
+            if (e.Value)
+            {
+                ((App)Application.Current).ScheduleDailyReminder();
+            }
+            else
+            {
+                CancelDailyReminder();
+            }
+        }
+
+        private void CancelDailyReminder()
+        {
+            LocalNotificationCenter.Current.Cancel(1000); // Cancel by ID
+            Preferences.Set("DailyNotificationSet", false);
+        }
     }
+
 }
+
 

@@ -1,4 +1,8 @@
-﻿namespace IndoorMappingApp
+﻿using Plugin.LocalNotification;
+using Microsoft.Maui.Storage;
+using Plugin.LocalNotification.AndroidOption; // For Preferences
+
+namespace IndoorMappingApp
 {
     public partial class App : Application
     {
@@ -12,7 +16,35 @@
                 BaseAddress = new Uri("https://isepindoornavigationapi-vgq7.onrender.com/swagger/index.html")
             };
 
-            MainPage = new AppShell(); 
+            MainPage = new AppShell();
+
+            ScheduleDailyReminder();
+        }
+
+        public void ScheduleDailyReminder()
+        {
+            // Only schedule if it hasn't been set before
+            if (!Preferences.Get("DailyNotificationSet", false))
+            {
+                var notification = new NotificationRequest
+                {
+                    NotificationId = 1000,
+                    Title = "Don't forget!",
+                    Description = "Check the app today for new updates.",
+                    Schedule = new NotificationRequestSchedule
+                    {
+                        NotifyTime = DateTime.Now.AddSeconds(30), // Set to 9 AM today or tomorrow
+                        RepeatType = NotificationRepeat.Daily
+                    }
+                };
+
+                // DateTime.Now.Date.AddHours(18)
+
+                LocalNotificationCenter.Current.Show(notification);
+
+                // Mark as scheduled
+                Preferences.Set("DailyNotificationSet", true);
+            }
         }
     }
 }
