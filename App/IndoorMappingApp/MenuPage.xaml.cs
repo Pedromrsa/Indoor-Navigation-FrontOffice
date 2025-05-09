@@ -19,11 +19,15 @@ namespace IndoorMappingApp
 
         async void OnGuestClicked(object sender, EventArgs e)
         {
-            await Shell.Current.GoToAsync("mainmenu", true, new Dictionary<string, object>
-            {
-                { "IsGuest", true }
-            });
+            await Shell.Current.GoToAsync(
+                "mainmenu",
+                animate: true,
+                new Dictionary<string, object>
+                {
+            { "IsGuest", true }
+                });
         }
+
 
         // Called by the "Português" button
         void OnToggleLanguageClicked(object sender, EventArgs e)

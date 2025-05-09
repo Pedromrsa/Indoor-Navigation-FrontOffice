@@ -171,6 +171,9 @@
   <data name="FeedbackSubmitted" xml:space="preserve">
     <value>Opinião submetida</value>
   </data>
+  <data name="home" xml:space="preserve">
+    <value>Página inicial</value>
+  </data>
   <data name="Label_ChooseDestination" xml:space="preserve">
     <value>Escolhe um destino:</value>
   </data>

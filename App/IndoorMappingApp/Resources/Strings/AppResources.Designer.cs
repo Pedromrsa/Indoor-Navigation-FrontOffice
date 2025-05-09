@@ -223,6 +223,15 @@ namespace IndoorMappingApp.Resources.Strings {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Home Page.
+        /// </summary>
+        internal static string home {
+            get {
+                return ResourceManager.GetString("home", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Choose a destination:.
         /// </summary>
         internal static string Label_ChooseDestination {
