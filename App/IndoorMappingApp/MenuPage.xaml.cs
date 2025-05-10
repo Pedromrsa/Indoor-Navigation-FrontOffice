@@ -27,6 +27,10 @@ namespace IndoorMappingApp
             { "IsGuest", true }
                 });
         }
+        
+
+            async void OnShowRoomClicked(object sender, EventArgs e)
+            => await Navigation.PushAsync(new ShowRoomPage());
 
 
         // Called by the "Português" button

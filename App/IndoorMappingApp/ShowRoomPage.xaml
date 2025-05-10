@@ -1,11 +1,12 @@
-<?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="IndoorMappingApp.ShowRoomPage"
-             xmlns:helpers="clr-namespace:IndoorMappingApp.Helpers"
-             BackgroundColor="White">
-    <Grid HorizontalOptions="Center" VerticalOptions="Center">
-
-        <WebView x:Name="MatterportWebView" />
+<ContentPage
+    x:Class="IndoorMappingApp.ShowRoomPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
+    <Grid>
+        <!--  You can also use a custom handler-based WebView (see Android below)  -->
+        <WebView
+            x:Name="MatterportWebView"
+            HorizontalOptions="Fill"
+            VerticalOptions="Fill" />
     </Grid>
 </ContentPage>

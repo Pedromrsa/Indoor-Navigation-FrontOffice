@@ -38,5 +38,11 @@
             Text="{helpers:Translate MenuPage_Button_Portuguese}"
             TextColor="White" />
 
+        <Button
+            BackgroundColor="Green"
+            Clicked="OnShowRoomClicked"
+            Text="Show Room"
+            TextColor="White" />
+
     </VerticalStackLayout>
 </ContentPage>
