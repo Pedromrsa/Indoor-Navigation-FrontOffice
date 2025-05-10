@@ -51,8 +51,8 @@
                 <VerticalStackLayout Padding="20" Spacing="20">
 
                     <Label
+                        x:Name="IsepNumber"
                         FontSize="14"
-                        Text="{helpers:Translate Label_IsepNumber}"
                         TextColor="Black" />
 
                     <Label
@@ -145,6 +145,7 @@
 
                     <!--  Send Button  -->
                     <Button
+                        Clicked="OnSubmitButton" 
                         BackgroundColor="Red"
                         CornerRadius="10"
                         FontAttributes="Bold"

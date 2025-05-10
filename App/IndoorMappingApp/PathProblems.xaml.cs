@@ -1,5 +1,6 @@
 ﻿using System.Collections.ObjectModel;
 using System.Text.Json;
+using System.Text;
 
 namespace IndoorMappingApp;
 
@@ -7,6 +8,8 @@ public partial class PathProblems : ContentPage
 {
     private readonly HttpClient _httpClient = new HttpClient();
     private ObservableCollection<PathDetail> _paths = new ObservableCollection<PathDetail>();
+
+
 
     private PathDetail _selectedPath;
     public PathDetail SelectedPath
@@ -18,12 +21,15 @@ public partial class PathProblems : ContentPage
             OnPropertyChanged();  // Notifica a UI para atualizar a seleção
         }
     }
+    
+    private string elevatorDecription;
 
     public PathProblems()
     {
         InitializeComponent();
         LoadPathsAsync();
-        LoadElevatorsAsync(); // Corrigido nome e chamada
+        LoadElevatorsAsync();
+        IsepNumber.Text = ActiveUser.UserNumber;
     }
 
     private async Task LoadPathsAsync()
@@ -67,6 +73,10 @@ public partial class PathProblems : ContentPage
 
     private async void OnBurgerMenuClicked(object sender, EventArgs e)
     {
+        SelectedPath = null;
+        ElevatorProblemCheckBox.IsChecked = false;
+        ObstructionCheckBox.IsChecked = false;
+        OtherProblemCheckBox.IsChecked = false;
         await Shell.Current.GoToAsync("options");
     }
 
@@ -116,7 +126,19 @@ public partial class PathProblems : ContentPage
 
         // Desmarca todas as outras
         if (changedCheckBox != ElevatorProblemCheckBox)
+        {
             ElevatorProblemCheckBox.IsChecked = false;
+            elevatorDecription = null;
+        }
+        else
+        {
+            if (ElevatorPicker.SelectedItem is Infrastructure selectedElevator)
+            {
+                Console.WriteLine($"Elevador selecionado: {selectedElevator.Descricao}");
+
+                elevatorDecription = selectedElevator.Descricao;
+            }
+        }
 
         if (changedCheckBox != ObstructionCheckBox)
             ObstructionCheckBox.IsChecked = false;
@@ -138,7 +160,77 @@ public partial class PathProblems : ContentPage
 
     private async void OnBackButtonClicked(object sender, EventArgs e)
     {
-        await Navigation.PopAsync();
+        SelectedPath = null;
+        ElevatorProblemCheckBox.IsChecked = false;
+        ObstructionCheckBox.IsChecked = false;
+        OtherProblemCheckBox.IsChecked = false;
+        await Shell.Current.GoToAsync("options");
+    }
+
+    private async void OnSubmitButton(object sender, EventArgs e)
+    {
+        // Verifique se o usuário e caminho estão definidos
+        if (ActiveUser.UserId == null || ActiveUser.UserId == "0")
+        {
+            await DisplayAlert("Erro", "Usuário não autenticado.", "OK");
+            return;
+        }
+
+        if (_selectedPath == null)
+        {
+            await DisplayAlert("Erro", "Selecione um caminho.", "OK");
+            return;
+        }
+
+        string comentario = string.Empty;
+
+        if (ElevatorProblemCheckBox.IsChecked)
+        {
+            comentario = elevatorDecription + " is Broken";
+        }
+        else if (ObstructionCheckBox.IsChecked)
+        {
+            comentario = "Path obstruct"; 
+        }
+        else if (OtherProblemCheckBox.IsChecked)
+        {
+            comentario = OtherProblemEntry.Text; 
+        }
+
+
+
+        var feedbackCaminho = new
+        {
+            usuarioId = ActiveUser.UserId,
+            caminhoId = _selectedPath.Id,
+            avaliacao = 1,
+            comentario = comentario,
+        };
+
+        try
+        {
+            var httpClient = new HttpClient();
+            var url = "https://isepindoornavigationapi-vgq7.onrender.com/api/FeedbackCaminhos";
+
+            var json = JsonSerializer.Serialize(feedbackCaminho);
+            var content = new StringContent(json, Encoding.UTF8, "application/json");
+
+            var response = await httpClient.PostAsync(url, content);
+
+            if (response.IsSuccessStatusCode)
+            {
+                await DisplayAlert("Sucesso", "Feedback enviado com sucesso!", "OK");
+            }
+            else
+            {
+                var errorMsg = await response.Content.ReadAsStringAsync();
+                await DisplayAlert("Erro", $"Erro ao enviar feedback: {errorMsg}", "OK");
+            }
+        }
+        catch (Exception ex)
+        {
+            await DisplayAlert("Exceção", ex.Message, "OK");
+        }
     }
 
 }
