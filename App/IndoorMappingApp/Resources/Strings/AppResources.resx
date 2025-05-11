@@ -157,7 +157,7 @@
     <value>***********</value>
   </data>
   <data name="Entry_Password_Placeholder" xml:space="preserve">
-    <value>Password</value>
+    <value>Old Password</value>
   </data>
   <data name="Error" xml:space="preserve">
     <value>Error</value>
@@ -412,7 +412,7 @@
     <value>Passwords don’t match!</value>
   </data>
   <data name="RecoverPassword_Placeholder_Confirm" xml:space="preserve">
-    <value>Confirm Password</value>
+    <value>New Password</value>
   </data>
   <data name="RecoverPassword_Placeholder_New" xml:space="preserve">
     <value> New Password</value>
@@ -494,5 +494,11 @@
   </data>
   <data name="ValidationError_Token" xml:space="preserve">
     <value>Wrong token provided. Please provide a valid token</value>
+  </data>
+  <data name="AccountSettings_ChangePassword" xml:space="preserve">
+    <value>Change Password</value>
+  </data>
+  <data name="Button_ChangePassword" xml:space="preserve">
+    <value>Save Changes</value>
   </data>
 </root>

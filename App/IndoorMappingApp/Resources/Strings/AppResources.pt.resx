@@ -157,7 +157,7 @@
     <value>***********</value>
   </data>
   <data name="Entry_Password_Placeholder" xml:space="preserve">
-    <value>Palavra-passe</value>
+    <value>Antiga Palavra-passe</value>
   </data>
   <data name="Error" xml:space="preserve">
     <value>Erro</value>
@@ -412,7 +412,7 @@
     <value>As palavras-passe não coincidem!</value>
   </data>
   <data name="RecoverPassword_Placeholder_Confirm" xml:space="preserve">
-    <value>Confirmar Palavra-passe</value>
+    <value>Nova Palavra-passe</value>
   </data>
   <data name="RecoverPassword_Placeholder_New" xml:space="preserve">
     <value>Nova Palavra-passe</value>
@@ -494,5 +494,11 @@
   </data>
   <data name="ValidationError_Token" xml:space="preserve">
     <value>Token errado. Por favor dê um token válido.</value>
+  </data>
+  <data name="AccountSettings_ChangePassword" xml:space="preserve">
+    <value>Alterar Palavra-Passe</value>
+  </data>
+  <data name="Button_ChangePassword" xml:space="preserve">
+    <value>Guardar Alterações</value>
   </data>
 </root>
