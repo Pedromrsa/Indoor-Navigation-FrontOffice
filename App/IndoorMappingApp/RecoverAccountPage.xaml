@@ -2,59 +2,65 @@
 <ContentPage
     x:Class="IndoorMappingApp.RecoverAccountPage"
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
-    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:helpers="clr-namespace:IndoorMappingApp.Helpers"
     BackgroundColor="White">
 
-    <!--  Create a Grid to center the container  -->
-    <Grid HorizontalOptions="Center" VerticalOptions="Center">
+    <!--  Outer grid: single star column, three rows (auto, * , auto)  -->
+    <Grid
+        Padding="20"
+        ColumnSpacing="15"
+        HorizontalOptions="Fill"
+        RowSpacing="15"
+        VerticalOptions="Fill">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <!--  Header  -->
+            <RowDefinition Height="*" />
+            <!--  Content  -->
+            <RowDefinition Height="Auto" />
+            <!--  Footer  -->
+        </Grid.RowDefinitions>
 
-        <!--  Grey container with padding and rounded corners  -->
-        <Frame
-            Padding="50"
-            BackgroundColor="#D3D3D3"
-            BorderColor="Transparent"
-            CornerRadius="0">
-            <StackLayout
-                HorizontalOptions="CenterAndExpand"
-                Spacing="17"
-                VerticalOptions="Center">
+        <!--  Title in row 0  -->
+        <Label
+            Grid.Row="0"
+            Grid.Column="0"
+            FontSize="22"
+            HorizontalOptions="Center"
+            Text="{helpers:Translate RecoverAccount_Title}"
+            TextColor="Black" />
 
-                <!--  Recover Account Label  -->
+        <!--  Main content in row 1  -->
+        <ScrollView
+            Grid.Row="1"
+            Grid.Column="0"
+            HorizontalOptions="Fill"
+            VerticalOptions="FillAndExpand">
+            <VerticalStackLayout
+                Padding="10"
+                HorizontalOptions="Fill"
+                Spacing="20"
+                VerticalOptions="Start">
+
+                <!--  1. Email prompt  -->
                 <Label
-                    Margin="0,0,0,20"
-                    FontSize="20"
-                    HorizontalOptions="Center"
-                    Text="{helpers:Translate RecoverAccount_Title}"
-                    TextColor="Black"
-                    VerticalOptions="Start" />
+                    x:Name="emailLabel"
+                    FontSize="17"
+                    HorizontalOptions="FillAndExpand"
+                    HorizontalTextAlignment="Center"
+                    Text="{helpers:Translate Recover_Email_Text}"
+                    TextColor="Black" />
 
-                <StackLayout Margin="0,0,0,0">
-                    <Label
-                        x:Name="emailLabel"
-                        FontSize="17"
-                        HorizontalOptions="Center"
-                        HorizontalTextAlignment="Center"
-                        Text="{helpers:Translate Recover_Email_Text}"
-                        TextColor="black"
-                        VerticalOptions="Center" />
-                    <Label
-                        x:Name="tokenLabel"
-                        FontSize="17"
-                        HorizontalOptions="Center"
-                        HorizontalTextAlignment="Center"
-                        IsVisible="Collapse"
-                        Text="{helpers:Translate RecoverAccount_Label_EnterToken}"
-                        TextColor="black"
-                        VerticalOptions="Center" />
-                </StackLayout>
-
-                <!--  Email Text Entry  -->
+                <!--  2. Email entry frame  -->
                 <Frame
                     x:Name="emailFrame"
                     Padding="0"
                     BorderColor="Black"
-                    CornerRadius="0"
+                    CornerRadius="4"
                     HasShadow="False"
                     HorizontalOptions="FillAndExpand">
                     <Entry
@@ -64,51 +70,50 @@
                         HorizontalOptions="FillAndExpand"
                         Keyboard="Email"
                         Placeholder="{helpers:Translate RecoverAccount_Placeholder_Email}"
-                        PlaceholderColor="Black"
+                        PlaceholderColor="Gray"
                         TextColor="Black" />
                 </Frame>
 
-                <!--  Token Text Entry  -->
+                <!--  3. Token prompt (initially hidden)  -->
+                <Label
+                    x:Name="tokenLabel"
+                    FontSize="17"
+                    HorizontalOptions="FillAndExpand"
+                    HorizontalTextAlignment="Center"
+                    IsVisible="False"
+                    Text="{helpers:Translate RecoverAccount_Label_EnterToken}"
+                    TextColor="Black" />
+
+                <!--  4. Token entry frame (initially hidden)  -->
                 <Frame
                     x:Name="tokenFrame"
                     Padding="0"
                     BorderColor="Black"
-                    CornerRadius="0"
+                    CornerRadius="4"
                     HasShadow="False"
                     HorizontalOptions="FillAndExpand"
-                    IsVisible="Collapse">
+                    IsVisible="False">
                     <Entry
                         x:Name="tokenEntry"
                         Background="White"
                         FontSize="17"
                         HorizontalOptions="FillAndExpand"
-                        Keyboard="Email"
+                        Keyboard="Default"
                         Placeholder="{helpers:Translate RecoverAccount_Placeholder_Token}"
-                        PlaceholderColor="Black"
+                        PlaceholderColor="Gray"
                         TextColor="Black" />
                 </Frame>
 
-                <StackLayout>
-                    <Label
-                        x:Name="sendEmailLabel"
-                        FontSize="17"
-                        HorizontalOptions="Center"
-                        HorizontalTextAlignment="Center"
-                        Text="{helpers:Translate RecoverAccount_Label_Instructions}"
-                        TextColor="black"
-                        VerticalOptions="Center" />
-                </StackLayout>
-
-                <!--  Back to Menu Button  -->
-                <Button
-                    x:Name="backMenuButton"
-                    BackgroundColor="Transparent"
-                    Clicked="OnBackToMenuClicked"
+                <!--  5. Instruction label  -->
+                <Label
+                    x:Name="sendEmailLabel"
+                    FontSize="17"
                     HorizontalOptions="Center"
-                    Text="{helpers:Translate RecoverAccount_Button_BackToLogin}"
-                    TextColor="Blue" />
+                    HorizontalTextAlignment="Center"
+                    Text="{helpers:Translate RecoverAccount_Label_Instructions}"
+                    TextColor="Black" />
 
-                <!--  Send Email Button  -->
+                <!--  6. Send Email button  -->
                 <Button
                     x:Name="sendEmailButton"
                     BackgroundColor="Red"
@@ -118,27 +123,35 @@
                     FontSize="16"
                     HorizontalOptions="FillAndExpand"
                     Text="{helpers:Translate RecoverAccount_Button_SendEmail}"
-                    TextColor="White"
-                    WidthRequest="120" />
+                    TextColor="White" />
 
+                <!--  7. Verify token button (initially hidden)  -->
                 <Button
                     x:Name="verifyButton"
-                    BackgroundColor="Red"
+                    BackgroundColor="Green"
                     BorderColor="Black"
                     BorderWidth="1"
                     Clicked="OnVerifyClicked"
                     FontSize="16"
                     HorizontalOptions="FillAndExpand"
-                    IsVisible="Collapse"
+                    IsVisible="False"
                     Text="{helpers:Translate RecoverAccount_Button_Confirm}"
-                    TextColor="White"
-                    WidthRequest="120" />
+                    TextColor="White" />
 
-            </StackLayout>
+            </VerticalStackLayout>
+        </ScrollView>
 
-        </Frame>
+        <!--  Footer row 2: Back to Login  -->
+        <Button
+            x:Name="backMenuButton"
+            Grid.Row="2"
+            Grid.Column="0"
+            BackgroundColor="Transparent"
+            Clicked="OnBackToMenuClicked"
+            FontSize="16"
+            HorizontalOptions="Center"
+            Text="{helpers:Translate RecoverAccount_Button_BackToLogin}"
+            TextColor="Blue" />
 
     </Grid>
-
-
 </ContentPage>
