@@ -24,14 +24,13 @@ public partial class RecoverAccountPage : ContentPage
             {
                 //apiService = new IndoorApiService();
                 //bool isEmailSent = await apiService.RequestRecoveryTokenAsync(emailEntry.Text);
-
-                sendEmailButton.IsVisible = false;
-                verifyButton.IsVisible = true;
-                sendEmailLabel.IsVisible = false;
-                emailLabel.IsVisible = false;
                 tokenLabel.IsVisible = true;
-                emailFrame.IsVisible = false;
                 tokenFrame.IsVisible = true;
+                verifyButton.IsVisible = true;
+                emailLabel.IsVisible = false;
+                emailFrame.IsVisible = false;
+                sendEmailButton.IsVisible = false;
+                sendEmailLabel.IsVisible = false;
             }
             else
             {
@@ -62,10 +61,7 @@ public partial class RecoverAccountPage : ContentPage
 
         if (isValidToken)
         {
-            receivedTokenLabel.Text = $"Token: {tokenEntry.Text}";
-            receivedTokenLabel.IsVisible = true;
-            changePasswordButton.IsVisible = true;
-            // await Navigation.PushAsync(new RecoverPasswordPage(tokenEntry.Text), true);
+            await Navigation.PushAsync(new RecoverPasswordPage(tokenEntry.Text), true);
         }
         else
         {
