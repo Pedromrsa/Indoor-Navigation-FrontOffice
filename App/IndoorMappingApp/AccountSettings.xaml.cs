@@ -1,4 +1,5 @@
-﻿using IndoorMappingApp.Scripts.DTOs;
+﻿using System.Globalization;
+using IndoorMappingApp.Scripts.DTOs;
 using IndoorMappingApp.Scripts.Services;
 
 namespace IndoorMappingApp;
@@ -13,10 +14,13 @@ public partial class AccountSettings : ContentPage
 
     private async void OnSaveChangesClicked(object sender, EventArgs e)
     {
+        // get selected limitation
         int? limitation = (LimitationPicker.SelectedIndex >= 0) ? LimitationPicker.SelectedIndex + 1 : (int?)null;
-        //int? language = (LanguagePicker.SelectedIndex >= 0) ? LanguagePicker.SelectedIndex : (int?)null;
 
-        if (limitation == null /*&& language == null*/)
+        // get selected language
+        var selectedCulture = GetSelectedLanguage();
+
+        if (limitation == null && selectedCulture == null)
         {
             await DisplayAlert("No Changes", "Please select a value to update.", "OK");
             return;
@@ -26,6 +30,14 @@ public partial class AccountSettings : ContentPage
         if (!int.TryParse(ActiveUser.UserId, out int userId))
         {
             await DisplayAlert("Error", "User ID not found or invalid. Please log in again.", "OK");
+            return;
+        }
+
+        if (limitation == null && selectedCulture != null)
+        {
+            LocalizationResourceManager.Instance.SetCulture(selectedCulture);
+            Preferences.Set("AppLanguage", selectedCulture.Name);
+            await DisplayAlert("Success", "Language updated successfully.", "OK");
             return;
         }
 
@@ -59,6 +71,16 @@ public partial class AccountSettings : ContentPage
             "Editor" => 3,
             "Reader" => 4,
             _ => 4
+        };
+    }
+
+    private CultureInfo? GetSelectedLanguage()
+    {
+        return LanguagePicker.SelectedIndex switch
+        {
+            0 => new CultureInfo("en-US"),
+            1 => new CultureInfo("pt-PT"),
+            _ => null
         };
     }
 

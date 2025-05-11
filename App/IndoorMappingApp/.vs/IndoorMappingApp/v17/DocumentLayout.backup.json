@@ -3,12 +3,16 @@
   "WorkspaceRootPath": "C:\\Catarina\\GitHub\\Indoor-Navigation-FrontOffice\\App\\IndoorMappingApp\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{CCE8AD22-C2AD-499F-BE91-C7087F165FC1}|IndoorMappingApp.csproj|c:\\catarina\\github\\indoor-navigation-frontoffice\\app\\indoormappingapp\\scripts\\services\\indoorapiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CCE8AD22-C2AD-499F-BE91-C7087F165FC1}|IndoorMappingApp.csproj|solutionrelative:scripts\\services\\indoorapiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{CCE8AD22-C2AD-499F-BE91-C7087F165FC1}|IndoorMappingApp.csproj|c:\\catarina\\github\\indoor-navigation-frontoffice\\app\\indoormappingapp\\accountsettings.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CCE8AD22-C2AD-499F-BE91-C7087F165FC1}|IndoorMappingApp.csproj|solutionrelative:accountsettings.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CCE8AD22-C2AD-499F-BE91-C7087F165FC1}|IndoorMappingApp.csproj|c:\\catarina\\github\\indoor-navigation-frontoffice\\app\\indoormappingapp\\menupage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CCE8AD22-C2AD-499F-BE91-C7087F165FC1}|IndoorMappingApp.csproj|solutionrelative:menupage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CCE8AD22-C2AD-499F-BE91-C7087F165FC1}|IndoorMappingApp.csproj|c:\\catarina\\github\\indoor-navigation-frontoffice\\app\\indoormappingapp\\scripts\\services\\indoorapiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CCE8AD22-C2AD-499F-BE91-C7087F165FC1}|IndoorMappingApp.csproj|solutionrelative:scripts\\services\\indoorapiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{CCE8AD22-C2AD-499F-BE91-C7087F165FC1}|IndoorMappingApp.csproj|c:\\catarina\\github\\indoor-navigation-frontoffice\\app\\indoormappingapp\\loginpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -26,7 +30,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
@@ -34,20 +38,33 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
+              "Title": "MenuPage.xaml.cs",
+              "DocumentMoniker": "C:\\Catarina\\GitHub\\Indoor-Navigation-FrontOffice\\App\\IndoorMappingApp\\MenuPage.xaml.cs",
+              "RelativeDocumentMoniker": "MenuPage.xaml.cs",
+              "ToolTip": "C:\\Catarina\\GitHub\\Indoor-Navigation-FrontOffice\\App\\IndoorMappingApp\\MenuPage.xaml.cs",
+              "RelativeToolTip": "MenuPage.xaml.cs",
+              "ViewState": "AgIAABoAAAAAAAAAAAAIwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-11T16:31:18.141Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "IndoorApiService.cs",
               "DocumentMoniker": "C:\\Catarina\\GitHub\\Indoor-Navigation-FrontOffice\\App\\IndoorMappingApp\\Scripts\\Services\\IndoorApiService.cs",
               "RelativeDocumentMoniker": "Scripts\\Services\\IndoorApiService.cs",
               "ToolTip": "C:\\Catarina\\GitHub\\Indoor-Navigation-FrontOffice\\App\\IndoorMappingApp\\Scripts\\Services\\IndoorApiService.cs",
               "RelativeToolTip": "Scripts\\Services\\IndoorApiService.cs",
-              "ViewState": "AgIAAFEAAAAAAAAAAAAqwGEAAABOAAAAAAAAAA==",
+              "ViewState": "AgIAAGUAAAAAAAAAAAAmwGwAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-11T12:09:27.713Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "LoginPage.xaml.cs",
               "DocumentMoniker": "C:\\Catarina\\GitHub\\Indoor-Navigation-FrontOffice\\App\\IndoorMappingApp\\LoginPage.xaml.cs",
               "RelativeDocumentMoniker": "LoginPage.xaml.cs",
@@ -60,13 +77,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "AccountSettings.xaml.cs",
               "DocumentMoniker": "C:\\Catarina\\GitHub\\Indoor-Navigation-FrontOffice\\App\\IndoorMappingApp\\AccountSettings.xaml.cs",
               "RelativeDocumentMoniker": "AccountSettings.xaml.cs",
               "ToolTip": "C:\\Catarina\\GitHub\\Indoor-Navigation-FrontOffice\\App\\IndoorMappingApp\\AccountSettings.xaml.cs",
               "RelativeToolTip": "AccountSettings.xaml.cs",
-              "ViewState": "AgIAABMAAAAAAAAAAAAYwA8AAAAMAAAAAAAAAA==",
+              "ViewState": "AgIAADoAAAAAAAAAAAAqwE4AAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-10T00:56:19.002Z",
               "EditorCaption": ""
@@ -94,7 +111,7 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "UpdateAccountRequestDTO.cs",
               "DocumentMoniker": "C:\\Catarina\\GitHub\\Indoor-Navigation-FrontOffice\\App\\IndoorMappingApp\\Scripts\\DTOs\\UpdateAccountRequestDTO.cs",
               "RelativeDocumentMoniker": "Scripts\\DTOs\\UpdateAccountRequestDTO.cs",
