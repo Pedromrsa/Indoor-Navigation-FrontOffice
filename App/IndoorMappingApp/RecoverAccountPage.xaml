@@ -6,7 +6,7 @@
     xmlns:helpers="clr-namespace:IndoorMappingApp.Helpers"
     BackgroundColor="White">
 
-    <!--  Outer grid: single star column, three rows (auto, * , auto)  -->
+    <!--  Outer grid: single * column, three rows  -->
     <Grid
         Padding="20"
         ColumnSpacing="15"
@@ -18,26 +18,24 @@
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto" />
-            <!--  Header  -->
+            <!--  Title  -->
             <RowDefinition Height="*" />
-            <!--  Content  -->
+            <!--  Form  -->
             <RowDefinition Height="Auto" />
-            <!--  Footer  -->
+            <!--  Back button  -->
         </Grid.RowDefinitions>
 
-        <!--  Title in row 0  -->
+        <!--  Title  -->
         <Label
             Grid.Row="0"
-            Grid.Column="0"
             FontSize="22"
             HorizontalOptions="Center"
             Text="{helpers:Translate RecoverAccount_Title}"
             TextColor="Black" />
 
-        <!--  Main content in row 1  -->
+        <!--  Form content  -->
         <ScrollView
             Grid.Row="1"
-            Grid.Column="0"
             HorizontalOptions="Fill"
             VerticalOptions="FillAndExpand">
             <VerticalStackLayout
@@ -46,16 +44,13 @@
                 Spacing="20"
                 VerticalOptions="Start">
 
-                <!--  1. Email prompt  -->
+                <!--  Email prompt & entry  -->
                 <Label
                     x:Name="emailLabel"
                     FontSize="17"
-                    HorizontalOptions="FillAndExpand"
                     HorizontalTextAlignment="Center"
                     Text="{helpers:Translate Recover_Email_Text}"
                     TextColor="Black" />
-
-                <!--  2. Email entry frame  -->
                 <Frame
                     x:Name="emailFrame"
                     Padding="0"
@@ -67,24 +62,20 @@
                         x:Name="emailEntry"
                         Background="White"
                         FontSize="17"
-                        HorizontalOptions="FillAndExpand"
                         Keyboard="Email"
                         Placeholder="{helpers:Translate RecoverAccount_Placeholder_Email}"
                         PlaceholderColor="Gray"
                         TextColor="Black" />
                 </Frame>
 
-                <!--  3. Token prompt (initially hidden)  -->
+                <!--  Token prompt & entry (shown after email validated)  -->
                 <Label
                     x:Name="tokenLabel"
                     FontSize="17"
-                    HorizontalOptions="FillAndExpand"
                     HorizontalTextAlignment="Center"
                     IsVisible="False"
                     Text="{helpers:Translate RecoverAccount_Label_EnterToken}"
                     TextColor="Black" />
-
-                <!--  4. Token entry frame (initially hidden)  -->
                 <Frame
                     x:Name="tokenFrame"
                     Padding="0"
@@ -97,23 +88,29 @@
                         x:Name="tokenEntry"
                         Background="White"
                         FontSize="17"
-                        HorizontalOptions="FillAndExpand"
                         Keyboard="Default"
                         Placeholder="{helpers:Translate RecoverAccount_Placeholder_Token}"
                         PlaceholderColor="Gray"
                         TextColor="Black" />
                 </Frame>
 
-                <!--  5. Instruction label  -->
+                <!--  New: Display the validated token  -->
+                <Label
+                    x:Name="receivedTokenLabel"
+                    FontSize="16"
+                    HorizontalTextAlignment="Center"
+                    IsVisible="False"
+                    TextColor="DarkGreen" />
+
+                <!--  Instruction  -->
                 <Label
                     x:Name="sendEmailLabel"
                     FontSize="17"
-                    HorizontalOptions="Center"
                     HorizontalTextAlignment="Center"
                     Text="{helpers:Translate RecoverAccount_Label_Instructions}"
                     TextColor="Black" />
 
-                <!--  6. Send Email button  -->
+                <!--  Send Email button  -->
                 <Button
                     x:Name="sendEmailButton"
                     BackgroundColor="Red"
@@ -125,7 +122,7 @@
                     Text="{helpers:Translate RecoverAccount_Button_SendEmail}"
                     TextColor="White" />
 
-                <!--  7. Verify token button (initially hidden)  -->
+                <!--  Verify Token button  -->
                 <Button
                     x:Name="verifyButton"
                     BackgroundColor="Green"
@@ -138,20 +135,31 @@
                     Text="{helpers:Translate RecoverAccount_Button_Confirm}"
                     TextColor="White" />
 
+                <!--  New: Change Password button (shown after token valid)  -->
+                <Button
+                    x:Name="changePasswordButton"
+                    BackgroundColor="Blue"
+                    BorderColor="Black"
+                    BorderWidth="1"
+                    Clicked="OnChangePasswordClicked"
+                    FontSize="16"
+                    HorizontalOptions="FillAndExpand"
+                    IsVisible="False"
+                    Text="{helpers:Translate RecoverAccount_Button_ChangePassword}"
+                    TextColor="White" />
+
             </VerticalStackLayout>
         </ScrollView>
 
-        <!--  Footer row 2: Back to Login  -->
+        <!--  Back to Login  -->
         <Button
             x:Name="backMenuButton"
             Grid.Row="2"
-            Grid.Column="0"
             BackgroundColor="Transparent"
             Clicked="OnBackToMenuClicked"
             FontSize="16"
             HorizontalOptions="Center"
             Text="{helpers:Translate RecoverAccount_Button_BackToLogin}"
             TextColor="Blue" />
-
     </Grid>
 </ContentPage>
