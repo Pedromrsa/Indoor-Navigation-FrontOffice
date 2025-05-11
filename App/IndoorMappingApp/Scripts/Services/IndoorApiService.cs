@@ -176,6 +176,40 @@ namespace IndoorMappingApp.Scripts.Services
             }
         }
 
+        public async Task<RegisterResponseDTO> DeleteUserAsync(int id, DeleteAccountDTO dto)
+        {
+            try
+            {
+                var json = JsonSerializer.Serialize(dto);
+                var content = new StringContent(json, Encoding.UTF8, "application/json");
+
+                var response = await _httpClient.DeleteAsync($"api/Usuarios/{id}");
+                var responseBody = await response.Content.ReadAsStringAsync();
+
+                if (response.StatusCode == HttpStatusCode.NoContent)
+                {
+                    return new RegisterResponseDTO
+                    {
+                        Success = true,
+                        Message = "Account deleted successfully."
+                    };
+                }
+
+                return JsonSerializer.Deserialize<RegisterResponseDTO>(responseBody, new JsonSerializerOptions
+                {
+                    PropertyNameCaseInsensitive = true
+                });
+            }
+            catch (Exception ex)
+            {
+                return new RegisterResponseDTO
+                {
+                    Success = false,
+                    Message = ex.Message
+                };
+            }
+        }
+
 
         //public async Task<bool> RequestRecoveryTokenAsync(string email)
         //{

@@ -574,6 +574,15 @@ namespace IndoorMappingApp.Resources.Strings {
         }
         
         /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a Delete Account.
+        /// </summary>
+        internal static string Options_Delete {
+            get {
+                return ResourceManager.GetString("Options_Delete", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Consulta uma cadeia de caracteres localizada semelhante a Give us Feedback.
         /// </summary>
         internal static string Options_GiveUsFeedback {

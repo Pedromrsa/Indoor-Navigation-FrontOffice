@@ -1,10 +1,14 @@
 ﻿using Plugin.LocalNotification.AndroidOption;
 using Plugin.LocalNotification;
+using IndoorMappingApp.Scripts.DTOs;
+using IndoorMappingApp.Scripts.Services;
 
 namespace IndoorMappingApp
 {
     public partial class OptionsPage : ContentPage
     {
+        readonly IndoorApiService _api = new IndoorApiService();
+
         public OptionsPage()
         {
             InitializeComponent();
@@ -22,6 +26,45 @@ namespace IndoorMappingApp
         private async void OnFeedbackClicked(object sender, EventArgs e)
         {
             await Navigation.PushAsync(new FeedbackOptionsPage());
+        }
+
+        private async void OnDeleteAccountClicked(object sender, EventArgs e)
+        {
+            // Retrieve user ID from ActiveUser
+            if (!int.TryParse(ActiveUser.UserId, out int userId))
+            {
+                await DisplayAlert("Error", "User ID not found or invalid. Please log in again.", "OK");
+                return;
+            }
+
+            var dto = new DeleteAccountDTO
+            {
+                id = int.Parse(ActiveUser.UserId)
+            };
+
+            bool confirm = await Application.Current.MainPage.DisplayAlert(
+                "Confirm Deletion",
+                "Are you sure you want to delete your account? This action cannot be undone.",
+                "Yes, delete",
+                "Cancel"
+            );
+
+            if (confirm)
+            {
+                var result = await _api.DeleteUserAsync(userId, dto);
+
+                await Application.Current.MainPage.DisplayAlert(
+                    result.Success ? "Success" : "Error",
+                    result.Message,
+                    "OK"
+                );
+
+                if (result.Success)
+                {
+                    await Shell.Current.GoToAsync("//MenuPage");
+                }
+            }
+
         }
 
         /*private async void OnDiaryClicked(object sender, EventArgs e)

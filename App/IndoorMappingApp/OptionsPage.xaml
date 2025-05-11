@@ -62,6 +62,15 @@
             <Button
                 Padding="0"
                 BackgroundColor="LightGrey"
+                Clicked="OnDeleteAccountClicked"
+                FontSize="16"
+                HorizontalOptions="Fill"
+                Text="{helpers:Translate Options_Delete}"
+                TextColor="Black" />
+            
+            <Button
+                Padding="0"
+                BackgroundColor="LightGrey"
                 Clicked="OnLogoutClicked"
                 FontSize="16"
                 HorizontalOptions="Fill"

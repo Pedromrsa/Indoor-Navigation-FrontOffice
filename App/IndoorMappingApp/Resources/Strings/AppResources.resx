@@ -501,4 +501,7 @@
   <data name="Button_ChangePassword" xml:space="preserve">
     <value>Save Changes</value>
   </data>
+  <data name="Options_Delete" xml:space="preserve">
+    <value>Delete Account</value>
+  </data>
 </root>

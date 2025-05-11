@@ -3,32 +3,24 @@
   "WorkspaceRootPath": "C:\\Catarina\\GitHub\\Indoor-Navigation-FrontOffice\\App\\IndoorMappingApp\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{CCE8AD22-C2AD-499F-BE91-C7087F165FC1}|IndoorMappingApp.csproj|c:\\catarina\\github\\indoor-navigation-frontoffice\\app\\indoormappingapp\\resources\\strings\\appresources.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}",
-      "RelativeMoniker": "D:0:0:{CCE8AD22-C2AD-499F-BE91-C7087F165FC1}|IndoorMappingApp.csproj|solutionrelative:resources\\strings\\appresources.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}"
+      "AbsoluteMoniker": "D:0:0:{CCE8AD22-C2AD-499F-BE91-C7087F165FC1}|IndoorMappingApp.csproj|c:\\catarina\\github\\indoor-navigation-frontoffice\\app\\indoormappingapp\\optionspage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CCE8AD22-C2AD-499F-BE91-C7087F165FC1}|IndoorMappingApp.csproj|solutionrelative:optionspage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CCE8AD22-C2AD-499F-BE91-C7087F165FC1}|IndoorMappingApp.csproj|c:\\catarina\\github\\indoor-navigation-frontoffice\\app\\indoormappingapp\\changepasswordpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{CCE8AD22-C2AD-499F-BE91-C7087F165FC1}|IndoorMappingApp.csproj|solutionrelative:changepasswordpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CCE8AD22-C2AD-499F-BE91-C7087F165FC1}|IndoorMappingApp.csproj|c:\\catarina\\github\\indoor-navigation-frontoffice\\app\\indoormappingapp\\changepasswordpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CCE8AD22-C2AD-499F-BE91-C7087F165FC1}|IndoorMappingApp.csproj|solutionrelative:changepasswordpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CCE8AD22-C2AD-499F-BE91-C7087F165FC1}|IndoorMappingApp.csproj|c:\\catarina\\github\\indoor-navigation-frontoffice\\app\\indoormappingapp\\accountsettings.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CCE8AD22-C2AD-499F-BE91-C7087F165FC1}|IndoorMappingApp.csproj|solutionrelative:accountsettings.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CCE8AD22-C2AD-499F-BE91-C7087F165FC1}|IndoorMappingApp.csproj|c:\\catarina\\github\\indoor-navigation-frontoffice\\app\\indoormappingapp\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{CCE8AD22-C2AD-499F-BE91-C7087F165FC1}|IndoorMappingApp.csproj|solutionrelative:app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{CCE8AD22-C2AD-499F-BE91-C7087F165FC1}|IndoorMappingApp.csproj|c:\\catarina\\github\\indoor-navigation-frontoffice\\app\\indoormappingapp\\optionspage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{CCE8AD22-C2AD-499F-BE91-C7087F165FC1}|IndoorMappingApp.csproj|solutionrelative:optionspage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{CCE8AD22-C2AD-499F-BE91-C7087F165FC1}|IndoorMappingApp.csproj|c:\\catarina\\github\\indoor-navigation-frontoffice\\app\\indoormappingapp\\scripts\\services\\indoorapiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CCE8AD22-C2AD-499F-BE91-C7087F165FC1}|IndoorMappingApp.csproj|solutionrelative:scripts\\services\\indoorapiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CCE8AD22-C2AD-499F-BE91-C7087F165FC1}|IndoorMappingApp.csproj|c:\\catarina\\github\\indoor-navigation-frontoffice\\app\\indoormappingapp\\scripts\\dtos\\changepassworddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CCE8AD22-C2AD-499F-BE91-C7087F165FC1}|IndoorMappingApp.csproj|solutionrelative:scripts\\dtos\\changepassworddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{CCE8AD22-C2AD-499F-BE91-C7087F165FC1}|IndoorMappingApp.csproj|c:\\catarina\\github\\indoor-navigation-frontoffice\\app\\indoormappingapp\\changepasswordpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{CCE8AD22-C2AD-499F-BE91-C7087F165FC1}|IndoorMappingApp.csproj|solutionrelative:changepasswordpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CCE8AD22-C2AD-499F-BE91-C7087F165FC1}|IndoorMappingApp.csproj|c:\\catarina\\github\\indoor-navigation-frontoffice\\app\\indoormappingapp\\resources\\strings\\appresources.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}",
+      "RelativeMoniker": "D:0:0:{CCE8AD22-C2AD-499F-BE91-C7087F165FC1}|IndoorMappingApp.csproj|solutionrelative:resources\\strings\\appresources.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,94 +30,72 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "App.xaml",
-              "DocumentMoniker": "C:\\Catarina\\GitHub\\Indoor-Navigation-FrontOffice\\App\\IndoorMappingApp\\App.xaml",
-              "RelativeDocumentMoniker": "App.xaml",
-              "ToolTip": "C:\\Catarina\\GitHub\\Indoor-Navigation-FrontOffice\\App\\IndoorMappingApp\\App.xaml",
-              "RelativeToolTip": "App.xaml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 3,
+              "Title": "ChangePasswordPage.xaml",
+              "DocumentMoniker": "C:\\Catarina\\GitHub\\Indoor-Navigation-FrontOffice\\App\\IndoorMappingApp\\ChangePasswordPage.xaml",
+              "RelativeDocumentMoniker": "ChangePasswordPage.xaml",
+              "ToolTip": "C:\\Catarina\\GitHub\\Indoor-Navigation-FrontOffice\\App\\IndoorMappingApp\\ChangePasswordPage.xaml",
+              "RelativeToolTip": "ChangePasswordPage.xaml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAA+AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-05-11T22:20:01.239Z",
+              "WhenOpened": "2025-05-11T23:47:34.544Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "OptionsPage.xaml.cs",
+              "DocumentMoniker": "C:\\Catarina\\GitHub\\Indoor-Navigation-FrontOffice\\App\\IndoorMappingApp\\OptionsPage.xaml.cs",
+              "RelativeDocumentMoniker": "OptionsPage.xaml.cs",
+              "ToolTip": "C:\\Catarina\\GitHub\\Indoor-Navigation-FrontOffice\\App\\IndoorMappingApp\\OptionsPage.xaml.cs",
+              "RelativeToolTip": "OptionsPage.xaml.cs",
+              "ViewState": "AgIAACMAAAAAAAAAAAAIwC4AAABUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-11T23:35:46.653Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "AppResources.resx",
               "DocumentMoniker": "C:\\Catarina\\GitHub\\Indoor-Navigation-FrontOffice\\App\\IndoorMappingApp\\Resources\\Strings\\AppResources.resx",
               "RelativeDocumentMoniker": "Resources\\Strings\\AppResources.resx",
               "ToolTip": "C:\\Catarina\\GitHub\\Indoor-Navigation-FrontOffice\\App\\IndoorMappingApp\\Resources\\Strings\\AppResources.resx",
               "RelativeToolTip": "Resources\\Strings\\AppResources.resx",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
-              "WhenOpened": "2025-05-11T22:59:34.858Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "AccountSettings.xaml.cs",
-              "DocumentMoniker": "C:\\Catarina\\GitHub\\Indoor-Navigation-FrontOffice\\App\\IndoorMappingApp\\AccountSettings.xaml.cs",
-              "RelativeDocumentMoniker": "AccountSettings.xaml.cs",
-              "ToolTip": "C:\\Catarina\\GitHub\\Indoor-Navigation-FrontOffice\\App\\IndoorMappingApp\\AccountSettings.xaml.cs",
-              "RelativeToolTip": "AccountSettings.xaml.cs",
-              "ViewState": "AgIAAB0AAAAAAAAAAAAwwAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-11T22:03:11.528Z",
+              "WhenOpened": "2025-05-11T23:34:52.913Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "ChangePasswordPage.xaml",
-              "DocumentMoniker": "C:\\Catarina\\GitHub\\Indoor-Navigation-FrontOffice\\App\\IndoorMappingApp\\ChangePasswordPage.xaml",
-              "RelativeDocumentMoniker": "ChangePasswordPage.xaml",
-              "ToolTip": "C:\\Catarina\\GitHub\\Indoor-Navigation-FrontOffice\\App\\IndoorMappingApp\\ChangePasswordPage.xaml",
-              "RelativeToolTip": "ChangePasswordPage.xaml",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABEAAABQAAAAAAAAAA==",
+              "Title": "OptionsPage.xaml",
+              "DocumentMoniker": "C:\\Catarina\\GitHub\\Indoor-Navigation-FrontOffice\\App\\IndoorMappingApp\\OptionsPage.xaml",
+              "RelativeDocumentMoniker": "OptionsPage.xaml",
+              "ToolTip": "C:\\Catarina\\GitHub\\Indoor-Navigation-FrontOffice\\App\\IndoorMappingApp\\OptionsPage.xaml",
+              "RelativeToolTip": "OptionsPage.xaml",
+              "ViewState": "AgIAADAAAAAAAAAAAAAAAD4AAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-05-11T22:01:03.678Z",
+              "WhenOpened": "2025-05-11T23:33:48.688Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "ChangePasswordPage.xaml.cs",
-              "DocumentMoniker": "C:\\Catarina\\GitHub\\Indoor-Navigation-FrontOffice\\App\\IndoorMappingApp\\ChangePasswordPage.xaml.cs",
-              "RelativeDocumentMoniker": "ChangePasswordPage.xaml.cs",
-              "ToolTip": "C:\\Catarina\\GitHub\\Indoor-Navigation-FrontOffice\\App\\IndoorMappingApp\\ChangePasswordPage.xaml.cs",
-              "RelativeToolTip": "ChangePasswordPage.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAaAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-11T21:57:18.654Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "ChangePasswordDTO.cs",
-              "DocumentMoniker": "C:\\Catarina\\GitHub\\Indoor-Navigation-FrontOffice\\App\\IndoorMappingApp\\Scripts\\DTOs\\ChangePasswordDTO.cs",
-              "RelativeDocumentMoniker": "Scripts\\DTOs\\ChangePasswordDTO.cs",
-              "ToolTip": "C:\\Catarina\\GitHub\\Indoor-Navigation-FrontOffice\\App\\IndoorMappingApp\\Scripts\\DTOs\\ChangePasswordDTO.cs",
-              "RelativeToolTip": "Scripts\\DTOs\\ChangePasswordDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-11T17:20:51.059Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
               "Title": "IndoorApiService.cs",
               "DocumentMoniker": "C:\\Catarina\\GitHub\\Indoor-Navigation-FrontOffice\\App\\IndoorMappingApp\\Scripts\\Services\\IndoorApiService.cs",
               "RelativeDocumentMoniker": "Scripts\\Services\\IndoorApiService.cs",
               "ToolTip": "C:\\Catarina\\GitHub\\Indoor-Navigation-FrontOffice\\App\\IndoorMappingApp\\Scripts\\Services\\IndoorApiService.cs",
               "RelativeToolTip": "Scripts\\Services\\IndoorApiService.cs",
-              "ViewState": "AgIAAJkAAAAAAAAAAAAUwKoAAAAuAAAAAAAAAA==",
+              "ViewState": "AgIAALEAAAAAAAAAAADwv8EAAAAyAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-11T12:09:27.713Z",
               "EditorCaption": ""
