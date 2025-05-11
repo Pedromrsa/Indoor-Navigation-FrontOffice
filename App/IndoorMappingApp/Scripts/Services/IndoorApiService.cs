@@ -130,6 +130,25 @@ namespace IndoorMappingApp.Scripts.Services
             }
         }
 
+        /*public async Task<RegisterResponseDTO> UpdatePasswordAsync(int id, ChangePasswordDTO dto)
+        {
+            try
+            {
+                var json = JsonSerializer.Serialize(dto);
+                var content = new StringContent(json, Encoding.UTF8, "application/json");
+
+                var response = await _httpClient.PostAsync("api/Auth/change-password", content);
+            }
+            catch (Exception ex)
+            {
+                return new RegisterResponseDTO
+                {
+                    Success = false,
+                    Message = ex.Message
+                };
+            }
+        }*/
+
 
         //public async Task<bool> RequestRecoveryTokenAsync(string email)
         //{

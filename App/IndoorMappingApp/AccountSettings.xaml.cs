@@ -12,6 +12,11 @@ public partial class AccountSettings : ContentPage
         InitializeComponent();
     }
 
+    private async void OnPasswordClicked(object sender, EventArgs e)
+    {
+        await Navigation.PushAsync(new ChangePasswordPage());
+    }
+
     private async void OnSaveChangesClicked(object sender, EventArgs e)
     {
         // get selected limitation

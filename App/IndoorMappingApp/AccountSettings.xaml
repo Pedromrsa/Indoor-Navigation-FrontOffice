@@ -11,25 +11,17 @@
         <ScrollView>
             <VerticalStackLayout Padding="20" Spacing="20">
 
+                <Button
+                    Padding="0"
+                    BackgroundColor="LightGrey"
+                    Clicked="OnPasswordClicked"
+                    FontSize="16"
+                    HorizontalOptions="Fill"
+                    Text="{helpers:Translate AccountSettings_ChangePassword}"
+                    TextColor="Black" />
+
                 <!--  ISEP Number Label  -->
                 <Label FontSize="14" Text="{helpers:Translate Label_IsepNumber_Feedback}" />
-
-                <!--  New Password  -->
-                <Label FontSize="14" Text="{helpers:Translate Entry_Password_Placeholder}" />
-                <Entry
-                    x:Name="NewPasswordEntry"
-                    FontSize="14"
-                    IsPassword="True"
-                    Placeholder="***********" />
-
-                <!--  Confirm Password  -->
-                <Label FontSize="14" Text="{helpers:Translate RecoverPassword_Placeholder_Confirm}" />
-                <Entry
-                    x:Name="ConfirmPasswordEntry"
-                    BackgroundColor="White"
-                    FontSize="14"
-                    IsPassword="True"
-                    Placeholder="" />
 
                 <!--  Physical Limitation Dropdown  -->
                 <Label FontSize="14" Text="{helpers:Translate Label_PhysicalLimitation}" />
