@@ -23,7 +23,7 @@
             <Label
                 x:Name="PercursoLabel"
                 Margin="10"
-                FontSize="14"
+                FontSize="14" 
                 LineBreakMode="WordWrap"
                 TextColor="Black" />
 

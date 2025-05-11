@@ -172,5 +172,19 @@ namespace IndoorMappingApp.Scripts.Services
             }
         }
 
+        public async Task<bool> PostFeedback(int u_id, string tipo, string conteudo)
+        {
+            try
+            {
+                var payload = new { usuarioId = u_id, tipo = tipo, conteudo = conteudo };
+                var response = await _httpClient.PostAsJsonAsync("api/public/Diario", payload);
+                return response.IsSuccessStatusCode;
+            }
+            catch (Exception ex)
+            {
+                return false;
+            }
+        }
+
     }
 }

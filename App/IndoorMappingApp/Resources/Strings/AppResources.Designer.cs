@@ -295,7 +295,7 @@ namespace IndoorMappingApp.Resources.Strings {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Is this message related to any path?.
+        ///   Looks up a localized string similar to Is this message related to any path? Leave empty if not..
         /// </summary>
         internal static string Label_PathRelated {
             get {
@@ -457,7 +457,7 @@ namespace IndoorMappingApp.Resources.Strings {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to The path x seems very optimal..
+        ///   Looks up a localized string similar to The path seems very optimal..
         /// </summary>
         internal static string Option1_Text {
             get {
@@ -475,7 +475,7 @@ namespace IndoorMappingApp.Resources.Strings {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to The path x is always full of people..
+        ///   Looks up a localized string similar to The path is always full of people..
         /// </summary>
         internal static string Option2_Text {
             get {

@@ -196,7 +196,7 @@
     <value> New Password</value>
   </data>
   <data name="Label_PathRelated" xml:space="preserve">
-    <value>Is this message related to any path?</value>
+    <value>Is this message related to any path? Leave empty if not.</value>
   </data>
   <data name="Label_PhysicalLimitation" xml:space="preserve">
     <value>Physical Limitation</value>
@@ -250,13 +250,13 @@
     <value>Option 1</value>
   </data>
   <data name="Option1_Text" xml:space="preserve">
-    <value>The path x seems very optimal.</value>
+    <value>The path seems very optimal.</value>
   </data>
   <data name="Option2" xml:space="preserve">
     <value>Option 2</value>
   </data>
   <data name="Option2_Text" xml:space="preserve">
-    <value>The path x is always full of people.</value>
+    <value>The path is always full of people.</value>
   </data>
   <data name="Option3" xml:space="preserve">
     <value>Option 3</value>

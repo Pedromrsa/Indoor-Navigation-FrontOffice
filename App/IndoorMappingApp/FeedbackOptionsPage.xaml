@@ -3,41 +3,13 @@
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:helpers="clr-namespace:IndoorMappingApp.Helpers"
+    Title="{helpers:Translate FeedbackOptions_Title}"
     BackgroundColor="White">
 
     <Grid RowDefinitions="Auto,*">
 
-        <!--  Top Bar  -->
-        <Grid
-            Padding="0"
-            BackgroundColor="Red"
-            HeightRequest="50"
-            RowSpacing="0">
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="*" />
-                <ColumnDefinition Width="Auto" />
-            </Grid.ColumnDefinitions>
-
-            <Label
-                Margin="10,0"
-                FontAttributes="Bold"
-                Text="{helpers:Translate PathProblems_ProjectLogo}"
-                TextColor="White"
-                VerticalOptions="Center" />
-
-            <ImageButton
-                Grid.Column="1"
-                Margin="10,0"
-                BackgroundColor="Transparent"
-                HeightRequest="24"
-                HorizontalOptions="End"
-                Source="burguer_menu.png"
-                VerticalOptions="Center"
-                WidthRequest="24" />
-        </Grid>
-
         <!--  Scrollable Content  -->
-        <ScrollView Grid.Row="1">
+        <ScrollView Grid.Row="0">
             <VerticalStackLayout Padding="20" Spacing="20">
 
                 <!--  ISEP Number Label  -->
@@ -48,15 +20,7 @@
 
                 <!--  Picker  -->
                 <Label Text="{helpers:Translate Label_PathRelated}" />
-                <Picker x:Name="PathPicker" Title="{helpers:Translate Picker_Path_Title}">
-                    <Picker.ItemsSource>
-                        <x:Array Type="{x:Type x:String}">
-                            <x:String>No</x:String>
-                            <x:String>Path x \\ Yes</x:String>
-                            <x:String>Path y \\ Yes</x:String>
-                        </x:Array>
-                    </Picker.ItemsSource>
-                </Picker>
+                <Picker x:Name="PathPicker" Title="{helpers:Translate Picker_Path_Title}" ItemsSource="{Binding PathOptions}" />
 
                 <!--  Feedback Options  -->
                 <Label Text="{helpers:Translate Picker_Path_Title}" />
@@ -100,5 +64,15 @@
 
             </VerticalStackLayout>
         </ScrollView>
+
+        <!--  Burger Icon -->
+        <ImageButton
+            Source="burguer_menu.png"
+            BackgroundColor="Transparent"
+            HeightRequest="24"
+            HorizontalOptions="End"
+            VerticalOptions="Start"
+            WidthRequest="24"
+            Clicked="OnBurgerMenuClicked" />
     </Grid>
 </ContentPage>

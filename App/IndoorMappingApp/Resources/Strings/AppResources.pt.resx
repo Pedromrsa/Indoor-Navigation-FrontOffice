@@ -196,7 +196,7 @@
     <value>Nova Palavra-passe</value>
   </data>
   <data name="Label_PathRelated" xml:space="preserve">
-    <value>Esta mensagem está relacionada com algum percurso?</value>
+    <value>Esta mensagem está relacionada com algum percurso? Deixa vazio se não estiver.</value>
   </data>
   <data name="Label_PhysicalLimitation" xml:space="preserve">
     <value>Limitação Física</value>
@@ -250,13 +250,13 @@
     <value>Opção 1</value>
   </data>
   <data name="Option1_Text" xml:space="preserve">
-    <value>O percurso x parece muito otimizado.</value>
+    <value>O percurso parece muito otimizado.</value>
   </data>
   <data name="Option2" xml:space="preserve">
     <value>Opção 2</value>
   </data>
   <data name="Option2_Text" xml:space="preserve">
-    <value>O percurso x está sempre cheio de pessoas.</value>
+    <value>O percurso está sempre cheio de pessoas.</value>
   </data>
   <data name="Option3" xml:space="preserve">
     <value>Opção 3</value>

@@ -2,11 +2,20 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="IndoorMappingApp.AvailableRoutesPage"
-             Title="AvailableRoutesPage">
+             Title="Available Routes">
     <VerticalStackLayout>
-        <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
+        <CollectionView ItemsSource="{Binding Routes}">
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+                    <VerticalStackLayout Padding="10">
+                        <Label Text="{Binding RoomName}" 
+                               FontAttributes="Bold" 
+                               FontSize="18" />
+                        <Label Text="{Binding RouteDetails}" 
+                               FontSize="14" />
+                    </VerticalStackLayout>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
     </VerticalStackLayout>
 </ContentPage>
