@@ -130,7 +130,7 @@ namespace IndoorMappingApp.Scripts.Services
             }
         }
 
-        /*public async Task<RegisterResponseDTO> UpdatePasswordAsync(int id, ChangePasswordDTO dto)
+        public async Task<RegisterResponseDTO> UpdatePasswordAsync(ChangePasswordDTO dto)
         {
             try
             {
@@ -138,6 +138,33 @@ namespace IndoorMappingApp.Scripts.Services
                 var content = new StringContent(json, Encoding.UTF8, "application/json");
 
                 var response = await _httpClient.PostAsync("api/Auth/change-password", content);
+                var responseBody = await response.Content.ReadAsStringAsync();
+
+                // Check if the response is JSON before deserializing
+                if (response.Content.Headers.ContentType?.MediaType == "application/json")
+                {
+                    return JsonSerializer.Deserialize<RegisterResponseDTO>(responseBody, new JsonSerializerOptions
+                    {
+                        PropertyNameCaseInsensitive = true
+                    });
+                }
+                else if (response.IsSuccessStatusCode)
+                {
+                    // Treat plain-text success as a successful result
+                    return new RegisterResponseDTO
+                    {
+                        Success = true,
+                        Message = responseBody // This could be something like "Password changed successfully"
+                    };
+                }
+                else
+                {
+                    return new RegisterResponseDTO
+                    {
+                        Success = false,
+                        Message = responseBody // likely plain text error message
+                    };
+                }
             }
             catch (Exception ex)
             {
@@ -147,7 +174,7 @@ namespace IndoorMappingApp.Scripts.Services
                     Message = ex.Message
                 };
             }
-        }*/
+        }
 
 
         //public async Task<bool> RequestRecoveryTokenAsync(string email)
