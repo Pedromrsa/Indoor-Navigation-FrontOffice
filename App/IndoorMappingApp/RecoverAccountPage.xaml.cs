@@ -18,7 +18,7 @@ public partial class RecoverAccountPage : ContentPage
         {
             var apiService = new IndoorApiService();
 
-            bool response =  await apiService.ValidateEmailExistance(emailEntry.Text);
+            bool response = await apiService.ValidateEmailExistance(emailEntry.Text);
 
             if (response)
             {
@@ -62,7 +62,10 @@ public partial class RecoverAccountPage : ContentPage
 
         if (isValidToken)
         {
-            await Navigation.PushAsync(new RecoverPasswordPage(tokenEntry.Text), true);
+            receivedTokenLabel.Text = $"Token: {tokenEntry.Text}";
+            receivedTokenLabel.IsVisible = true;
+            changePasswordButton.IsVisible = true;
+            // await Navigation.PushAsync(new RecoverPasswordPage(tokenEntry.Text), true);
         }
         else
         {
@@ -91,5 +94,11 @@ public partial class RecoverAccountPage : ContentPage
             return false;
         }
     }
+
+    async void OnChangePasswordClicked(object sender, EventArgs e)
+    {
+        await Navigation.PushAsync(new RecoverPasswordPage(tokenEntry.Text), true);
+    }
+
 
 }

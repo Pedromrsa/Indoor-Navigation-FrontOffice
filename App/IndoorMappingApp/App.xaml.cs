@@ -36,7 +36,19 @@ namespace IndoorMappingApp
                     Description = "Check the app today for new updates.",
                     Schedule = new NotificationRequestSchedule
                     {
-                        NotifyTime = DateTime.Now.AddSeconds(30),
+                        NotifyTime = DateTime.Now.AddSeconds(20),
+                        RepeatType = NotificationRepeat.Daily
+                    }
+                };
+
+                var notification2 = new NotificationRequest
+                {
+                    NotificationId = 1001,
+                    Title = "Don't know how to get to your class?",
+                    Description = "Indoor Navigation will help you!",
+                    Schedule = new NotificationRequestSchedule
+                    {
+                        NotifyTime = DateTime.Now.AddMinutes(3),
                         RepeatType = NotificationRepeat.Daily
                     }
                 };
@@ -44,6 +56,7 @@ namespace IndoorMappingApp
                 // DateTime.Now.Date.AddHours(18)
 
                 LocalNotificationCenter.Current.Show(notification);
+                LocalNotificationCenter.Current.Show(notification2);
 
                 // Mark as scheduled
                 Preferences.Set("DailyNotificationSet", true);

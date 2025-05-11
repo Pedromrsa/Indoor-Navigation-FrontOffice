@@ -3,8 +3,8 @@
   <PropertyGroup>
     <IsFirstTimeProjectOpen>False</IsFirstTimeProjectOpen>
     <ActiveDebugFramework>net9.0-android</ActiveDebugFramework>
-    <ActiveDebugProfile>Pixel 7 - API 34 (Android 14.0 - API 34)</ActiveDebugProfile>
-    <SelectedPlatformGroup>Emulator</SelectedPlatformGroup>
+    <ActiveDebugProfile>realme RMX2063 (Android 11.0 - API 30)</ActiveDebugProfile>
+    <SelectedPlatformGroup>PhysicalDevice</SelectedPlatformGroup>
     <DefaultDevice>pixel_7_-_api_34</DefaultDevice>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|net8.0-android|AnyCPU'">
@@ -14,8 +14,14 @@
     <RuntimeIdentifier>ios-arm64</RuntimeIdentifier>
     <PlatformTarget>arm64</PlatformTarget>
   </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|net9.0-android|AnyCPU'">
+    <DebuggerFlavor>ProjectDebugger</DebuggerFlavor>
+  </PropertyGroup>
   <ItemGroup>
     <EmbeddedResource Update="Resources\Strings\AppResources.pt.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Resources\Strings\AppResources.resx">
       <SubType>Designer</SubType>
     </EmbeddedResource>
   </ItemGroup>
@@ -50,6 +56,9 @@
       <SubType>Designer</SubType>
     </None>
     <None Update="Resources\Styles\Styles.xaml">
+      <SubType>Designer</SubType>
+    </None>
+    <None Update="ShowRoomPage.xaml">
       <SubType>Designer</SubType>
     </None>
   </ItemGroup>

@@ -1,4 +1,5 @@
 ﻿using IndoorMappingApp.Scripts.DTOs;
+using System.Net;
 using System.Net.Http.Json;
 using System.Text;
 using System.Text.Json;
@@ -84,25 +85,70 @@ namespace IndoorMappingApp.Scripts.Services
             return response;
         }
 
-        public async Task<RegisterResponseDTO> UpdateAccountSettingsAsync(UpdateAccountRequestDTO dto)
+        public async Task<RegisterResponseDTO> UpdateUserInfoAsync(int id, UpdateAccountRequestDTO dto)
         {
-            var client = new HttpClient();
-            var url = "https://isepindoornavigationapi-vgq7.onrender.com/api/Account/update";
-
-            var json = JsonSerializer.Serialize(dto);
-            var content = new StringContent(json, Encoding.UTF8, "application/json");
-
             try
             {
-                var response = await client.PostAsync(url, content);
+                var json = JsonSerializer.Serialize(dto);
+                var content = new StringContent(json, Encoding.UTF8, "application/json");
+
+                var response = await _httpClient.PutAsync($"api/Usuarios/{id}", content);
+
+                if (response.StatusCode == HttpStatusCode.NoContent)
+                {
+                    return new RegisterResponseDTO
+                    {
+                        Success = true,
+                        Message = "Settings updated successfully."
+                    };
+                }
+
                 var responseBody = await response.Content.ReadAsStringAsync();
-                return JsonSerializer.Deserialize<RegisterResponseDTO>(responseBody);
+
+                if (string.IsNullOrWhiteSpace(responseBody))
+                {
+                    return new RegisterResponseDTO
+                    {
+                        Success = false,
+                        Message = "No content returned from server."
+                    };
+                }
+
+                return JsonSerializer.Deserialize<RegisterResponseDTO>(responseBody, new JsonSerializerOptions
+                {
+                    PropertyNameCaseInsensitive = true
+                });
+                
             }
             catch (Exception ex)
             {
-                return new RegisterResponseDTO { Success = false, Message = ex.Message };
+                return new RegisterResponseDTO
+                {
+                    Success = false,
+                    Message = ex.Message
+                };
             }
         }
+
+        /*public async Task<RegisterResponseDTO> UpdatePasswordAsync(int id, ChangePasswordDTO dto)
+        {
+            try
+            {
+                var json = JsonSerializer.Serialize(dto);
+                var content = new StringContent(json, Encoding.UTF8, "application/json");
+
+                var response = await _httpClient.PostAsync("api/Auth/change-password", content);
+            }
+            catch (Exception ex)
+            {
+                return new RegisterResponseDTO
+                {
+                    Success = false,
+                    Message = ex.Message
+                };
+            }
+        }*/
+
 
         //public async Task<bool> RequestRecoveryTokenAsync(string email)
         //{

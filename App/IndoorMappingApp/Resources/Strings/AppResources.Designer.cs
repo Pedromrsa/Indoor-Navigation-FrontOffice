@@ -223,6 +223,15 @@ namespace IndoorMappingApp.Resources.Strings {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Home Page.
+        /// </summary>
+        internal static string home {
+            get {
+                return ResourceManager.GetString("home", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Choose a destination:.
         /// </summary>
         internal static string Label_ChooseDestination {
@@ -914,7 +923,7 @@ namespace IndoorMappingApp.Resources.Strings {
                 return ResourceManager.GetString("RecoverPassword_Label_Header", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to Passwords match!.
         /// </summary>
@@ -1119,6 +1128,15 @@ namespace IndoorMappingApp.Resources.Strings {
         internal static string SettingsSucess {
             get {
                 return ResourceManager.GetString("SettingsSucess", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Show Room.
+        /// </summary>
+        internal static string ShowRoom_Label_Header {
+            get {
+                return ResourceManager.GetString("ShowRoom_Label_Header", resourceCulture);
             }
         }
         

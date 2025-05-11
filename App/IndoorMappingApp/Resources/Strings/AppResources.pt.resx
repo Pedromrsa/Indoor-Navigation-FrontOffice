@@ -171,6 +171,9 @@
   <data name="FeedbackSubmitted" xml:space="preserve">
     <value>Opinião submetida</value>
   </data>
+  <data name="home" xml:space="preserve">
+    <value>Página inicial</value>
+  </data>
   <data name="Label_ChooseDestination" xml:space="preserve">
     <value>Escolhe um destino:</value>
   </data>
@@ -398,6 +401,9 @@
   </data>
   <data name="RecoverPassword_Label_Header" xml:space="preserve">
     <value>Recuperação de Palavra-passe</value>
+  </data>
+  <data name="ShowRoom_Label_Header" xml:space="preserve">
+    <value>Visualização de Sala</value>
   </data>
   <data name="RecoverPassword_MatchMessage" xml:space="preserve">
     <value>As palavras-passe coincidem!</value>

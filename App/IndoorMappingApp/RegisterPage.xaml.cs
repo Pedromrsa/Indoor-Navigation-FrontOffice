@@ -90,7 +90,7 @@ namespace IndoorMappingApp
                     lrm["Registration_Success_Title"],
                     lrm["Registration_Success_Message"],
                     lrm["Button_OK"]);
-                await Navigation.PopAsync();
+                await Navigation.PushAsync(new MainMenuPage()); ;
             }
             else
             {

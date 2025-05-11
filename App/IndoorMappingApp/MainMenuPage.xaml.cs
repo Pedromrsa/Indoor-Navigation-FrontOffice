@@ -16,8 +16,8 @@ public partial class MainMenuPage : ContentPage, IQueryAttributable
         set
         {
             _isGuest = value;
-            OptionsButton.IsVisible = true;
-                //!_isGuest;
+            OptionsButton.IsVisible = !_isGuest;
+            //!_isGuest;
         }
     }
 

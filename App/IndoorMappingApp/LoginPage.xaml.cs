@@ -26,6 +26,7 @@ namespace IndoorMappingApp
             string email = emailEntry.Text;
             string password = passwordEntry.Text;
 
+
             if (string.IsNullOrWhiteSpace(email) || string.IsNullOrWhiteSpace(password))
             {
                 //DisplayAlert("Login Error", "Please enter both email and password.", "OK");
@@ -57,11 +58,30 @@ namespace IndoorMappingApp
 
                     if (response.IsSuccessStatusCode)
                     {
-                        var responseContent = await response.Content.ReadAsStringAsync();
-                        await Shell.Current.GoToAsync("mainmenu", true, new Dictionary<string, object>
+                        ActiveUser.UserEmail = email;
+
+                        // Faz chamada para buscar o utilizador autenticado
+                        var userUrl = "https://isepindoornavigationapi-vgq7.onrender.com/api/Usuarios";
+                        var userResponse = await client.GetAsync(userUrl);
+
+                        if (userResponse.IsSuccessStatusCode)
                         {
-                            { "IsGuest", false }
-                        });
+                            var userJson = await userResponse.Content.ReadAsStringAsync();
+                            var usuarios = JsonSerializer.Deserialize<List<User>>(userJson);
+                            var usuario = usuarios.FirstOrDefault(u => u.email.Equals(email, StringComparison.OrdinalIgnoreCase));
+
+
+                            // Guarda os dados globalmente
+                            ActiveUser.UserId = usuario.usuarioId;
+                            ActiveUser.UserName = usuario.nome;
+                            ActiveUser.UserMobilityType = usuario.mobilidadeTipo;
+                            ActiveUser.UserType = usuario.tipoUsuario;
+
+                            await Shell.Current.GoToAsync("mainmenu", true, new Dictionary<string, object>
+                            {
+                                { "IsGuest", false }
+                            });
+                        }
                     }
                     else
                     {
@@ -79,4 +99,21 @@ namespace IndoorMappingApp
             }
         }
     }
+}
+public static class ActiveUser
+{
+    public static string UserId { get; set; }
+    public static string UserName { get; set; }
+    public static string UserEmail { get; set; }
+    public static string UserMobilityType { get; set; }
+    public static string UserType { get; set; }
+    public static string UserNumber => UserEmail?.Split('@')[0];
+}
+public class User
+{
+    public string usuarioId { get; set; }
+    public string nome { get; set; }
+    public string email { get; set; }
+    public string mobilidadeTipo { get; set; }
+    public string tipoUsuario { get; set; }
 }
