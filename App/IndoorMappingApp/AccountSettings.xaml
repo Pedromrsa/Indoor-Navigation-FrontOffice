@@ -37,7 +37,7 @@
                     <Picker.Items>
                         <x:String>None</x:String>
                         <x:String>Paraplegic</x:String>
-                        <x:String>Quadriplegic</x:String>
+                        <x:String>Tetraplegic</x:String>
                     </Picker.Items>
                 </Picker>
 
