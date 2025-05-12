@@ -1,49 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage
-    x:Class="IndoorMappingApp.PathProblems"
+    x:Class="IndoorMappingApp.FeedbackOptionsPage"
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:helpers="clr-namespace:IndoorMappingApp.Helpers"
     Title="PathProblems"
-    BackgroundColor="White"
-    Shell.NavBarIsVisible="False">
+    BackgroundColor="White">
 
     <Grid RowDefinitions="Auto,*">
-
-        <!--  Top Bar  -->
-        <Grid
-            Grid.Row="0"
-            Padding="0"
-            BackgroundColor="Red"
-            HeightRequest="50"
-            RowSpacing="0">
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="*" />
-                <ColumnDefinition Width="Auto" />
-            </Grid.ColumnDefinitions>
-
-            <Label
-                Margin="10,0"
-                FontAttributes="Bold"
-                Text="Project Logo"
-                TextColor="White"
-                VerticalOptions="Center" />
-
-            <ImageButton
-                Grid.Column="1"
-                Margin="10,0"
-                BackgroundColor="Transparent"
-                Clicked="OnBurgerMenuClicked"
-                HeightRequest="24"
-                HorizontalOptions="End"
-                Source="burguer_menu.png"
-                VerticalOptions="Center"
-                WidthRequest="24" />
-        </Grid>
-
-
-
-
         <VerticalStackLayout Grid.Row="1" Padding="0">
 
             <!--  Content Form  -->
@@ -145,8 +109,8 @@
 
                     <!--  Send Button  -->
                     <Button
-                        Clicked="OnSubmitButton" 
                         BackgroundColor="Red"
+                        Clicked="OnSubmitButton"
                         CornerRadius="10"
                         FontAttributes="Bold"
                         HeightRequest="50"
