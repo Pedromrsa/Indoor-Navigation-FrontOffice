@@ -1,11 +1,14 @@
 using System.Collections.ObjectModel;
+using System.Text.Json;
 using IndoorMappingApp.Scripts.Services;
+using IndoorMappingApp.Scripts.DTOs;
 
 namespace IndoorMappingApp
 {
     public partial class AvailableRoutesPage : ContentPage
     {
         public ObservableCollection<RouteInfo> Routes { get; set; }
+        private readonly HttpClient _httpClient = new HttpClient();
 
         public AvailableRoutesPage()
         {
@@ -13,73 +16,93 @@ namespace IndoorMappingApp
             Routes = new ObservableCollection<RouteInfo>();
             BindingContext = this;
 
-            LoadRoutes();
+            LoadAllRoutes();
         }
 
-        private async void LoadRoutes()
+        private async void LoadAllRoutes()
         {
+            // For B311 (destination 9)
+            var b311Routes = await GetAllRoutesToRoom(9, "B311");
+            foreach (var route in b311Routes)
+                Routes.Add(route);
 
-            // Fetch routes for B311
-            // var b311Routes = await apiService.GetRoutesForRoomAsync("B311");
-            var steps = await GetStringPathToRoom(9);
-            Routes.Add(new RouteInfo
-            {
-                RoomName = "B311",
-                RouteDetails = string.Join("\n", steps)
-            });
-
-            // Fetch routes for B404
-            steps =  await GetStringPathToRoom(10);
-            Routes.Add(new RouteInfo
-            {
-                RoomName = "B404",
-                RouteDetails = string.Join("\n", steps)
-            });
+            // For B404 (destination 10)
+            var b404Routes = await GetAllRoutesToRoom(10, "B404");
+            foreach (var route in b404Routes)
+                Routes.Add(route);
         }
-        public async Task<List<String>> GetStringPathToRoom(int roomID)
+
+        private async Task<List<RouteInfo>> GetAllRoutesToRoom(int destinationId, string roomName)
         {
-            var lrm = LocalizationResourceManager.Instance;
+            var allRoutes = new List<RouteInfo>();
+            int[] origins = { 13, 1 };
 
-            var api = new IndoorApiService();
-            var resultado = await api.ObterMelhorCaminhoAsync(roomID);
-            var steps = new List<string>();
-
-
-            if (resultado == null || resultado.InfraestruturasIds == null || !resultado.InfraestruturasIds.Any())
+            foreach (var origin in origins)
             {
-                //await DisplayAlert("Erro", "Não foi possível obter o caminho.", "OK");
-                await DisplayAlert(
-                        lrm["Registration_Failure_Title"],
-                        lrm["Path_Message"],
-                        lrm["Button_OK"]);
-                return steps;
-            }
-
-            // Busca todas as infraestruturas com tipo e descrição
-            var infraestruturas = await api.GetInfraestruturasAsync();
-
-            for (int i = 0; i < resultado.InfraestruturasIds.Count - 1; i++)
-            {
-                var origemId = resultado.InfraestruturasIds[i];
-                var destinoStepId = resultado.InfraestruturasIds[i + 1];
-
-                var origem = infraestruturas.FirstOrDefault(x => x.Id == origemId);
-                var destino = infraestruturas.FirstOrDefault(x => x.Id == destinoStepId);
-
-                if (origem != null && destino != null)
+                var url = $"https://isepindoornavigationapi-vgq7.onrender.com/api/Caminhos/todos-detalhados?origemId={origin}&destinoId={destinationId}";
+                try
                 {
-                    steps.Add($"De {origem.TipoInfraestrutura} {origem.Descricao} ({origem.Piso}) A {destino.TipoInfraestrutura} {destino.Descricao} ({destino.Piso})");
+                    var response = await _httpClient.GetAsync(url);
+                    if (response.IsSuccessStatusCode)
+                    {
+                        var json = await response.Content.ReadAsStringAsync();
+                        var routeResponse = JsonSerializer.Deserialize<AllRoutesResponseDTO>(json, new JsonSerializerOptions
+                        {
+                            PropertyNameCaseInsensitive = true
+                        });
+
+                        if (routeResponse?.caminhos != null)
+                        {
+                            int routeNumber = 1;
+                            foreach (var route in routeResponse.caminhos)
+                            {
+                                var steps = route.Select(step =>
+                                    $"De {step.OrigemTipoInfraestrutura} {step.OrigemDescricao} ({step.OrigemPiso}) " +
+                                    $"A {step.DestinoTipoInfraestrutura} {step.DestinoDescricao} ({step.DestinoPiso})"
+                                );
+                                var origem = route.FirstOrDefault(x => x.OrigemId == origin);
+                                allRoutes.Add(new RouteInfo
+                                {
+                                    RoomName = $"{roomName} (Origem {origem.OrigemTipoInfraestrutura} {origem.OrigemDescricao}, Rota {routeNumber})",
+                                    RouteDetails = string.Join("\n", steps)
+                                });
+                                routeNumber++;
+                            }
+                        }
+                        else
+                        {
+                            allRoutes.Add(new RouteInfo
+                            {
+                                RoomName = $"{roomName} (Origem {origin})",
+                                RouteDetails = "Nenhuma rota encontrada."
+                            });
+                        }
+                    }
+                    else
+                    {
+                        allRoutes.Add(new RouteInfo
+                        {
+                            RoomName = $"{roomName} (Origem {origin})",
+                            RouteDetails = "Erro ao obter rotas."
+                        });
+                    }
+                }
+                catch (Exception ex)
+                {
+                    allRoutes.Add(new RouteInfo
+                    {
+                        RoomName = $"{roomName} (Origem {origin})",
+                        RouteDetails = $"Exceção: {ex.Message}"
+                    });
                 }
             }
-            return steps;
+            return allRoutes;
         }
-    }
 
-    
-
-    public class RouteInfo
-    {
-        public string RoomName { get; set; }
-        public string RouteDetails { get; set; }
+        public class RouteInfo
+        {
+            public string RoomName { get; set; }
+            public string RouteDetails { get; set; }
+        }
     }
 }
