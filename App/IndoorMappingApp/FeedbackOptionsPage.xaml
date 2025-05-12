@@ -21,10 +21,7 @@
 
                 <!--  Picker  -->
                 <Label Text="{helpers:Translate Label_PathRelated}" />
-                <Picker
-                    x:Name="PathPicker"
-                    Title="{helpers:Translate Picker_Path_Title}"
-                    ItemsSource="{Binding PathOptions}" />
+                <Picker x:Name="PathPicker" Title="{helpers:Translate Picker_Path_Title}" ItemsSource="{Binding PathOptions}" />
 
                 <!--  Feedback Options  -->
                 <Label Text="{helpers:Translate Picker_Path_Title}" />
@@ -68,5 +65,15 @@
 
             </VerticalStackLayout>
         </ScrollView>
+
+        <!--  Burger Icon -->
+        <ImageButton
+            Source="burguer_menu.png"
+            BackgroundColor="Transparent"
+            HeightRequest="24"
+            HorizontalOptions="End"
+            VerticalOptions="Start"
+            WidthRequest="24"
+            Clicked="OnBurgerMenuClicked" />
     </Grid>
 </ContentPage>
