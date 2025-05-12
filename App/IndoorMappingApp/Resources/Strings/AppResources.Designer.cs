@@ -178,6 +178,15 @@ namespace IndoorMappingApp.Resources.Strings {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Choose at least one option..
+        /// </summary>
+        internal static string ChooseOneOption {
+            get {
+                return ResourceManager.GetString("ChooseOneOption", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to ISEP E-mail.
         /// </summary>
         internal static string Entry_Email_Placeholder {
@@ -1200,6 +1209,15 @@ namespace IndoorMappingApp.Resources.Strings {
         internal static string Tetraplegic {
             get {
                 return ResourceManager.GetString("Tetraplegic", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to User not authenticated..
+        /// </summary>
+        internal static string UserNotAuthenticated {
+            get {
+                return ResourceManager.GetString("UserNotAuthenticated", resourceCulture);
             }
         }
         

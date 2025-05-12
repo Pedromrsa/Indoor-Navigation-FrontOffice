@@ -1,5 +1,6 @@
 using System.Collections.ObjectModel;
 using System.Text.Json;
+using System.Text;
 using IndoorMappingApp.Scripts.Services;
 
 namespace IndoorMappingApp
@@ -10,11 +11,23 @@ namespace IndoorMappingApp
         private readonly HttpClient _httpClient = new HttpClient();
         public ObservableCollection<string> PathOptions { get; set; }
         private ObservableCollection<PathDetail> _paths = new ObservableCollection<PathDetail>();
+        private PathDetail _selectedPath;
+        public PathDetail SelectedPath
+        {
+            get => _selectedPath;
+            set
+            {
+                _selectedPath = value;
+                OnPropertyChanged();
+            }
+        }
+
         public FeedbackOptionsPage()
         {
             InitializeComponent();
             PathOptions = new ObservableCollection<string>();
             BindingContext = this;
+            IsepNumber.Text = ActiveUser.UserNumber;
 
             LoadPathsAsync();
         }
@@ -58,42 +71,24 @@ namespace IndoorMappingApp
             }
         }
 
-        private async void LoadPathOptions()
-        {
-            var api = new IndoorApiService();
-            var infraestruturas = await api.GetInfraestruturasAsync();
-            var paths = new List<string> { "No" };
-
-            if (infraestruturas != null && infraestruturas.Any())
-            {
-                for (int i = 0; i < infraestruturas.Count - 1; i++)
-                {
-                    var origem = infraestruturas[i];
-                    var destino = infraestruturas[i + 1];
-
-                    if (origem != null && destino != null)
-                    {
-                        paths.Add($"De {origem.TipoInfraestrutura} {origem.Descricao} ({origem.Piso}) A {destino.TipoInfraestrutura} {destino.Descricao} ({destino.Piso})");
-                    }
-                }
-            }
-
-            foreach (var path in paths)
-            {
-                PathOptions.Add(path);
-            }
-        }
-
         private async void OnSendFeedbackClicked(object sender, EventArgs e)
         {
             var lrm = LocalizationResourceManager.Instance;
             var api = new IndoorApiService();
 
+            if (ActiveUser.UserId == null || ActiveUser.UserId == "0")
+            {
+                await DisplayAlert(
+                    lrm["Registration_Failure_Title"],
+                    lrm["UserNotAuthenticated"],
+                    lrm["Button_OK"]);
+                return;
+            }
 
 
             var selectedFeedback = new List<string>();
 
-            var selectedPathOption = PathPicker.SelectedItem as string;
+            var selectedPathOption = PathPicker.SelectedItem as PathDetail;
 
             if (Option1.IsChecked) selectedFeedback.Add(lrm["Option1_Text"]);
             if (Option2.IsChecked) selectedFeedback.Add((lrm["Option2_Text"]));
@@ -103,18 +98,54 @@ namespace IndoorMappingApp
 
             string result = string.Join("\n", selectedFeedback);
 
-
-            var done = await api.PostFeedback(0, selectedPathOption ?? "No", result);
-
-            if (done) {
-                //DisplayAlert("Feedback Submitted", result, "OK");
+            if (result == "")
+            {
                 await DisplayAlert(
-                            lrm["Feedback"],
-                            lrm["FeedbackSubmitted"],
-                            lrm["Button_OK"]);
+                    lrm["Registration_Failure_Title"],
+                    lrm["ChooseOneOption"],
+                    lrm["Button_OK"]);
+                return;
+            }
+            var feedback = new
+            {
+                usuarioId = ActiveUser.UserId,
+                caminhoId = selectedPathOption == null ? 999 : selectedPathOption.Id,
+                avaliacao = 1,
+                comentario = result,
+            };
+
+            try
+            {
+                var httpClient = new HttpClient();
+                var url = "https://isepindoornavigationapi-vgq7.onrender.com/api/FeedbackCaminhos";
+
+                var json = JsonSerializer.Serialize(feedback);
+                var content = new StringContent(json, Encoding.UTF8, "application/json");
+
+                var response = await httpClient.PostAsync(url, content);
+
+                if (response.IsSuccessStatusCode)
+                {
+                    await DisplayAlert(
+                        lrm["Registration_Success_Title"],
+                        lrm["FeedbackSubmitted"], 
+                        lrm["Button_OK"]);
+                }
+                else
+                {
+                    var errorMsg = await response.Content.ReadAsStringAsync();
+                    await DisplayAlert(
+                        lrm["Registration_Failure_Title"],
+                        lrm["Request_Failed"],
+                        lrm["Button_OK"]);
+                }
+            }
+            catch (Exception ex)
+            {
+                await DisplayAlert("Exception", ex.Message, "OK");
             }
 
-            
+
         }
 
         private async void OnBurgerMenuClicked(object sender, EventArgs e)

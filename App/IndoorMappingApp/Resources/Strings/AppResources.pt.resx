@@ -510,4 +510,10 @@
   <data name="ShowRoom404" xml:space="preserve">
     <value>Mostrar Sala 404</value>
   </data>
+  <data name="UserNotAuthenticated" xml:space="preserve">
+    <value>Utilizador não autenticado.</value>
+  </data>
+  <data name="ChooseOneOption" xml:space="preserve">
+    <value>Escolhe pelo menos uma opção.</value>
+  </data>
 </root>

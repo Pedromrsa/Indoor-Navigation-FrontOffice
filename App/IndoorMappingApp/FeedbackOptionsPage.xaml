@@ -14,6 +14,7 @@
 
                 <!--  ISEP Number Label  -->
                 <Label
+                    x:Name="IsepNumber"
                     FontSize="16"
                     Text="{helpers:Translate Label_IsepNumber_Feedback}"
                     TextColor="Black" />
