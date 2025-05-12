@@ -20,12 +20,20 @@ public partial class RecoverPasswordPage : ContentPage
 
         if (isValidToken)
         {
-            await DisplayAlert("Succcess", "Password was successfuly changed!", "OK");
+            //await DisplayAlert("Succcess", "Password was successfuly changed!", "OK");
+            await DisplayAlert(
+                   lrm["Success"],
+                   lrm["PasswordChangedSucess"],
+                   lrm["Button_OK"]);
             await Navigation.PushAsync(new LoginPage(), true);
         }
         else
         {
-            await DisplayAlert("Error", "Error changing password!", "OK");
+            //await DisplayAlert("Error", "Error changing password!", "OK");
+            await DisplayAlert(
+                   lrm["Error"],
+                   lrm["PasswordChangeFailed"],
+                   lrm["Button_OK"]);
             return;
         }
     }

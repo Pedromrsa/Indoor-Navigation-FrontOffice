@@ -516,4 +516,16 @@
   <data name="ChooseOneOption" xml:space="preserve">
     <value>Escolhe pelo menos uma opção.</value>
   </data>
+  <data name="PasswordChangedSucess" xml:space="preserve">
+    <value>Palavra-passe mudada com sucesso!</value>
+  </data>
+  <data name="PasswordChangeFailed" xml:space="preserve">
+    <value>Erro ao mudar de palavra-passe!</value>
+  </data>
+  <data name="FeedbackResponseButton" xml:space="preserve">
+    <value>Resposta as opiniões</value>
+  </data>
+  <data name="BackToMainMenu" xml:space="preserve">
+    <value>Voltar ao Menu Principal</value>
+  </data>
 </root>

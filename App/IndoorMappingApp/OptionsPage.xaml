@@ -60,13 +60,22 @@
             </HorizontalStackLayout>
 
             <Button
-             Padding="0"
-             BackgroundColor="LightGrey"
-             Clicked="OnSeeMessagesClicked"
-             FontSize="16"
-             HorizontalOptions="Fill"
-             Text="Feedback responses"
-             TextColor="Black" />
+                Padding="0"
+                BackgroundColor="LightGrey"
+                Clicked="OnSeeMessagesClicked"
+                FontSize="16"
+                HorizontalOptions="Fill"
+                Text="{helpers:Translate FeedbackResponseButton}"
+                TextColor="Black" />
+
+            <Button
+                Padding="0"
+                BackgroundColor="LightGrey"
+                Clicked="OnMainMenuClicked"
+                FontSize="16"
+                HorizontalOptions="Fill"
+                Text="{helpers:Translate BackToMainMenu}"
+                TextColor="Black" />
 
             <Button
                 Padding="0"
@@ -76,7 +85,7 @@
                 HorizontalOptions="Fill"
                 Text="{helpers:Translate Options_Delete}"
                 TextColor="Black" />
-            
+
             <Button
                 Padding="0"
                 BackgroundColor="LightGrey"

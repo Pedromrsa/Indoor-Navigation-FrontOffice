@@ -17,7 +17,10 @@ namespace IndoorMappingApp
             DailyReminderSwitch.IsToggled = Preferences.Get("DailyNotificationSet", false);
         }
 
-
+        private async void OnMainMenuClicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new MainMenuPage());
+        }
         private async void OnAccountSettingsClicked(object sender, EventArgs e)
         {
             await Navigation.PushAsync(new AccountSettings());

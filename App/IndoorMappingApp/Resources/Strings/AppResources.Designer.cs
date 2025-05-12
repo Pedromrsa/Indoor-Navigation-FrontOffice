@@ -79,6 +79,15 @@ namespace IndoorMappingApp.Resources.Strings {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Back to Main Menu.
+        /// </summary>
+        internal static string BackToMainMenu {
+            get {
+                return ResourceManager.GetString("BackToMainMenu", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to  Available Routes.
         /// </summary>
         internal static string Button_AvailableRoutes {
@@ -237,6 +246,15 @@ namespace IndoorMappingApp.Resources.Strings {
         internal static string FeedbackOptions_Title {
             get {
                 return ResourceManager.GetString("FeedbackOptions_Title", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Feedback Response.
+        /// </summary>
+        internal static string FeedbackResponseButton {
+            get {
+                return ResourceManager.GetString("FeedbackResponseButton", resourceCulture);
             }
         }
         
@@ -633,6 +651,24 @@ namespace IndoorMappingApp.Resources.Strings {
         internal static string Paraplegic {
             get {
                 return ResourceManager.GetString("Paraplegic", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Password was changed sucessufully!.
+        /// </summary>
+        internal static string PasswordChangedSucess {
+            get {
+                return ResourceManager.GetString("PasswordChangedSucess", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Error changing password!.
+        /// </summary>
+        internal static string PasswordChangeFailed {
+            get {
+                return ResourceManager.GetString("PasswordChangeFailed", resourceCulture);
             }
         }
         
