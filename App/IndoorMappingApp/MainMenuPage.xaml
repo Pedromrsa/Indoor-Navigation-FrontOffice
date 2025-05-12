@@ -23,7 +23,7 @@
             <Label
                 x:Name="PercursoLabel"
                 Margin="10"
-                FontSize="14" 
+                FontSize="14"
                 LineBreakMode="WordWrap"
                 TextColor="Black" />
 
@@ -58,17 +58,17 @@
                 TextColor="White" />
 
             <Button
-                 x:Name="show311Btn"
-                 BackgroundColor="Green"
-                 Clicked="OnShowRoom311Clicked"
-                 Text="Show Room 311"
-                 TextColor="White" />
+                x:Name="show311Btn"
+                BackgroundColor="Green"
+                Clicked="OnShowRoom311Clicked"
+                Text="{helpers:Translate ShowRoom311}"
+                TextColor="White" />
 
             <Button
                 x:Name="show404Btn"
                 BackgroundColor="Green"
                 Clicked="OnShowRoom404Clicked"
-                Text="Show Room 404"
+                Text="{helpers:Translate ShowRoom404}"
                 TextColor="White" />
 
         </VerticalStackLayout>

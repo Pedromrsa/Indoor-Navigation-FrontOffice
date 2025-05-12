@@ -504,4 +504,10 @@
   <data name="Options_Delete" xml:space="preserve">
     <value>Delete Account</value>
   </data>
+  <data name="ShowRoom311" xml:space="preserve">
+    <value>Show Room 311</value>
+  </data>
+  <data name="ShowRoom404" xml:space="preserve">
+    <value>Show Room 404</value>
+  </data>
 </root>

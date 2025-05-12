@@ -6,46 +6,46 @@
     xmlns:helpers="clr-namespace:IndoorMappingApp.Helpers"
     BackgroundColor="White">
 
-    <Grid RowDefinitions="*,Auto,*" ColumnDefinitions="*">
-        <!-- Center the StackLayout vertically -->
+    <Grid ColumnDefinitions="*" RowDefinitions="*,Auto,*">
+        <!--  Center the StackLayout vertically  -->
         <StackLayout
             Grid.Row="1"
-    Padding="20"
-    Spacing="17"
-    VerticalOptions="Center"
-    HorizontalOptions="CenterAndExpand"
-    WidthRequest="300">
+            Padding="20"
+            HorizontalOptions="CenterAndExpand"
+            Spacing="17"
+            VerticalOptions="Center"
+            WidthRequest="350">
 
-            <!-- Title -->
+            <!--  Title  -->
             <Label
                 Margin="0,0,0,20"
                 FontSize="20"
-                LineBreakMode="NoWrap"
                 HorizontalOptions="Center"
+                LineBreakMode="NoWrap"
                 Text="{helpers:Translate RecoverAccount_Title}"
                 TextColor="Black" />
 
-            <!-- Token label -->
+            <!--  Token label  -->
             <Label
                 x:Name="tokenLabel"
                 FontSize="17"
-                LineBreakMode="NoWrap"
-                HorizontalTextAlignment="Center"                
+                HorizontalTextAlignment="Center"
                 IsVisible="False"
+                LineBreakMode="NoWrap"
                 Text="{helpers:Translate RecoverAccount_Label_EnterToken}"
                 TextColor="Green" />
 
-            <!-- Email label -->
+            <!--  Email label  -->
             <Label
                 x:Name="emailLabel"
                 FontSize="17"
-                LineBreakMode="NoWrap"
                 HorizontalOptions="Center"
                 HorizontalTextAlignment="Center"
+                LineBreakMode="NoWrap"
                 Text="{helpers:Translate Recover_Email_Text}"
                 TextColor="Black" />
 
-            <!-- Email input -->
+            <!--  Email input  -->
             <Frame
                 x:Name="emailFrame"
                 Padding="0"
@@ -63,7 +63,7 @@
                     TextColor="Black" />
             </Frame>
 
-            <!-- Token input -->
+            <!--  Token input  -->
             <Frame
                 x:Name="tokenFrame"
                 Padding="0"
@@ -82,16 +82,16 @@
                     TextColor="Black" />
             </Frame>
 
-            <!-- Instructions -->
+            <!--  Instructions  -->
             <Label
                 x:Name="sendEmailLabel"
                 FontSize="17"
-                LineBreakMode="NoWrap"
                 HorizontalTextAlignment="Center"
+                LineBreakMode="NoWrap"
                 Text="{helpers:Translate RecoverAccount_Label_Instructions}"
                 TextColor="Black" />
 
-            <!-- Send Email button -->
+            <!--  Send Email button  -->
             <Button
                 x:Name="sendEmailButton"
                 BackgroundColor="Red"
@@ -103,7 +103,7 @@
                 Text="{helpers:Translate RecoverAccount_Button_SendEmail}"
                 TextColor="White" />
 
-            <!-- Verify Token button -->
+            <!--  Verify Token button  -->
             <Button
                 x:Name="verifyButton"
                 BackgroundColor="Green"
@@ -112,11 +112,11 @@
                 Clicked="OnVerifyClicked"
                 FontSize="16"
                 HorizontalOptions="FillAndExpand"
+                IsVisible="False"
                 Text="{helpers:Translate RecoverAccount_Button_Confirm}"
-                TextColor="White"
-                IsVisible="False" />
+                TextColor="White" />
 
-            <!-- Change Password button -->
+            <!--  Change Password button  -->
             <Button
                 x:Name="changePasswordButton"
                 BackgroundColor="Blue"
@@ -125,11 +125,11 @@
                 Clicked="OnChangePasswordClicked"
                 FontSize="16"
                 HorizontalOptions="FillAndExpand"
+                IsVisible="False"
                 Text="{helpers:Translate RecoverAccount_Button_ChangePassword}"
-                TextColor="White"
-                IsVisible="False" />
+                TextColor="White" />
 
-            <!-- Back to login -->
+            <!--  Back to login  -->
             <Button
                 x:Name="backMenuButton"
                 BackgroundColor="Transparent"
