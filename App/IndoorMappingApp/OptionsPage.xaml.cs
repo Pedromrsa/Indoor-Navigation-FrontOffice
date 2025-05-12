@@ -84,6 +84,9 @@ namespace IndoorMappingApp
             // Clear user session data
             Preferences.Remove("AuthToken");
             Preferences.Remove("UserId");
+            await LocalStorageService.DeleteDataAsync("email.txt");
+            await LocalStorageService.DeleteDataAsync("password.txt");
+
 
             // Navigate to login page
             await Shell.Current.GoToAsync("//MenuPage");
@@ -109,7 +112,10 @@ namespace IndoorMappingApp
             }
         }
 
-
+        private async void OnSeeMessagesClicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new SeeMessages());
+        }
 
         private void CancelDailyReminder()
         {

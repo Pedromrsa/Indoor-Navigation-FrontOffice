@@ -1,0 +1,64 @@
+<ContentPage
+    x:Class="IndoorMappingApp.SeeMessages"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:helpers="clr-namespace:IndoorMappingApp.Helpers"
+    Title="SeeMessages"
+    BackgroundColor="White"
+    Shell.NavBarIsVisible="False">
+
+    <Grid RowDefinitions="Auto,*">
+
+        <!--  Top Bar  -->
+        <Grid
+            Grid.Row="0"
+            Padding="0"
+            BackgroundColor="Red"
+            HeightRequest="50"
+            RowSpacing="0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="Auto" />
+            </Grid.ColumnDefinitions>
+
+            <Label
+                Margin="10,0"
+                FontAttributes="Bold"
+                Text="Project Logo"
+                TextColor="White"
+                VerticalOptions="Center" />
+
+            <ImageButton
+                Grid.Column="1"
+                Margin="10,0"
+                BackgroundColor="Transparent"
+                Clicked="OnBurgerMenuClicked"
+                HeightRequest="24"
+                HorizontalOptions="End"
+                Source="burguer_menu.png"
+                VerticalOptions="Center"
+                WidthRequest="24" />
+        </Grid>
+        <ScrollView Grid.Row="1">
+            <CollectionView ItemsSource="{Binding FeedbackWithResponses}">
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <Frame Padding="10" Margin="0,5" BorderColor="LightGray" BackgroundColor="#20232A">
+                            <StackLayout>
+                                <Label Text="Comentario do Utilizador:" FontAttributes="Bold"/>
+                                <Label Text="{Binding Feedback.Comentario}" />
+                                <Label Text="Data:" FontAttributes="Bold" />
+                                <Label Text="{Binding Feedback.DataHora}" />
+
+                                <Label Text="Resposta do Administrador:" FontAttributes="Bold" />
+                                <Label Text="{Binding AdminResponse.Comentario}" />
+                                <Label Text="Data da Resposta:" FontAttributes="Bold" />
+                                <Label Text="{Binding AdminResponse.DataHora}" />
+                            </StackLayout>
+                        </Frame>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+        </ScrollView>
+    </Grid>
+</ContentPage>
