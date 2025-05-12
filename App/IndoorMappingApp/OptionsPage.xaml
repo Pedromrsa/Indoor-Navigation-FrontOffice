@@ -60,6 +60,15 @@
             </HorizontalStackLayout>
 
             <Button
+             Padding="0"
+             BackgroundColor="LightGrey"
+             Clicked="OnSeeMessagesClicked"
+             FontSize="16"
+             HorizontalOptions="Fill"
+             Text="Feedback responses"
+             TextColor="Black" />
+
+            <Button
                 Padding="0"
                 BackgroundColor="LightGrey"
                 Clicked="OnDeleteAccountClicked"

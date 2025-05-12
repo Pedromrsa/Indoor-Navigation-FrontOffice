@@ -4,21 +4,24 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:helpers="clr-namespace:IndoorMappingApp.Helpers"
     BackgroundColor="White">
-    <!--  Create a Grid to center the container  -->
-    <Grid HorizontalOptions="Center" VerticalOptions="Center">
-
-        <!--  Grey container with padding and rounded corners  -->
+    
+    <!-- Main Grid to center the entire content -->
+    <Grid HorizontalOptions="Center" VerticalOptions="CenterAndExpand">
+        
+        <!-- Login Frame with the form -->
         <Frame
+            x:Name="loginFrame"
             Padding="20"
             BackgroundColor="#D3D3D3"
             BorderColor="Transparent"
-            CornerRadius="0">
+            CornerRadius="10"
+            IsVisible="True">
             <StackLayout
                 HorizontalOptions="CenterAndExpand"
                 Spacing="17"
                 VerticalOptions="Center">
 
-                <!--  Login Label  -->
+                <!-- Login Title -->
                 <Label
                     Margin="0,0,0,20"
                     FontSize="20"
@@ -27,13 +30,8 @@
                     TextColor="Black"
                     VerticalOptions="Start" />
 
-                <!--  Email Text Entry  -->
-                <Frame
-                    Padding="0"
-                    BorderColor="Black"
-                    CornerRadius="0"
-                    HasShadow="False"
-                    HorizontalOptions="FillAndExpand">
+                <!-- Email Entry -->
+                <Frame Padding="0" BorderColor="Black" CornerRadius="0" HasShadow="False" HorizontalOptions="FillAndExpand">
                     <Entry
                         x:Name="emailEntry"
                         Background="White"
@@ -45,13 +43,8 @@
                         TextColor="Black" />
                 </Frame>
 
-                <Frame
-                    Padding="0"
-                    BorderColor="Black"
-                    CornerRadius="0"
-                    HasShadow="False"
-                    HorizontalOptions="FillAndExpand">
-                    <!--  Password Text Entry  -->
+                <!-- Password Entry -->
+                <Frame Padding="0" BorderColor="Black" CornerRadius="0" HasShadow="False" HorizontalOptions="FillAndExpand">
                     <Entry
                         x:Name="passwordEntry"
                         Background="White"
@@ -62,7 +55,8 @@
                         PlaceholderColor="Black"
                         TextColor="Black" />
                 </Frame>
-                <!--  Forgot Password label  -->
+
+                <!-- Forgot Password Button -->
                 <Button
                     BackgroundColor="Transparent"
                     BorderWidth="0"
@@ -73,16 +67,13 @@
                     TextColor="#2e52f3"
                     VerticalOptions="End" />
 
-                <StackLayout
-                    HorizontalOptions="Center"
-                    Orientation="Horizontal"
-                    VerticalOptions="Center">
+                <!-- Don't have account message -->
+                <StackLayout HorizontalOptions="Center" Orientation="Horizontal" VerticalOptions="Center">
                     <Label
                         FontSize="17"
                         Text="{helpers:Translate Label_DontHaveAccount}"
                         TextColor="black"
                         VerticalOptions="Center" />
-
                     <Button
                         BackgroundColor="Transparent"
                         BorderWidth="0"
@@ -93,7 +84,7 @@
                         VerticalOptions="Center" />
                 </StackLayout>
 
-                <!--  Enter Button  -->
+                <!-- Login Button -->
                 <Button
                     BackgroundColor="Red"
                     BorderColor="Black"
@@ -106,10 +97,6 @@
                     WidthRequest="70" />
 
             </StackLayout>
-
         </Frame>
-
     </Grid>
-
-
 </ContentPage>
