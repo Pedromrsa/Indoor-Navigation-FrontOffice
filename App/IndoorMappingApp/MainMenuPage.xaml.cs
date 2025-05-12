@@ -1,5 +1,7 @@
-﻿using IndoorMappingApp.Scripts;
+﻿using Android.Widget;
+using IndoorMappingApp.Scripts;
 using IndoorMappingApp.Scripts.Services;
+using static Android.Provider.DocumentsContract;
 
 namespace IndoorMappingApp;
 
@@ -53,7 +55,13 @@ public partial class MainMenuPage : ContentPage, IQueryAttributable
     {
         await MostrarCaminhoParaDestino(10);
     }
-    
+
+    async void OnShowRoom311Clicked(object sender, EventArgs e)
+           => await Navigation.PushAsync(new ShowRoomPage(show311Btn.Text));
+
+    async void OnShowRoom404Clicked(object sender, EventArgs e)
+           => await Navigation.PushAsync(new ShowRoomPage(show404Btn.Text));
+
     private async Task MostrarCaminhoParaDestino(long destinoId)
     {
         var lrm = LocalizationResourceManager.Instance;

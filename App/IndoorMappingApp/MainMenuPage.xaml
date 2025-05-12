@@ -47,7 +47,7 @@
                 BackgroundColor="DodgerBlue"
                 Clicked="OnB304Clicked"
                 HorizontalOptions="Fill"
-                Text="B304"
+                Text="B311"
                 TextColor="White" />
 
             <Button
@@ -57,6 +57,19 @@
                 Text="B404"
                 TextColor="White" />
 
+            <Button
+                 x:Name="show311Btn"
+                 BackgroundColor="Green"
+                 Clicked="OnShowRoom311Clicked"
+                 Text="Show Room 311"
+                 TextColor="White" />
+
+            <Button
+                x:Name="show404Btn"
+                BackgroundColor="Green"
+                Clicked="OnShowRoom404Clicked"
+                Text="Show Room 404"
+                TextColor="White" />
 
         </VerticalStackLayout>
     </ScrollView>
